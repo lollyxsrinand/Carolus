@@ -13,4 +13,3 @@ import random
 import datetime 
 import aiml
 import youtube_dl
-import shutil
