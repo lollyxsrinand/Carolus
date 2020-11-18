@@ -294,9 +294,9 @@ class Music(commands.Cog):
 
         ctx.voice_state.voice = await destination.connect()
 
-    @commands.command(name='summon')
+    @commands.command(name='move')
     @commands.has_permissions(manage_guild=True)
-    async def _summon(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None):
+    async def _move(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None):
         """Summons the bot to a voice channel.
         If no channel was specified, it joins your channel.
         """
@@ -480,13 +480,18 @@ class Music(commands.Cog):
         async with ctx.typing():
             try:
                 source = await YTDLSource.create_source(ctx, search, loop=self.bot.loop)
+                await ctx.send("try opened")
+                print("try block opened")
             except YTDLError as e:
                 await ctx.send('An error occurred while processing this request: {}'.format(str(e)))
+                await ctx.send("exception opened")
+                print("exception block opened")
             else:
                 song = Song(source)
-
+                print("else block opened")
                 await ctx.voice_state.songs.put(song)
                 await ctx.send('Enqueued {}'.format(str(source)))
+                await ctx.send("else opened")
 
     @_join.before_invoke
     @_play.before_invoke
