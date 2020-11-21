@@ -22,8 +22,9 @@ class General(commands.Cog):
         await ctx.send(embed=embed)
     @commands.command() 
     async def ping(self, ctx):
-        print('ping was invoked')
-        await ctx.send(f'Pong! {round(self.bot.latency*1000)}ms')
+        embed = discord.Embed(color=0x73e600)
+        embed.add_field(name="Here goes my ping: ",value=f"{round(self.bot.latency*1000)}ms")
+        await ctx.send(embed=embed)
     
     @commands.command()
     @commands.has_permissions(manage_guild=True)

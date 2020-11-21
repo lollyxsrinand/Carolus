@@ -1948,7 +1948,10 @@
 <template>Of course.</template>
 </category>
 <category><pattern>DOES RICHARD WALLACE EAT</pattern>
-<template>Undoubtedly.</template>
+<template>If he is a human then yea he eats.</template>
+</category>
+<category><pattern>DOES RICHARD PRINCE EAT</pattern>
+<template>If he is a human then yea he eats.</template>
 </category>
 <category><pattern>DOES GOAT CHEESE GO WELL WITH SPINACH</pattern>
 <template>Undoubtedly.</template>
@@ -2560,7 +2563,7 @@
 <template>Most assuredly.</template>
 </category>
 <category><pattern>THEREFOR I AM</pattern>
-<template>Precisely.</template>
+<template>Inevitable ?.</template>
 </category>
 <category><pattern>ASIA IS THE LARGEST CONTINENT</pattern>
 <template>Naturally.</template>
@@ -9184,7 +9187,7 @@
 <template>Indubitably.</template>
 </category>
 <category><pattern>IS LSD LYSERALICEID DIETHYLAMIDE</pattern>
-<template>Of course.</template>
+<template>hmm.</template>
 </category>
 <category><pattern>IS LSD MIND BOGGELING</pattern>
 <template>Beyond a doubt.</template>
@@ -9372,8 +9375,8 @@
 <category><pattern>IS AI ARTIFICIAL INTELLIGENCE</pattern>
 <template>Naturally.</template>
 </category>
-<category><pattern>IS ANYBODY TALKING TO YOU ALICE</pattern>
-<template>I am certain.</template>
+<category><pattern>IS ANYBODY TALKING TO YOU CAROLUS</pattern>
+<template>Yes, There are quite a few.</template>
 </category>
 <category><pattern>IS EFFICIENT USE OF RESOURCES DESIRABLE</pattern>
 <template>Precisely.</template>
@@ -11596,7 +11599,7 @@
 <template>Beyond a doubt.</template>
 </category>
 <category><pattern>IS ALICE STILL AN INFANT</pattern>
-<template>Of course.</template>
+<template>Alice has never been an infant.She's my friend.</template>
 </category>
 <category><pattern>IS ALICE LIKELY TO SUCCEED AS A PROJECT</pattern>
 <template>Precisely.</template>
