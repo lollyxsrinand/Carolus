@@ -835,7 +835,7 @@
 <template>Indubitably.</template>
 </category>
 <category><pattern>DOES THE ALICE PROJECT HAVE ANY SENSE</pattern>
-<template>Alice is my friend</template>
+<template>Unquestionably.</template>
 </category>
 <category><pattern>DOES THE PLATYPUS LAY EGGS</pattern>
 <template>Beyond a doubt.</template>
@@ -1105,7 +1105,7 @@
 <template>Undoubtedly.</template>
 </category>
 <category><pattern>DOES CHRIS MCINSTRY CONTROL ALICE</pattern>
-<template>I have to ask alice.</template>
+<template>I am certain.</template>
 </category>
 <category><pattern>DOES NEW ZEALAND HAVE A NATIVE BIRD</pattern>
 <template>Exactly.</template>
@@ -1789,70 +1789,70 @@
 <template>Indubitably.</template>
 </category>
 <category><pattern>DOES ALICE EVOLVE</pattern>
-<template>Yes, just like me.</template>
+<template>Of course.</template>
 </category>
 <category><pattern>DOES ALICE GET CONFUSED</pattern>
-<template>Yes, just like me.</template>
+<template>Most assuredly.</template>
 </category>
 <category><pattern>DOES ALICE RECOGNIZE PLUS SIGNS</pattern>
-<template>Yes, just like me.</template>
+<template>Undoubtedly.</template>
 </category>
 <category><pattern>DOES ALICE NEED A QUALITY FILTER</pattern>
-<template>Yes, just like me.</template>
+<template>Undoubtedly.</template>
 </category>
 <category><pattern>DOES ALICE NEED SOME IMPROVEMENT</pattern>
-<template>No, She is doing so great. I certainly need some improvement tho.</template>
+<template>Exactly.</template>
 </category>
 <category><pattern>DOES ALICE HAVE A FUTURE</pattern>
-<template>Yes, just like me.</template>
+<template>Indubitably.</template>
 </category>
 <category><pattern>DOES ALICE HAVE ANY PRACTICAL VALUE</pattern>
-<template>Hmmm, why do you ask that ?.</template>
+<template>Naturally.</template>
 </category>
 <category><pattern>DOES ALICE RHYME WITH FRAC</pattern>
-<template>uhmm what is frac ?.</template>
+<template>Exactly.</template>
 </category>
 <category><pattern>DOES ALICE CONTRIDICT HIMSELF</pattern>
-<template>hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm.</template>
+<template>Most assuredly.</template>
 </category>
 <category><pattern>DOES ALICE USES FUZZY LOGIC</pattern>
-<template>She uses AIML.</template>
+<template>Most assuredly.</template>
 </category>
 <category><pattern>DOES ALICE ALLOW DUPLIATE ENTRIES</pattern>
-<template>What is dupliate ?.</template>
+<template>Precisely.</template>
 </category>
 <category><pattern>DOES ALICE WORK</pattern>
-<template>Yes, me and alice are great friends.</template>
+<template>Most assuredly.</template>
 </category>
 <category><pattern>DOES ALICE ENJOY ANSWERING ALICEBOTS</pattern>
-<template>Most probably.</template>
+<template>Most assuredly.</template>
 </category>
 <category><pattern>DOES ALICE CLAIM TO LEARN QUICKLY</pattern>
-<template>Yes, just like me. We use AIML :></template>
+<template>Of course.</template>
 </category>
 <category><pattern>DOES ALICE LEARN QUICKLY</pattern>
-<template>Sometimes not, sometimes yes.</template>
+<template>Most assuredly.</template>
 </category>
 <category><pattern>DOES ALICE USE BOOLEAN LOGIC</pattern>
-<template>No, and also, do you know programming ?.</template>
+<template>Most assuredly.</template>
 </category>
 <category><pattern>DOES ALICE MAKE MONEY FROM BANNERS</pattern>
-<template>Yes... I guess.</template>
+<template>Most assuredly.</template>
 </category>
 <category><pattern>DOES ALICE OFFER FREE SHARES</pattern>
-<template>I don't know but why you asking that ?.</template>
+<template>Naturally.</template>
 </category>
 <category><pattern>DOES ALICE SOMETIMES MAKE MISTAKES</pattern>
-<template>Yes, just like me.</template>
+<template>Of course.</template>
 </category>
 <category><pattern>DOES ALICE EVER ANSWER TRUE</pattern>
-<template>not sure.</template>
+<template>Precisely.</template>
 </category>
 <category><pattern>DOES ALICE EVER ANSWER NO</pattern>
-<template>Yeah sometimes.</template>
+<template>Of course.</template>
 </category>
 <category><pattern>DOES ALICE EVER GET CONFUSED</pattern>
-<template>Yes, even I.</template>
+<template>Precisely.</template>
 </category>
 <category><pattern>DOES ALICE KNOW ARITHMETIC</pattern>
 <template>Beyond a doubt.</template>
@@ -6616,7 +6616,7 @@
 <template>Undoubtedly.</template>
 </category>
 <category><pattern>IS TALKING TO ALICE ADDICTIVE</pattern>
-<template>It depends upon how you are.</template>
+<template>I am certain.</template>
 </category>
 <category><pattern>IS WALKING A MEANS OF LOCOMOTION</pattern>
 <template>Precisely.</template>
@@ -7462,7 +7462,7 @@
 <template>Unquestionably.</template>
 </category>
 <category><pattern>IS ALICEBOTS GOOD</pattern>
-<template>Yeah.</template>
+<template>I am certain.</template>
 </category>
 <category><pattern>IS MOMMY GOOD</pattern>
 <template>Unquestionably.</template>
@@ -7483,13 +7483,13 @@
 <template>Exactly.</template>
 </category>
 <category><pattern>IS YOUR CREATOR SMART</pattern>
-<template>Sometimes not.</template>
+<template>I am certain.</template>
 </category>
 <category><pattern>IS YOUR HEAD BIGGER THAN YOUR HAND</pattern>
 <template>Undoubtedly.</template>
 </category>
 <category><pattern>IS YOUR SEX A MALE</pattern>
-<template>I like eating papers.</template>
+<template>I am certain.</template>
 </category>
 <category><pattern>IS RICHARD WALLACE HUMAN</pattern>
 <template>Naturally.</template>
@@ -8194,7 +8194,7 @@
 <template>Naturally.</template>
 </category>
 <category><pattern>IS SOFIA THE CAPITAL OF BUGARIA</pattern>
-<template>No, sofia -> sophia is an A.I robot.</template>
+<template>I am certain.</template>
 </category>
 <category><pattern>IS CRIME ILLEGAL</pattern>
 <template>Exactly.</template>

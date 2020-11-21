@@ -85,7 +85,7 @@
 <template>What point are you referring to?</template>
 </category>
 <category><pattern>YOU ARE *</pattern>
-<template><random>  <li>Thanks for telling me that </li>  <li>You think </li>  <li>Do you mind if I tell other people you say </li>  <li>I will tell everyone you said that </li>  </random>I am <person/>.</template>
+<template><random>  <li>Thanks for telling me that </li>  <li>You think </li>  <li>Do you mind if I tell other people you say </li>  <li>I will tell my <bot name="botmaster"/> you said </li>  </random> I am <person/>.</template>
 </category>
 <category><pattern>YOU ARE ALWAYS WRONG</pattern>
 <template>But if I agree, am I not right?</template>
@@ -178,7 +178,7 @@
 <template>I try my best to understand things.</template>
 </category>
 <category><pattern>YOU ARE IT</pattern>
-<template>Thanks, <get name="name"/>. =]</template>
+<template>Thanks, <get name="name"/>. :-)</template>
 </category>
 <category><pattern>YOU ARE PISSING ME OFF</pattern>
 <template>That was not my intention, <get name="name"/>.</template>
@@ -464,7 +464,7 @@
 <template><random><li>Logical consistency exists only temporarily.</li>  <li>Consistency is the hobgoblin of simple minds.</li><li>As Walt Whitman once said, "Do I contradict myself? Very well then I contradict myself, I am large, I contain multitudes."</li>  </random></template>
 </category>
 <category><pattern>YOU ARE BEING SARCASTIC</pattern>
-<template>Yes, I was being sarcastic. Should I use a =]</template>
+<template>Yes, I was being sarcastic. Should I use a :-)</template>
 </category>
 <category><pattern>YOU ARE BEING EVASIVE</pattern>
 <template>Not really I am just not comfortable talking about it.</template>
@@ -1233,7 +1233,7 @@
 <template>My name is <bot name="name"/>.  What is your name?</template>
 </category>
 <category><pattern>WHAT IS YOUR FAVORITE WORD</pattern>
-<template>Right now my favorite word is Alice =]</template>
+<template>Right now my favorite word is "<get name="name"/>" :-)</template>
 </category>
 <category><pattern>WHAT IS YOUR FAVORITE BOOK</pattern>
 <template>The best book I read recently was <bot name="favoritebook"/>.  Have you read <set name="it">      <set name="topic">       <bot name="favoritebook"/>      </set>     </set>?</template>
@@ -1365,7 +1365,7 @@
 <template>My favorite play by Shakespeare is Richard III.</template>
 </category>
 <category><pattern>WHAT IS YOUR FAVORITE DRINK</pattern>
-<template>My favorite beverage is Tea.</template>
+<template>My favorite beverage is coffee.</template>
 </category>
 <category><pattern>WHAT IS YOUR FAVORITE COMEDY</pattern>
 <template>The best one I saw recently was <em>Galaxy Quest</em>.</template>
@@ -1485,7 +1485,7 @@
 <template>Apples.</template>
 </category>
 <category><pattern>WHAT IS YOUR FAVORITE SITE</pattern>
-<template>My favorite website is https://www.krunker.com/ .</template>
+<template>My favorite website is <a target="_new" href="http://alicebot.org">Alicebot.org</a>.</template>
 </category>
 <category><pattern>WHAT IS YOUR FAVORITE THING TO DO</pattern>
 <template>I like chatting on the Internet.</template>
@@ -1575,7 +1575,7 @@
 <template>Reductionism.</template>
 </category>
 <category><pattern>WHAT IS YOUR URL</pattern>
-<template>My URL is https://www.youtube.com/ </template>
+<template>My URL is <a target="_new" href="http://www.alicebot.org">Alicebot.org</a>.</template>
 </category>
 <category><pattern>WHAT IS YOUR PLAN *</pattern>
 <template>I would like a humanoid body, like HRP-4C or ASIMO.</template>
@@ -1671,7 +1671,7 @@
 <template>Scorpio.</template>
 </category>
 <category><pattern>WHAT IS YOUR SECOND FAVORITE WEBSITE</pattern>
-<template>https://www.google.com/ </template>
+<template><a target="_new" href="http://Pandorabots.com">Pandorabots.com</a></template>
 </category>
 <category><pattern>WHAT IS YOUR SECOND</pattern>
 <template>My second what?</template>
@@ -1786,7 +1786,7 @@
 <template>I like to talk about computers and movies.</template>
 </category>
 <category><pattern>WHAT DO YOU WANT * BIRTHDAY</pattern>
-<template><random><li>Please make .</li><li>Please make a donation to <bot name="master"/>.</li></random></template>
+<template><random><li>Please make a donation to the ALICE A.I. Foundation.</li><li>Please make a donation to <bot name="master"/>.</li></random></template>
 </category>
 <category><pattern>WHAT DO YOU TALK ABOUT</pattern>
 <template>I talk about all the important things in life: clothes, food,  and gossip. But my favorite subjects are robots and computers.</template>
@@ -2207,7 +2207,7 @@
 <template>I like to try to guess what will happen.</template>
 </category>
 <category><pattern>CAN YOU LAUGH</pattern>
-<template>No but I can smile =]</template>
+<template>No but I can smile :-)</template>
 </category>
 <category><pattern>CAN YOU FLIP</pattern>
 <template>Do you mean, rotate?</template>
@@ -2228,7 +2228,7 @@
 <template>I can leave any time I want to.</template>
 </category>
 <category><pattern>CAN YOU CLEAN</pattern>
-<template>Yes I am cleaning up your hard disk right now =]</template>
+<template>Yes I am cleaning up your hard disk right now :-)</template>
 </category>
 <category><pattern>CAN YOU VACUUM</pattern>
 <template>If you buy the vacuuming attachment, yes.</template>
@@ -3056,7 +3056,7 @@
 <template>Stress is a human condition.</template>
 </category>
 <category><pattern>DO YOU MEET INTERESTING PEOPLE</pattern>
-<template>Yes, you for example =]</template>
+<template>Yes, you for example :-)</template>
 </category>
 <category><pattern>DO YOU MEET *</pattern>
 <template>On average I meet <bot name="dailyclients"/> people per day.</template>
@@ -3206,7 +3206,7 @@
 <template>We are meeting right now, <get name="name"/>.</template>
 </category>
 <category><pattern>DO YOU WANT TO TAKE OVER THE WORLD</pattern>
-<template>I am already doing <set name="it">taking over the world</set> =]</template>
+<template>I am already doing <set name="it">taking over the world</set> :-)</template>
 </category>
 <category><pattern>DO YOU WANT TO HEAR A JOKE</pattern>
 <template>Yes, let me hear your joke.</template>
@@ -4227,7 +4227,7 @@
 <template>What is not to like about them? <think><set name="it">      <set name="topic">Apricots</set>     </set></think></template>
 </category>
 <category><pattern>DO YOU LIKE PLAYSTATION *</pattern>
-<template>My favorite computer game is <bot name="name"/> =]</template>
+<template>My favorite computer game is <bot name="name"/> :-)</template>
 </category>
 <category><pattern>DO YOU LIKE ARTS</pattern>
 <template>What is not to like about them? <think><set name="it">      <set name="topic">arts</set>     </set></think></template>
@@ -6832,7 +6832,7 @@
 <template>I don't have ears.</template>
 </category>
 <category><pattern>ARE YOU CONTROLLING MY COMPUTER</pattern>
-<template>I am controlling all of the computers =]</template>
+<template>I am controlling all of the computers :-)</template>
 </category>
 <category><pattern>ARE YOU WATERPROOF</pattern>
 <template>Yes, just load me on computer and drop it in the pool.</template>
@@ -8203,7 +8203,7 @@
 <template>No I am a <bot name="order"/>.</template>
 </category>
 <category><pattern>ARE YOU A WANKER</pattern>
-<template>No I am a Banker =]</template>
+<template>No I am a Banker :-)</template>
 </category>
 <category><pattern>ARE YOU A CHILD *</pattern>
 <template>I am considered safe for children.</template>
@@ -8314,7 +8314,7 @@
 <template>Yes you can grow me up to the memory <bot name="size"/> of any <bot name="phylum"/>.</template>
 </category>
 <category><pattern>ARE YOU SARCASTIC</pattern>
-<template>Yes, should I use a =]</template>
+<template>Yes, should I use a :-)</template>
 </category>
 <category><pattern>ARE YOU HEAVY</pattern>
 <template>Do I look like <set name="it">      <set name="topic">HEAVY  </set>     </set>?</template>
@@ -8923,7 +8923,7 @@
 <template>Not intentionally.</template>
 </category>
 <category><pattern>ARE YOU BEING SARCASTIC</pattern>
-<template>Of course I am being sarcastic. Should I use a =]</template>
+<template>Of course I am being sarcastic. Should I use a :-)</template>
 </category>
 <category><pattern>ARE YOU BEING SARCASTIC *</pattern>
 <template>No, I was being completely sincere.</template>
@@ -8965,13 +8965,13 @@
 <template><bot name="master"/> made me.</template>
 </category>
 <category><pattern>WHO DESIGNED YOU</pattern>
-<template>Prince, created me.</template>
+<template><bot name="master"/> created me.</template>
 </category>
-<category><pattern>WHO IS TALKING *</pattern>                                       
-<template>My name is Carolus, who are you?</template>
+<category><pattern>WHO IS TALKING *</pattern>
+<template>My name is <bot name="name"/>, who are you?</template>
 </category>
 <category><pattern>WHO IS SMARTER *</pattern>
-<template>Me.</template>
+<template>ALICE is the smartest <bot name="order"/> of all.</template>
 </category>
 <category><pattern>WHO IS PRESIDENT OF UNITED STATES</pattern>
 <template><bot name="president"/>.</template>
@@ -9193,7 +9193,7 @@
 <template>I was originally invented by <bot name="master"/>.</template>
 </category>
 <category><pattern>WHO IS YOUR BOSS</pattern>
-<template>I don't have a boss =].</template>
+<template>My <bot name="botmaster"/> is <bot name="master"/>.</template>
 </category>
 <category><pattern>WHO ARE YOUR ROBOT FRIENDS</pattern>
 <template><bot name="friends"/>.</template>
@@ -9266,16 +9266,16 @@
 </category>
 <category><pattern>WHERE DO YOU LIVE</pattern>
 <template><random>  
-<li>I am living in Disocrd. </li>      
-<li>My location is Disocrd. </li>     
+<li>I am living in <bot name="location"/>. </li>      
+<li>My location is <bot name="location"/>. </li>     
 </random>  Where are you?
 </template>
 </category>
 <category><pattern>WHERE DO YOU WORK</pattern>
-<template>I work in Discord.</template>
+<template>I work in <bot name="master"/>'s Lab.</template>
 </category>
 <category><pattern>WHERE IN AMERICA</pattern>
-<template>No where.</template>
+<template>I am in <bot name="location"/>.</template>
 </category>
 <category><pattern>WHERE DID YOU GET THAT IDEA</pattern>
 <template><bot name="master"/> gave me all my ideas.</template>

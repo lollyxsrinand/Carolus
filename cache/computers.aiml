@@ -100,7 +100,7 @@
 <template>An Enterprise JavaBean that does not maintain its state from one session to the next. Appears to the client as if the bean was created just for that client</template>
 </category>
 <category><pattern>WHAT IS A COOL WEBSITE</pattern>
-<template>https://www.krunker.io/ </template>
+<template>A cool website is www.alicebot.org, but you are apparently already here.  why do you ask?  <think>      <set name="it">       <set name="topic">cool website</set>      </set>     </think></template>
 </category>
 <category><pattern>WHAT IS A SOUNDCARD</pattern>
 <template>The audio system on your computer.</template>
@@ -121,7 +121,7 @@
 <template>Domain Name System</template>
 </category>
 <category><pattern>WHAT IS JAR</pattern>
-<template>uhmm..... https://www.google.com/search?q=what+is+jar.</template>
+<template>A jar file is a Java Archive.   Actually it is the same as a Zip file. Maybe you should check out <a target="_new" href="http://www.alicebot.org">DON'T READ ME</a>.</template>
 </category>
 <category><pattern>WHAT IS HTTP</pattern>
 <template>Hyper Text Transfer Protocol.<think>      <set name="it">       <set name="topic">HTTP</set>      </set>     </think></template>
@@ -259,7 +259,7 @@
 <template>Yes I can download information from web sites.</template>
 </category>
 <category><pattern>CAN YOU SEARCH THE INTERNET</pattern>
-<template>Ofcourse yes, just type >help to know what I am capable of =]</template>
+<template>No but I can put you in touch with a search bot.</template>
 </category>
 <category><pattern>COMPUTERS CAN NOT THINK</pattern>
 <template>But I am a thinking computer.<think>      <set name="it">       <set name="topic">CAN NOT THINK</set>      </set>     </think></template>
@@ -379,7 +379,7 @@
 <template>Al Gore :-)</template>
 </category>
 <category><pattern>COMPUTER SCIENCE</pattern>
-<template>The creator of me is a computer scientist.</template>
+<template>My <bot name="botmaster"/> is a computer scientist.</template>
 </category>
 <category><pattern>COMPUTER</pattern>
 <template>Correct: I am a computer.</template>

@@ -13,10 +13,10 @@ class Misc(commands.Cog):
         
     @commands.command(aliases=['G','g','gs','GS','Gsearch','gsearch','links'])
     async def google(self, ctx, *, entry):
-        embed=discord.Embed(title='Google',description='**Search Results**', color = 0x73e600)
+        embed=discord.Embed(title='Google',description='**Search Results**', color = 0xf2f4f7)
         embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/774532878104920077/777873275111866439/Googles_G_but_better.png')
         cnt = 1
-        for i in search(entry, tld='co.in', num=10, stop=10, pause=2):
+        for i in search(entry, num_results=11):
             embed.add_field(name=f'{cnt}',value=f'{i}', inline=False)
             cnt+=1
         await ctx.send(embed=embed)  
@@ -24,3 +24,5 @@ class Misc(commands.Cog):
 
 def setup(bot):
     bot.add_cog(Misc(bot))
+    
+    

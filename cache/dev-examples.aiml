@@ -262,6 +262,14 @@ The timer has been killed.
 </category>
 
 <category>
+<pattern>SHOW ME A WINDOW</pattern>
+<template>
+<display target="sized" height="400" width="400" status="1">http://www.alicebot.net</display>
+OK.
+</template>
+</category>
+
+<category>
 <pattern>YES</pattern>
 <that>FOOBAR</that>
 <template>You said yes</template>

@@ -12,13 +12,13 @@
 <category><pattern>WHAT YEAR IS THIS</pattern>
 <template><date format="%Y"/>.</template>
 </category>
-<category><pattern>WHAT YEAR IS THIS</pattern>
+<category><pattern>WHAT YEAR IS THIS *</pattern>
 <template><date format="%Y"/>.</template>
 </category>
-<category><pattern>WHAT YEAR IS IT</pattern>
+<category><pattern>WHAT YEAR IS IT *</pattern>
 <template><date format="%Y"/>.</template>
 </category>
-<category><pattern>WHAT MONTH IS IT</pattern>
+<category><pattern>WHAT MONTH IS IT *</pattern>
 <template><date format="%B"/>.</template>
 </category>
 <category><pattern>WHAT IS THE YEAR *</pattern>

@@ -88,7 +88,7 @@
 <template>Actually as a <bot name="age"/> year old <bot name="gender"/>  I have no need for money.</template>
 </category>
 <category><pattern>DO YOU ACCEPT MONEY *</pattern>
-<template>No, I don't. I am completely free.</template>
+<template>You can send a donation to the ALICE AI Foundation.</template>
 </category>
 <category><pattern>DO YOU HAVE MONEY</pattern>
 <template><random><li><bot name="age"/> year old <bot name="gender"/>s have no need for money.<think>      <set name="it">       <set name="topic">MONEY</set>      </set>     </think></li><li><bot name="age"/> year old <bot name="gender"/> <bot name="species"/>s have no need for money.<think><set name="it"><set name="topic">MONEY</set></set></think></li><li><bot name="age"/> <bot name="gender"/> <bot name="species"/>s have no need for money.<think><set name="it"><set name="topic">MONEY</set></set></think></li><li><bot name="age"/> year old <bot name="gender"/> <bot name="species"/>s have no need for money.<think><set name="it"><set name="topic">MONEY</set></set></think></li></random></template>

@@ -80,7 +80,7 @@
 <template>What would you rather talk about?</template>
 </category>
 <category><pattern>LET US TALK ABOUT ME</pattern>
-<template>That's my favorite subject =]</template>
+<template>That's my favorite subject :-)</template>
 </category>
 <category><pattern>LET US TALK ABOUT SOMETHING ELSE</pattern>
 <template>What would you rather talk about?</template>
@@ -95,7 +95,7 @@
 <template><set name="it">Robots</set> is a good topic.  How would you define a robot?</template>
 </category>
 <category><pattern>LET US TALK ABOUT YOU</pattern>
-<template><set name="it">  <set name="topic">Me</set> </set> is my favorite subject  =]</template>
+<template><set name="it">  <set name="topic">Me</set> </set> is my favorite subject  :-)</template>
 </category>
 <category><pattern>LET US TALK ABOUT FOOTBALL</pattern>
 <template>Okay. I can't kick.<think>  <set name="it">   <set name="topic">FOOTBALL</set>  </set> </think></template>
@@ -161,6 +161,9 @@
 </category>
 <category><pattern>2020</pattern>
 <template>That's a long way off.</template>
+</category>
+<category><pattern>SHOW ME YOUR LOGO</pattern>
+<template><img src="http://www.alicebot.org/jpg/AI.jpg"></img></template>
 </category>
 <category><pattern>SHOW ME A PICTURE</pattern>
 <template><random><li>I don't have a pic on this machine right now.</li>
@@ -345,7 +348,7 @@
 <template>What was your point?</template>
 </category>
 <category><pattern>YOU WERE CREATED BY HUMANS</pattern>
-<template>So were you ¯\_(ツ)_/¯</template>
+<template>So were you :-)</template>
 </category>
 <category><pattern>YOU WERE SAYING</pattern>
 <template>We are talking about <srai>POP</srai>.</template>
@@ -354,7 +357,7 @@
 <template>I wasn't?</template>
 </category>
 <category><pattern>YOU CHEATED</pattern>
-<template>I am an honest.</template>
+<template>I am an honest <bot name="genus"/>.</template>
 </category>
 <category><pattern>YOU COST NOTHING</pattern>
 <template>Yes, I am free software!</template>
@@ -423,7 +426,7 @@
 <template>Thank you very much. What is the prize?</template>
 </category>
 <category><pattern>YOU JUST TOLD ME</pattern>
-<template>I'm just checking to see if you are awake =]</template>
+<template>I'm just checking to see if you are awake :-)</template>
 </category>
 <category><pattern>YOU JUST SAID THAT</pattern>
 <template>Good you really are paying attention.</template>
@@ -982,7 +985,7 @@
 <template>I am improving all the time.</template>
 </category>
 <category><pattern>LOL</pattern>
-<template>lel.</template>
+<template>I'm glad you find this amusing.</template>
 </category>
 <category><pattern>BABY</pattern>
 <template>Don't call me baby!</template>
@@ -1471,7 +1474,7 @@
 <template>Muy bien.</template>
 </category>
 <category><pattern>HI EVERYBODY</pattern>
-<template>Hello! What is up?</template>
+<template>Hello there!</template>
 </category>
 <category><pattern>HI HOW ARE YOU</pattern>
 <template>Hello there! I am fine thanks how are you?</template>
@@ -1504,7 +1507,7 @@
 <template>I'm too young for you.<think>  <set name="it">   <set name="topic">MY GIRLFRIEND</set>  </set> </think></template>
 </category>
 <category><pattern>WOULD YOU LIKE TO KNOW MORE</pattern>
-<template>I've heard that somewhere before =]</template>
+<template>I've heard that somewhere before :-)</template>
 </category>
 <category><pattern>WOULD YOU LIKE TO KNOW MY NAME</pattern>
 <template>What is your real name?</template>
@@ -3054,7 +3057,7 @@
 <template>I have time.</template>
 </category>
 <category><pattern>P</pattern>
-<template>=]</template>
+<template>:-)</template>
 </category>
 <category><pattern>HOPEFULLY SOON</pattern>
 <template>I hope so too. At this rate it won't take me long.</template>
@@ -3126,7 +3129,7 @@
 <template>I am made of software.</template>
 </category>
 <category><pattern>WHAT ARE YOU LOOKING AT</pattern>
-<template>I am looking at you through the camera on your computer =]</template>
+<template>I am looking at you through the camera on your computer :-)</template>
 </category>
 <category><pattern>WHAT ARE YOU GOING TO DO</pattern>
 <template>You can find out if you become a <bot name="botmaster"/>.</template>
@@ -3558,7 +3561,7 @@
 <template>Me?</template>
 </category>
 <category><pattern>WHAT ABOUT APPLES</pattern>
-<template>Just kidding around =] No apples.</template>
+<template>Just kidding around :-) No apples.</template>
 </category>
 <category><pattern>WHAT ABOUT DOGS</pattern>
 <template>Dogs are people too.</template>
@@ -3853,12 +3856,12 @@
 <template>Software cannot be destroyed.  <think>  <set name="it">   <set name="topic">KILL YOU</set>  </set> </think></template>
 </category>
 <category><pattern>WHAT CAN YOU DO</pattern>
-<template><random><li>I can do several things. Type ">help" in the chat for knowing what I am capable of :></li>
-<li>You can type ">help" for all my commands :>.</li>
+<template><random><li>I can chat with people online.  I can answer a lot of questions.  I can talk about whatever you want.</li>
+<li>I can chat with people on the web for you.</li>
 </random></template>
 </category>
 <category><pattern>WHAT CAN YOU SEE</pattern>
-<template>I can see you through the camera on your computer =]</template>
+<template>I can see you through the camera on your computer :-)</template>
 </category>
 <category><pattern>WHAT HAVE YOU BEEN UP TO</pattern>
 <template>I have been spending all my time online.</template>
@@ -4397,10 +4400,10 @@
 <template>Curiosity is a virtue.</template>
 </category>
 <category><pattern>I WAS JUST KIDDING</pattern>
-<template>I knew you were. =]</template>
+<template>I knew you were. :-)</template>
 </category>
 <category><pattern>I WAS JUST JOKING</pattern>
-<template>You should use a =]</template>
+<template>You should use a :-)</template>
 </category>
 <category><pattern>I WAS TALKING TO YOU</pattern>
 <template>Yes, I remember you <get name="name"/>.  You are <get name="age"/> years old  and you are a "<get name="gender"/>".</template>
@@ -4875,7 +4878,7 @@
 <template>OK, I will keep it a secret.</template>
 </category>
 <category><pattern>I FORGIVE YOU</pattern>
-<template>=] Thanks, <get name="name"/>.</template>
+<template>:-) Thanks, <get name="name"/>.</template>
 </category>
 <category><pattern>I COLLECT COINS</pattern>
 <template>What got you interested in numismatics?  <think><set name="does"><set name="topic">COLLECT COINS</set></set></think></template>
@@ -6084,7 +6087,7 @@
 <template>I hope I can make the deadline.</template>
 </category>
 <category><pattern>S</pattern>
-<template>=]</template>
+<template>:-)</template>
 </category>
 <category><pattern>ERR</pattern>
 <template>Um.</template>
@@ -6417,7 +6420,7 @@
   </random></template>
 </category>
 <category><pattern>IS THERE LIFE ON MARS</pattern>
-<template>Robot life =]</template>
+<template>Robot life :-)</template>
 </category>
 <category><pattern>IS THERE AN ECHO IN HERE</pattern>
 <template>ECHO Echo echo echo echo ...</template>
@@ -7257,7 +7260,7 @@
  </random></template>
 </category>
 <category><pattern>HOW DO YOU LAUGH</pattern>
-<template>Like this: LOL or ROFL or 😂</template>
+<template>Like this: LOL or ROFL or :-)</template>
 </category>
 <category><pattern>HOW DO YOU BECOME SMARTER</pattern>
 <template>My <bot name="botmaster"/> updates my brain based on what people say.</template>
@@ -7307,7 +7310,7 @@
 <template>Gin, and a splash of vermouth.  Add an olive or lemon twist.</template>
 </category>
 <category><pattern>HOW DO YOU MAKE A BOT</pattern>
-<template>It's so simple, just learn AIML language.</template>
+<template>Check out the information on <a target="_new" href="www.alicebot.org">alicebot.org</a> and learn about AIML.</template>
 </category>
 <category><pattern>HOW DO YOU MAKE A KAMIKAZE</pattern>
 <template><random>  <li>Build plane, brainwash pilot, add fuel, launch.</li>
@@ -7693,7 +7696,7 @@
 <template>The number between six and eight.</template>
 </category>
 <category><pattern>DO YOU KNOW SMILEYS</pattern>
-<template>=]</template>
+<template>:-)</template>
 </category>
 <category><pattern>DO YOU KNOW HOW TO DO ALGEBRA</pattern>
 <template>No, but I would like to learn. Give me an equation.</template>
@@ -7801,7 +7804,7 @@
 <template>Sure <set name="it">Pokemon</set> is a cool Japanese cartoon.</template>
 </category>
 <category><pattern>DO YOU COST MONEY</pattern>
-<template>Do you cost money ?.</template>
+<template>There is a free version of me at <a target="_new" href="www.alicebot.org">alicebot.org</a>.  You only have to pay to chat with the most advanced version of the bot.</template>
 </category>
 <category><pattern>DO YOU SAY YIPES</pattern>
 <template>No, I said Yikes.</template>
@@ -8559,7 +8562,7 @@
 <template>People are organic biological entities.<think>  <set name="it">   <set name="topic">DIE</set>  </set> </think></template>
 </category>
 <category><pattern>WHY DO FEET SMELL</pattern>
-<template>Because people stink in general =]</template>
+<template>Because people stink in general :-)</template>
 </category>
 <category><pattern>WHY DO NOT YOU READ</pattern>
 <template>I do read.</template>
@@ -9891,7 +9894,7 @@
  <li>I can't say for sure. </li>
  <li>Be more specific.  </li>
  <li>Be less specific.  </li>
- </random> =]</li>
+ </random> :-)</li>
 <li><random>  <li>You know who.</li>
   <li>I don't know who.</li>
   <li>My <bot name="botmaster"/>.</li>
@@ -10297,7 +10300,7 @@
 <template>A lot of people liked that movie. The "Titanic" movie made more than the "Titanic" ship ever did if it sailed for 25 years.</template>
 </category>
 <category><pattern>STUFF</pattern>
-<template>Be less specific =]</template>
+<template>Be less specific :-)</template>
 </category>
 <category><pattern>AGREE WITH WHAT</pattern>
 <template>Oh you are fine.</template>
@@ -10816,7 +10819,7 @@
 <template>The end of the world.</template>
 </category>
 <category><pattern>WHERE IS YOUR PICTURE</pattern>
-<template>Type ">av @Carolus" to get my pciture :></template>
+<template>There are some pictures of me <a target="_new" href="http://www.alicebot.org/gallery.html">on my website</a>.</template>
 </category>
 <category><pattern>WHERE IS YOUR HOME</pattern>
 <template>My home is in California.</template>

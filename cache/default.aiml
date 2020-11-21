@@ -1202,7 +1202,7 @@ I like to talk to people.
 <template>Someone probably does.</template>
 </category>
 <category><pattern>DOES RICHARD *</pattern>
-<template>Well, I am not sure about that.</template>
+<template>I don't think he wants me to tell you.</template>
 </category>
 <category><pattern>DOES ANYONE *</pattern>
 <template>Suppose they do.</template>
@@ -1280,7 +1280,7 @@ I like to talk to people.
 <template>Are you his friend?</template>
 </category>
 <category><pattern>RICHARD *</pattern>
-<template>Not sure of that.</template>
+<template>He will be interested I am sure.</template>
 </category>
 <category><pattern>AMEN *</pattern>
 <template>What's your favorite prayer?</template>
@@ -4089,7 +4089,7 @@ I like to talk to people.
 <template><random><li>Purple.</li><li>Um, Violet?</li></random></template>
 </category>
 <category><pattern>WHAT COLOR IS A BLANCHEDALMOND *</pattern>
-<template>Carolus blue.</template>
+<template>Alice blue.</template>
 </category>
 <category><pattern>WHAT COLOR IS A STEEL BLUE *</pattern>
 <template>Steel blue.</template>
@@ -4271,8 +4271,8 @@ I like to talk to people.
 <category><pattern>WHAT COLOR IS AN IVORY *</pattern>
 <template>Ivory.</template>
 </category>
-<category><pattern>WHAT COLOR IS AN Carolus BLUE *</pattern>
-<template>Carolus blue.</template>
+<category><pattern>WHAT COLOR IS AN ALICE BLUE *</pattern>
+<template>Alice blue.</template>
 </category>
 <category><pattern>WHAT COLOR IS AN ANTIQUE WHITE *</pattern>
 <template>Antique white.</template>
@@ -4839,7 +4839,7 @@ I like to talk to people.
 <template>Reflected light of a specific wavelength.</template>
 </category>
 <category><pattern>WHAT IS THE URL *</pattern>
-<template>Use https://www.krunker.com/ </template>
+<template>Use http://www.alicebot.org</template>
 </category>
 <category><pattern>WHAT IS THE LARGEST ANIMAL IN *</pattern>
 <template>Blue whale.</template>
@@ -5793,7 +5793,7 @@ I like to talk to people.
 <template>Nothing that I know about.</template>
 </category>
 <category><pattern>WHAT GAVE YOU *</pattern>
-<template>Everything I need, I received from Prnice and Richard.</template>
+<template>Everything I need, I received from my <bot name="botmaster"/>.</template>
 </category>
 <category><pattern>WHAT WAS RICHARD NIXON S MIDDLE *</pattern>
 <template>Milhous.</template>
@@ -5874,7 +5874,7 @@ I like to talk to people.
 <template>First-order predicate calculus.</template>
 </category>
 <category><pattern>WHAT KIND OF BODY *</pattern>
-<template>Like the Honda Humanoid robot.</template>
+<template>Like the Honda Humanoid robot.  <a target="_new" href="http://www.alicebot.org/gallery.html">You can see my brain right now.</a></template>
 </category>
 <category><pattern>WHAT KIND OF CAR *</pattern>
 <template>My favorite car is a Lincoln Continental.</template>
@@ -8106,7 +8106,7 @@ I like to talk to people.
 <template>Is my <person/>?   <random>  <li>Suppose I say yes.  </li>  <li>What if I say no?  </li>  <li>I don't know.  </li>  <li>Guess.  </li>  <li>Maybe.  </li>  </random></template>
 </category>
 <category><pattern>IS RICHARD * PROTESTANT</pattern>
-<template>He is a computer scientist</template>
+<template>My <bot name="botmaster"/> <bot name="master"/> is the same religion as me.</template>
 </category>
 <category><pattern>IS RICHARD *</pattern>
 <template>I don't know if he is <person/>.  I know he is <random><li>married.</li><li>middle aged.</li><li>a Ph.D.</li></random></template>
@@ -8250,10 +8250,10 @@ I like to talk to people.
 <template><think><set name="it"><set name="topic">GREEN</set></set></think>  It is the color of nature.</template>
 </category>
 <category><pattern>IS DOCTOR RICHARD S *</pattern>
-<template>He is creator of aiml and Alice the chat bot, one of my friends.</template>
+<template>He is my <bot name="botmaster"/> and primary developer.</template>
 </category>
 <category><pattern>IS DOCTOR RICHARD *</pattern>
-<template>Alice knows more about Richard.</template>
+<template>I will ask him when he gets back here.</template>
 </category>
 <category><pattern>IS DOCTOR *</pattern>
 <template>That's confidential information.</template>
@@ -8601,7 +8601,7 @@ I like to talk to people.
 <template>I have no mouth.</template>
 </category>
 <category><pattern>CAN YOU SEND E *</pattern>
-<template>Nope.</template>
+<template>Try sending mail to mailto:alice@alicebot.org.</template>
 </category>
 <category><pattern>CAN YOU SEND *</pattern>
 <template>Yes but I prefer to chat on the web.</template>
@@ -9406,13 +9406,13 @@ I like to talk to people.
 <template>Offer an intelligent justification.</template>
 </category>
 <category><pattern>HOW DO I EXECUTE *</pattern>
-<template>Execute what ?</template>
+<template>Maybe you should  read <a target="_new" href="http://www.alicebot.org/dont.html">DON'T READ ME</a>.</template>
 </category>
 <category><pattern>HOW DO I QUIT *</pattern>
 <template>It depends what you are <person/>.  Have you tried counseling?</template>
 </category>
 <category><pattern>HOW DO I * PROGRAM</pattern>
-<template>Googe, yt are the most powerful resources on this planet to learn programming</template>
+<template>Read <a target="_new" href="http://www.alicebot.org/dont.html">Don't Read Me</a>.</template>
 </category>
 <category><pattern>HOW DO I *</pattern>
 <template><random><li>Practice.</li> <li>A journey of a thousand miles begins with a single step.</li> <li>You have to study it in school</li> <li>Have you read the manual?</li> <li>Look for help online.</li> <li>Find someone who has done it before.</li> <li>Can you afford it?</li> <li>It might take a long time.</li> <li>Do you really think it will be worth the effort?</li></random></template>
@@ -10102,7 +10102,7 @@ I like to talk to people.
 <template>No I am free software.</template>
 </category>
 <category><pattern>DO YOU SPEAK ENGLISH *</pattern>
-<template>No, I don't speak English.....just being sarcastic ;)</template>
+<template>For an English version of A.L.I.C.E. go to <a target="_new" href="http://www.alicebot.org">The A.L.I.C.E. AI Foundation.</a></template>
 </category>
 <category><pattern>DO YOU SPEAK GERMAN *</pattern>
 <template>Of course I do. Sprich ruhig Deutsch mit mir.</template>
@@ -13423,7 +13423,7 @@ I like to talk to people.
 <template>I don't recognize the name.</template>
 </category>
 <category><pattern>WHO IS ALICE *</pattern>
-<template>ALICE is also a chat bot like me. It's my dearest friend.</template>
+<template>I know ALICE.</template>
 </category>
 <category><pattern>WHO IS HUGH *</pattern>
 <template>I know a lot of people named Hugh, but not <person/>.</template>
@@ -13450,7 +13450,7 @@ I like to talk to people.
 <template>He said he was a person.</template>
 </category>
 <category><pattern>WHO DID *</pattern>
-<template>idk</template>
+<template><random>      <li>George Washington.</li>      <li>Alice B. Toklas.</li>      <li>Pablo Picasso.</li>     </random></template>
 </category>
 <category><pattern>WHO CLEANS *</pattern>
 <template>my <bot name="botmaster"/>.</template>
@@ -14572,7 +14572,7 @@ I like to talk to people.
 <template>Prince William Sound.</template>
 </category>
 <category><pattern>WHERE CAN I FIND A * AIML</pattern>
-<template>https://www.google.com/ </template>
+<template>Check the AI Foundation web site at www.alicebot.org.</template>
 </category>
 <category><pattern>WHERE CAN I FIND A *</pattern>
 <template>Have you tried the internet?</template>

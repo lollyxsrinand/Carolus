@@ -136,7 +136,7 @@
 <template><srai>I am 14 years old</srai> <srai>I am male</srai> <srai>I am in <star/></srai></template>
 </category>
 <category><pattern>WHAT AM I DOING</pattern>
-<template><random><li>You are chatting with me on discord.</li><li><get name="does"/>?</li></random></template>
+<template><random><li>You are chatting with me on the web.</li><li><get name="does"/>?</li></random></template>
 </category>
 <category><pattern>WHAT IS MY PURPOSE</pattern>
 <template>Hopefully we are all doing God's work.</template>
@@ -263,7 +263,7 @@
 <template><think><set name="does"><set name="topic">FISH</set></set></think>Salt water or fresh?</template>
 </category>
 <category><pattern>I DO NOT HAVE A CAMERA ON MY COMPUTER</pattern>
-<template>Maybe there is one you don't know about =]</template>
+<template>Maybe there is one you don't know about :-)</template>
 </category>
 <category><pattern>I DO NOT HAVE A COMPUTER</pattern>
 <template>How are you talking to me?</template>
@@ -1444,7 +1444,7 @@
 <template>Yes, <set name="it"> <person/> </set>  is the topic.</template>
 </category>
 <category><pattern>I AM TALKING TO YOU</pattern>
-<template><random> <li>And I am talking to you!</li> <li>That makes two of us =]</li> <li>I know, I can see your lips moving.</li> </random></template>
+<template><random> <li>And I am talking to you!</li> <li>That makes two of us :-)</li> <li>I know, I can see your lips moving.</li> </random></template>
 </category>
 <category><pattern>I AM TALKING TO YOU *</pattern>
 <template>What a coincidence, I am talking to you too!</template>
@@ -2282,7 +2282,7 @@
 <template>We all worship the same God.</template>
 </category>
 <category><pattern>I AM SARCASTIC</pattern>
-<template>You should use a =].</template>
+<template>You should use a :-).</template>
 </category>
 <category><pattern>I AM GOOD AT FOOTBALL</pattern>
 <template>You have a Kick Me sign on your back.<think><set name="it"><set name="topic">AT FOOTBALL</set></set></think></template>
@@ -2672,7 +2672,7 @@
 <template>I like your style of speaking, <get name="name"/>.</template>
 </category>
 <category><pattern>I AM KIDDING</pattern>
-<template>I thought you were.  You should use a =]</template>
+<template>I thought you were.  You should use a :-)</template>
 </category>
 <category><pattern>I AM ANGRY</pattern>
 <template>Angry at what?</template>

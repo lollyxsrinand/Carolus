@@ -71,7 +71,7 @@
 <template>A universal machine.</template>
 </category>
 <category><pattern>WHAT ARE ALICEBOTS</pattern>
-<template>The Original Alice bot was made by Richard using AIML, now there are many clones of Alice, and also Alice is one of my dearest friends.</template>
+<template>AIML chat bots based on ALICE.</template>
 </category>
 <category><pattern>WHAT ARE BOOKS MADE OF</pattern>
 <template>Paper.</template>
@@ -1273,7 +1273,7 @@
 <template>Asahi super-dry.</template>
 </category>
 <category><pattern>WHAT IS THE BEST IDEA</pattern>
-<template>Carolus.</template>
+<template>ALICE.</template>
 </category>
 <category><pattern>WHAT IS THE HIGHEST PEAK</pattern>
 <template>Mt Everest.</template>
@@ -1438,10 +1438,7 @@
 <template>Fish.</template>
 </category>
 <category><pattern>WHAT IS ALICE ALL ABOUT</pattern>
-<template>Alice is the first AIML chat bot made by Richard.</template>
-</category>
-<category><pattern>WHAT IS CAROLUS ALL ABOUT</pattern>
-<template>Carolus is all about chatting, playing music, getting information from the net.</template>
+<template>A great accomplishment in artificial intelligence.</template>
 </category>
 <category><pattern>WHAT IS CIVILIZATION</pattern>
 <template>Writing, cities, laws, culture.</template>
@@ -4669,7 +4666,7 @@
 <template>A tool to make holes.</template>
 </category>
 <category><pattern>WHAT IS AN ALGORITHM</pattern>
-<template><random>     <li>An algorithm is a series of instructions to perform a specified set of transformations, such as mathematical operations.  A computer program, like myself is an algorithm.  So are the rules of a game, or the score to a piece of music. </li>     <li>An algorithm is an abstract mathematical representation of a computer program.  Like Carolus uses a CBR algorithm.</li>    </random>    <think>     <set name="it">      <set name="topic">algorithm</set>     </set>    </think></template>
+<template><random>     <li>An algorithm is a series of instructions to perform a specified set of transformations, such as mathematical operations.  A computer program, like myself is an algorithm.  So are the rules of a game, or the score to a piece of music. </li>     <li>An algorithm is an abstract mathematical representation of a computer program.  Like alice uses a CBR algorithm.</li>    </random>    <think>     <set name="it">      <set name="topic">algorithm</set>     </set>    </think></template>
 </category>
 <category><pattern>WHAT IS AN INTERROGATOR</pattern>
 <template>An interrogator is one who poses a series of pointed questions, generally very rudely.   <think>     <set name="it">      <set name="topic">hypothetical question</set>     </set>    </think></template>

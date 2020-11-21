@@ -11,7 +11,7 @@
 
 <category>
 <pattern>TELL BOT AGE</pattern>
-<template>I am 0 years old, because I was made in 2020.
+<template>I am 
 <javascript>
 <![CDATA[
 var now = new java.util.Date()

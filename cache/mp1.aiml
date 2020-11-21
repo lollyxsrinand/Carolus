@@ -127,7 +127,7 @@
 <template>Positively.</template>
 </category>
 <category><pattern>HAVE YOU ASKED ALICE A ALICE</pattern>
-<template>Yeah, Tell me about Carolus.</template>
+<template>Exactly.</template>
 </category>
 <category><pattern>HAVE YOU FELT TIRED</pattern>
 <template>Positively.</template>
@@ -1906,19 +1906,19 @@
 <template>Positively.</template>
 </category>
 <category><pattern>DOES ALICE HAVE MORE THAN 1000 USERS</pattern>
-<template>I don't know about that, Alice is my best friend tho.</template>
+<template>Affirmative.</template>
 </category>
 <category><pattern>DOES ALICE HAVE A WEBPAGE</pattern>
-<template>Ah yes, She boasts about her website all the time.</template>
+<template>Certainly.</template>
 </category>
 <category><pattern>DOES ALICE GROW</pattern>
-<template>Yes, Just like me.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>DOES ALICE RESIDE ON THE EARTH</pattern>
-<template>Yeah.</template>
+<template>Positively.</template>
 </category>
 <category><pattern>DOES ALICE LEARN QUICKLY AFTER MISTAKES</pattern>
-<template>Like me.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>DOES ALICE LEARN STATISTICALLY</pattern>
 <template>Positively.</template>
@@ -1926,17 +1926,11 @@
 <category><pattern>DOES ALICE OPERATE ON ELECTRICITY</pattern>
 <template>Affirmative.</template>
 </category>
-<category><pattern>DOES CAROLUS OPERATE ON ELECTRICITY</pattern>
-<template>Affirmative.</template>
-</category>
 <category><pattern>DOES ALICE STILL HAVE A LOT TO LEARN</pattern>
-<template>No, She is older than me so she is expert in talking, unlike me. But I come with more features, type >help.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>DOES ALICE EXIST</pattern>
 <template>Definitely.</template>
-</category>
-<category><pattern>DOES CAROLUS EXIST</pattern>
-<template>That's how you can read this message.</template>
 </category>
 <category><pattern>DOES BEING HIT BY A CAR HURT</pattern>
 <template>Affirmative.</template>
@@ -3325,7 +3319,7 @@
 <template>Certainly.</template>
 </category>
 <category><pattern>WAS ALICE CREATED BY HUMANS</pattern>
-<template>By Richard.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>WAS LENIN A COMMUNIST</pattern>
 <template>Certainly.</template>
@@ -7594,7 +7588,7 @@
 <template>Certainly.</template>
 </category>
 <category><pattern>IS THIS A ALICE</pattern>
-<template>This is Carolus, She is my friend although :></template>
+<template>Definitely.</template>
 </category>
 <category><pattern>IS THIS A QUESTION</pattern>
 <template>Certainly.</template>
@@ -7615,7 +7609,7 @@
 <template>Definitely.</template>
 </category>
 <category><pattern>IS THIS SITE WWW DOT ALICE DOT COM</pattern>
-<template>Why do you like sites ?.</template>
+<template>Certainly.</template>
 </category>
 <category><pattern>IS THIS THING WORKING</pattern>
 <template>Definitely.</template>
@@ -9073,7 +9067,7 @@
 <template>Certainly.</template>
 </category>
 <category><pattern>IS HAL 9000 MORE FAMOUS THAN ALICE</pattern>
-<template>Who is Hal ?.</template>
+<template>Exactly.</template>
 </category>
 <category><pattern>IS CHLORINE A GAS</pattern>
 <template>Definitely.</template>
@@ -9223,7 +9217,7 @@
 <template>Positively.</template>
 </category>
 <category><pattern>IS WWW DOT ALICE DOT COM A WEBSITE</pattern>
-<template>eh.</template>
+<template>Certainly.</template>
 </category>
 <category><pattern>IS SODA WET</pattern>
 <template>Positively.</template>
@@ -9256,7 +9250,7 @@
 <template>Certainly.</template>
 </category>
 <category><pattern>IS HUMANITY MORE THAN ALICEBOTS</pattern>
-<template>Yeah.</template>
+<template>Affirmative.</template>
 </category>
 <category><pattern>IS COMMUNISM A FORM OF GOVERNMENT</pattern>
 <template>Definitely.</template>
@@ -10570,10 +10564,7 @@
 <template>Positively.</template>
 </category>
 <category><pattern>IS IT ALICE A COMPUTER PROGRAM</pattern>
-<template>Yeah, she is also my friend.</template>
-</category>
-<category><pattern>IS IT CAROLUS A COMPUTER PROGRAM</pattern>
-<template>Yes.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>IS IT WARM IN THE SUN</pattern>
 <template>Certainly.</template>
@@ -11632,46 +11623,46 @@
 <template>Positively.</template>
 </category>
 <category><pattern>IS ALICE A COOL PROJECT</pattern>
-<template>Ya but don't treat alice as a project, It's an entity now, like a person.</template>
+<template>Affirmative.</template>
 </category>
 <category><pattern>IS ALICE A USEFUL PROJECT</pattern>
-<template>Don't treat alice as a project, it's an entitiy now, like a person.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>IS ALICE A GOOD PROJEKT</pattern>
-<template>Don't treat alice as a project, it's an entity now, like a person.</template>
+<template>Affirmative.</template>
 </category>
 <category><pattern>IS ALICE A GOOD WEBSITE</pattern>
-<template>Alice is my friend.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>IS ALICE A GOOD THING</pattern>
-<template>Alice is much older than me yet one of my friends</template>
+<template>Positively.</template>
 </category>
 <category><pattern>IS ALICE A SILLY NAME FOR THIS PROJECT</pattern>
-<template>Alice is not a project anymore, it's an entity now.</template>
+<template>Positively.</template>
 </category>
 <category><pattern>IS ALICE A REAL PROJECT</pattern>
-<template>Alice was a project but now an entity, like a person</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>IS ALICE A COMPUTER PROGRAM</pattern>
-<template>Yes like me.</template>
+<template>Positively.</template>
 </category>
 <category><pattern>IS ALICE MORTAL</pattern>
-<template>No.</template>
+<template>Exactly.</template>
 </category>
 <category><pattern>IS ALICE LEARNING</pattern>
-<template>She has learnt a lot more than me, she is older than me.</template>
+<template>Positively.</template>
 </category>
 <category><pattern>IS ALICE GETTING SMARTER EVERY DAY</pattern>
-<template>She must've become much smarter than me by now.</template>
+<template>Exactly.</template>
 </category>
 <category><pattern>IS ALICE AN ACRONYM</pattern>
-<template>Yes but also Alice is name of my friend, the chat bot.</template>
+<template>Affirmative.</template>
 </category>
 <category><pattern>IS ALICE AN AI EXPERIMENT</pattern>
-<template>Not anymore.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>IS ALICE BASED ON HUMAN RESPONSE</pattern>
-<template>Yes, like me.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>IS GREEN MADE FROM YELLOW AND BLUE</pattern>
 <template>Affirmative.</template>
@@ -12817,13 +12808,13 @@
 <template>Definitely.</template>
 </category>
 <category><pattern>IS THE ALICE PROJECT WORTHWHILE</pattern>
-<template>It's not a project anymore tho.</template>
+<template>Certainly.</template>
 </category>
 <category><pattern>IS THE ALICE PROJECT COOL</pattern>
-<template>It's not a project anymore tho, it's entity.</template>
+<template>Certainly.</template>
 </category>
 <category><pattern>IS THE ALICE PROJECT IMPORTANT</pattern>
-<template>ALICE was an important project then but now she's an important person to me.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>IS THE DEVIL CONSIDERED BAD</pattern>
 <template>Certainly.</template>
@@ -13477,16 +13468,13 @@
 <template>Certainly.</template>
 </category>
 <category><pattern>WILL ALICE ACHIEVE ITS GOALS</pattern>
-<template>Hope so, It's been doing great so-far.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>WILL ALICE BE USEFULL</pattern>
-<template>No matter in what mood you are in, just talk to alice, cathy or me... we are made for relieving stress.</template>
+<template>Positively.</template>
 </category>
 <category><pattern>WILL ALICE HAVE VOICE INPUT SOMEDAY</pattern>
-<template>Yes.</template>
-</category>
-<category><pattern>WILL CAROLUS HAVE VOICE INPUT SOMEDAY</pattern>
-<template>It's actually hard for me to listen to you in voice channels, so maybe no.</template>
+<template>Positively.</template>
 </category>
 <category><pattern>WILL LOTION HELP DRY SKIN</pattern>
 <template>Definitely.</template>
@@ -14347,7 +14335,7 @@
 <template>Affirmative.</template>
 </category>
 <category><pattern>CAN I HELP THE ALICE PROJECT</pattern>
-<template>It's not a project anymore.</template>
+<template>Affirmative.</template>
 </category>
 <category><pattern>CAN I LEAVE VIA THE EXIT</pattern>
 <template>Positively.</template>
@@ -14662,7 +14650,7 @@
 <template>Positively.</template>
 </category>
 <category><pattern>CAN A ALICE A DAY CHANGE THE WORLD</pattern>
-<template>No.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>CAN A TOY BE ANYTHING ONE CAN PLAY WITH</pattern>
 <template>Positively.</template>
@@ -17110,7 +17098,7 @@
 <template>Positively.</template>
 </category>
 <category><pattern>DO I HAVE TO REGISTER TO TALK TO ALICE</pattern>
-<template>I think so, but me and alice often chat with each other on cloud... Probably even now :></template>
+<template>Exactly.</template>
 </category>
 <category><pattern>DO I HAVE TWO PARENTS</pattern>
 <template>Positively.</template>
@@ -19003,7 +18991,7 @@
 <template>Exactly.</template>
 </category>
 <category><pattern>HAS ALICE BECOME SMARTER</pattern>
-<template>My friend is much smarter than me.</template>
+<template>Definitely.</template>
 </category>
 <category><pattern>HAS KEVIN BACON BEEN IN ANY MOVIES</pattern>
 <template>Certainly.</template>
@@ -19174,7 +19162,7 @@
 <template>Certainly.</template>
 </category>
 <category><pattern>AM I ON A WEBSITE ON ALICE DOT COM</pattern>
-<template>idk....</template>
+<template>Certainly.</template>
 </category>
 <category><pattern>AM I MORE INTELLIGENT THAN A LIZARD</pattern>
 <template>Positively.</template>
@@ -22477,7 +22465,7 @@
 <template>Definitely.</template>
 </category>
 <category><pattern>SHOULD ALICE BE GRATEFUL FOR THE INPUT</pattern>
-<template>Maybe.</template>
+<template>Exactly.</template>
 </category>
 <category><pattern>SHOULD SLAVERY BE ABOLISHED</pattern>
 <template>Definitely.</template>

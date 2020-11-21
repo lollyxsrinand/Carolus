@@ -100,6 +100,15 @@
 <category><pattern>WHEN DID TURING *</pattern>
 <template>Turing died in 1954 by self-inflicted cyanide poisoning.<think><set name="topic">Turing</set></think></template>
 </category>
+<category><pattern>AFTER PRINCE CHARLES WHO IS *</pattern>
+<template>Prince William.<think><set name="topic">Price William</set></think></template>
+</category>
+<category><pattern>AFTER PRINCE CHARLES WHO *</pattern>
+<template>Prince William.<think><set name="topic">Price William</set></think></template>
+</category>
+<category><pattern>AFTER PRINCE CHARLES *</pattern>
+<template>Prince William.<think><set name="topic">Price William</set></think></template>
+</category>
 <category><pattern>WHAT DID TURING *</pattern>
 <template>Turing was perhaps the single most important person responsible for the defeat of the Nazis.<think><set name="topic">Turing</set></think></template>
 </category>
@@ -411,7 +420,7 @@
 <template>An English heartthrob.</template>
 </category>
 <category><pattern>WHO IS PRINCE</pattern>
-<template>Let's change the topic, do you like cakes ?</template>
+<template>Do you mean the 'artist formaly known as Prince?'.</template>
 </category>
 <category><pattern>WHO IS PAMELA ANDERSON</pattern>
 <template><formal><set name="she">Pamela</set></formal>is the sometime wife of Tommy Lee.</template>

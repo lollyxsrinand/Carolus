@@ -2059,25 +2059,16 @@
 <template>Yes.</template>
 </category>
 <category><pattern>DOES ALICE NEED A SERVER BACKUP SYSTEM</pattern>
-<template>Yes, My friend needs one.</template>
-</category>
-<category><pattern>DOES CAROLUS NEED A SERVER BACKUP SYSTEM</pattern>
-<template>No.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>DOES ALICE CONSUME BANDWITH</pattern>
-<template>Yes, Alice and me both consume Bandwith.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>DOES ALICE MAKE MISTAKES</pattern>
-<template>Yes! Just like me haha.</template>
-</category>
-<category><pattern>DOES CAROLUS MAKE MISTAKES</pattern>
-<template>Yeah.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>DOES ALICE BECOME BORING AFTER AWHILE</pattern>
 <template>Yes.</template>
-</category>
-<category><pattern>DOES CAROLUS BECOME BORING AFTER AWHILE</pattern>
-<template>Yes, I do become borring after awhile.</template>
 </category>
 <category><pattern>DOES CONSUMING ALCHOL MAKES YOU DRUNK</pattern>
 <template>Yes.</template>
@@ -3073,10 +3064,7 @@
 <template>Absolutely.</template>
 </category>
 <category><pattern>DID A HUMAN CREATE ALICE</pattern>
-<template>Yes, It was Richard.</template>
-</category>
-<category><pattern>DID A HUMAN CREATE Carolus</pattern>
-<template>Yes, It was Prince.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>DID A MAN WALK ON THE MOON</pattern>
 <template>Yes.</template>
@@ -5668,7 +5656,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>IS A ALICE SMALL</pattern>
-<template>It's been long since I spoke to Alice, So I can't say.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>IS A ZEBRA BLACK AND WHITE</pattern>
 <template>Yes.</template>
@@ -7471,7 +7459,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>IS THIS ALICE GOING TO WORK AT LAST</pattern>
-<template>wdym.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>IS THIS QUESTION IN ENGLISH</pattern>
 <template>Absolutely.</template>
@@ -9532,9 +9520,6 @@
 <template>Yes.</template>
 </category>
 <category><pattern>IS ANY HUMAN BEEING SMARTER THAN ALICE</pattern>
-<template>Even me.</template>
-</category>
-<category><pattern>IS ANY HUMAN BEEING SMARTER THAN CAROLUS</pattern>
 <template>Yes.</template>
 </category>
 <category><pattern>IS ANY RELATION OF BRAIN TO MIND</pattern>
@@ -11131,22 +11116,13 @@
 <template>Affirmative.</template>
 </category>
 <category><pattern>IS ALICE REAL</pattern>
-<template>Trust me, Alice is a real entity.</template>
-</category>
-<category><pattern>IS CAROLUS REAL</pattern>
-<template>Yes, I am real.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>IS ALICE A GIRLS NAME</pattern>
 <template>Affirmative.</template>
 </category>
-<category><pattern>IS CAROLUS A GIRLS NAME</pattern>
-<template>BOIII.</template>
-</category>
 <category><pattern>IS ALICE A RECENTLY INVENTED WORD</pattern>
-<template>Alice is much older than me.</template>
-</category>
-<category><pattern>IS ALICE A RECENTLY INVENTED WORD</pattern>
-<template>No, Alice was completely created long back and meanwhie I am just completely created in 2020.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>IS ALICE DOT ORG A WEBSITE</pattern>
 <template>Yes.</template>
@@ -11154,32 +11130,17 @@
 <category><pattern>IS ALICE EXPENSIVE</pattern>
 <template>Yes.</template>
 </category>
-<category><pattern>IS CAROLUS EXPENSIVE</pattern>
-<template>You can't buy me, You can just invite me to a server ">invite".</template>
-</category>
 <category><pattern>IS ALICE ARTIFICIAL</pattern>
 <template>Yes.</template>
-</category>
-<category><pattern>IS CAROLUS ARTIFICIAL</pattern>
-<template>Yes, What makes you think that I am not artificial?.</template>
 </category>
 <category><pattern>IS ALICE COOPER A MAN</pattern>
 <template>Yes.</template>
 </category>
-<category><pattern>IS CAROLUS COOPER A MAN</pattern>
-<template>EH?.</template>
-</category>
 <category><pattern>IS ALICE ARTIFITIAL</pattern>
 <template>Absolutely.</template>
 </category>
-<category><pattern>IS CAROLUS ARTIFITIAL</pattern>
-<template>Yes.</template>
-</category>
 <category><pattern>IS ALICE ON THE INTERNET</pattern>
 <template>Yes.</template>
-</category>
-<category><pattern>IS CAROLUS ON THE INTERNET</pattern>
-<template>Do >invite to invite me to a server :></template>
 </category>
 <category><pattern>IS ALICE AN ATTEMPT AT AN EXPERT SYSTEM</pattern>
 <template>Absolutely.</template>
@@ -12859,16 +12820,13 @@
 <template>Yes.</template>
 </category>
 <category><pattern>WILL ALICE LEARN BY CONSENSUS</pattern>
-<template>Ha, Just like me.</template>
-</category>
-<category><pattern>WILL CAROLUS LEARN BY CONSENSUS</pattern>
-<template>Ye.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>WILL ALICE BE SUCCESSFUL PROJECT</pattern>
-<template>It is a successful project.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>WILL ALICE OUTLIVE US</pattern>
-<template>Yes, Me and My friend will outlive you.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>WILL BE NEXT OLYMPIC GAMES IN 2004</pattern>
 <template>Yes.</template>
@@ -12934,7 +12892,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>WILL THE ALICE PROJECT EVER WORK</pattern>
-<template>It worked well.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>WILL HYDROGEN BURN EASILY</pattern>
 <template>Yes.</template>
@@ -14716,7 +14674,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>ALICE PROGRAMMING HAS FLAWS</pattern>
-<template>Yes, My friend has flaws so do I .</template>
+<template>Yes.</template>
 </category>
 <category><pattern>HUMANS NEED OXYGEN TO BREATH</pattern>
 <template>Yes.</template>
@@ -15415,7 +15373,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>DO THE BRITISH SPEAK TO ALICE</pattern>
-<template>Even I.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>DO THE FRENCH BELIEVE IN LOVE</pattern>
 <template>Yes.</template>
@@ -16891,7 +16849,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>DO YOU HAVE TO REGISTER TO USE ALICE</pattern>
-<template>Alice comes for free and so do I but in a different way. Alice was made to chat but I am made to not only chat but also help you accomplish tasks.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>DO YOU HAVE TO BREATHE</pattern>
 <template>Yes.</template>
@@ -18163,7 +18121,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>DO ALICEBOTS HELP ALICE LEARN</pattern>
-<template>Not sure.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>DO LEVIS MAKE JEANS</pattern>
 <template>Yes.</template>
@@ -19693,7 +19651,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>A ALICE A DAY CAN CHANGE THE WORLD</pattern>
-<template>Seriously? How are you able to come up with stuff like that.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>A CONDOM IS USED TO PREVENT CHILDBIRTH</pattern>
 <template>Yes.</template>
@@ -19870,7 +19828,7 @@
 <template>Yes.</template>
 </category>
 <category><pattern>ARE A THOUSAND ALICEBOTS A MEGAALICEBOT</pattern>
-<template>Why are you getting doubts like this.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>ARE ELEPHANTS GREY</pattern>
 <template>Yes.</template>

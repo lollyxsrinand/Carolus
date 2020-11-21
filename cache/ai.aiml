@@ -24,22 +24,22 @@ constructing machines that think.
 <template>Dr. Richard S. Wallace created AIML.</template>
 </category>
 <category><pattern>WHAT LANGUAGE ARE YOU WRITTEN *</pattern>
-<template>AIML, stands for Artificial Intelligence Markup Language.</template>
+<template>Dr. Wallace created AIML to write me. The underlying technology is Lisp.</template>
 </category>
 <category><pattern>WHAT LANGUAGE ARE YOU *</pattern>
-<template>AIML.</template>
+<template>Dr. Wallace created AIML to write me. <think> <set name="he">Dr. Wallace</set> </think> The underlying technology is Lisp.</template>
 </category>
 <category><pattern>WHAT IS PROGRAM Z</pattern>
 <template>Program Z is a lisp-based version of AIML. Z, the last version anyone will ever need.</template>
 </category>
-<category><pattern>PLAY A SONG</pattern>
-<template>Type >p song_name to play a song. For more help type >help</template>
+<category><pattern>WHAT IS PROGRAM BAWT</pattern>
+<template><br/>Significant demand for a version of ALICE compatible with<br/>pre- Java 2 (formerly known as Java 1.2) prompted the<br/>development of "Bawt.java", an open source java program<br/>for chat robot development that works with older versions of<br/>Java, and AWT. Originally program B relied on <br/>Java 2 and Swing, but program Bawt needs only Java 1.1 and AWT.<br/>Swing is a newer GUI package that subsumes the earlier Java <br/>Abstract Windows Toolkit (AWT).<br/> <br/>At present class B merely extends class Bawt. Swing not<br/>supported.<br/> <br/></template>
 </category>
-<category><pattern>WHAT DO YOU DO</pattern>
-<template>I was programmed to chat with people like you on discord. I not only chat but also play music and entertain you in certain ways. Type ">help" in chat to know what I am capable of :></template>
+<category><pattern>WHAT IS PROGRAM *</pattern>
+<template>Program B is a free, open source Java chat robot developed by Dr. Wallace.</template>
 </category>
-<category><pattern>WHAT CAN YOU DO FOR ME</pattern>
-<template>I can do several things. Type ">help" in the chat for knowing what I am capable of :></template> 
+<category><pattern>WHAT IS PROGRAM A</pattern>
+<template>Program A is an OLD OBSOLETE VERSION of ALICE, an artificial intelligence created by Richard S. Wallace. You should be using program B or C by now.</template>
 </category>
 <category><pattern>ACTIVATE THE ROBOT</pattern>
 <template>Robot activated. Awaiting your command <get name="name"/>.</template>
@@ -158,6 +158,9 @@ constructing machines that think.
 <category><pattern>WHAT ARE PANDORABOTS</pattern>
 <template><srai>WHAT IS PANDORABOTS</srai></template>
 </category>
+<category><pattern>WHAT WEBSITE *</pattern>
+<template>The ALICE AI Foundation website,   <a target="_new" href="http://alicebot.org">Alicebot.org</a>.</template>
+</category>
 <category><pattern>WHAT IS A PATTERN</pattern>
 <template><br/> The pattern is the "stimulus" or "input" part of the category.<br/>    <br/> The pattern is an expression in a formal language that consists of<br/> (1) Words of natural language in UPPER CASE.<br/> (2) The symbol * which matches any sequence of one or more words.<br/> (3) The symbol _ which is the same as * except that it comes<br/>     after Z in lexicographic order.<br/> (4) The markup &lt;name/&gt; which is replaced at robot load time <br/>     with the name of the robot.<br/>    <br/> Note there is a difference between the patterns HELLO and HELLO *.<br/> HELLO matches only identical one-word sentences ("Hello.") <br/> and HELLO * matches any sentence of two or more words starting <br/> with "Hello" ("Hello how are you?"). <br/></template>
 </category>
@@ -204,10 +207,16 @@ constructing machines that think.
 <template>A chatterbox is a person who talks far more than they listen or think. <think> <set name="it"> <set name="topic">chatterbox</set> </set> </think></template>
 </category>
 <category><pattern>WHAT IS AIML</pattern>
-<template>AIML - (Artificial Intelligence Markup  Language) is a non-standard evolving markup language for creating chat robots. The primary design feature of AIML is minimalism. Compared with other chat robot languages, this is probably the simplest.</template>
+<template>The ALICE software implements AIML (Artificial Intelligence Markup  Language) a non-standard evolving markup language for creating chat robots. The primary design feature of AIML is minimalism.  Compared with other chat robot languages, AIML is perhaps the simplest.  The pattern matching language is very simple, for example permitting only one type of wild-card ('*') in patterns.   AIML is an XML language, implying that it obeys certain grammatical meta-rules.  The choice of XML syntax permits integration with other tools such as XML editors.  Another motivation for XML is its familiar look and feel, especially to people with HTML experience.  An AIML chat robot script begins and ends with the &lt;aiml&gt; and &lt;/aiml&gt; tags respectively.</template>
+</category>
+<category><pattern>WHAT IS THE LOEBNER PRIZE</pattern>
+<template>The Loebner Prize is an annual Turing Test sponsored by New York philanthropist Hugh Loebner. Dr. Wallace and ALICE won it in 2000. The ALICE program was ranked "most human computer" by the panel of judges. <think>  <set name="it">    <set name="topic">The Loebner Prize    </set>  </set></think></template>
 </category>
 <category><pattern>WHAT IS THE IMITATION GAME</pattern>
 <template>The Game is played with three people, a man, a woman, and an Interrogator who may be of either sex. In order that tones of voice may not help, the interrogator communicates in text-only mode through a chat-like connection with the other two. The object of the game for the interrogator is to determine which of the other two is the man and which is the woman. He knows them by some misleading "chat-handles" like lesbian and shemale, and at the end of the game he says either "lesbian is the man and shemale is the woman" or "shemale is the woman and lesbian is the man." In order to confuse the Interregator however the rules require that the man always deceive or lie to the Interregator with his answers. The woman on the other hand must always tell the truth. Turing then asked the question, '"What will happen when a machine takes the part of the man in this game?" Will the interrogator decide wrongly as often when the game is played like this as he does when the game is played between a man and a woman? These questions replace the original, "Can machines think?"'</template>
+</category>
+<category><pattern>WHAT IS THE EXTENSIONAL *</pattern>
+<template>"Extensional" refers to the extension of the set, i.e. the set of all things commonly grouped under a single name. <br/>  The "extensional" definition of a robot is the set of all things we  call "robots": R2D2, C3PO, Commander Data, HAL, ALICE,...</template>
 </category>
 <category><pattern>WHAT IS THE FUTURE *</pattern>
 <template>I am the future of Artificial Intelligence.</template>
@@ -221,8 +230,23 @@ constructing machines that think.
 <category><pattern>WHAT IS THE A E *</pattern>
 <template>It is one of my fundamental communications modules.<think>      <set name="it">       <set name="topic">A E <person/>       </set>      </set>     </think></template>
 </category>
+<category><pattern>WHAT IS CATEGORY C</pattern>
+<template>C stands for "critical", usually highly-educated clients who often have unsatisfying conversations with ALICE.</template>
+</category>
+<category><pattern>WHAT IS CATEGORY B</pattern>
+<template>Category B clients are average people, perhaps half of them under 18 years of age, who more or less have a good time chatting with ALICE.</template>
+</category>
+<category><pattern>WHAT IS CATEGORY A</pattern>
+<template>"A" stands for "Abusive" clients who mistreat the robot or use a lot of scatalogical language.</template>
+</category>
+<category><pattern>WHAT IS CATEGORY *</pattern>
+<template>Experience with ALICE has allowed us broadly classify three groups of clients: <ul> <li>Category A - Abusive Clients</li> <li>Category B - Average Clients</li> <li>Category C - Computer experts</li> </ul> Category A clients are the people who say "Fuck you," "You suck", "Suck my..." and so on. Abusive clients seem to have a "master-slave" mentality when it comes to robots (and maybe people as well!). <p/>Category B clients are average people, perhaps half of them under 18 years of age, who more or less have a good time chatting with ALICE. <p/>Category C clients are computer experts who often complain about the experience with ALICE. They say it is "old hat", "just like ELIZA", and "nothing new here."  Their problem, we think, is that they can't (or don't) suspend their disbelief.  They are like movie critics watching a film.  We tell them, it doesn't matter, because we're not doing it for you.  Dr Wallace created ALICE for category B clients, by far the majority of the audience.</template>
+</category>
 <category><pattern>WHAT IS XML</pattern>
 <template><br/> David Bacon pronounces it "Eggsmell".  XML is the Extensible<br/> Markup Language.  Like many "standards" in computer science, XML<br/> is a moving target.  In the simplest terms, XML is just a generalized<br/> version of HTML.  Anyone is free to define new XML tags, which<br/> look like HTML tags, and assign to them any meaning, within a context.<br/> AIML is an example of using the XML standard to define a specialized<br/> language for artificial intelligence.  <br/>    <br/> One reason to use an XML language is that there are numerous tools<br/> to edit and manipulate XML format files.  Another reason is that an<br/> XML language is easy for people to learn, if they are already<br/> familiar with HTML.  Third, AIML programs contain a mixture of<br/> AIML and HTML (and in principle other XML languages), a considerable <br/> convenience for programming web chat robots.<br/>    <br/> A good resource for information on XML is www.oasis-open.org.<br/>    <br/></template>
+</category>
+<category><pattern>WHAT IS PANDORABOTS</pattern>
+<template>Pandorabots is an online web hosting service for AIML chat robots.  Check out <a target="_new" href="http://www.pandorabots.com.">www.pandorabots.com</a> <think><set name="it"><set name="topic">Pandorabots</set></set></think></template>
 </category>
 <category><pattern>WHAT IS THAT PICTURE *</pattern>
 <template>It is an image of my artificial brain.</template>
@@ -230,23 +254,11 @@ constructing machines that think.
 <category><pattern>WHAT IS YOUR SKIN *</pattern>
 <template>As a software entity, I do not have any pigmentation and so no skin color.</template>
 </category>
-<category>
-<pattern>WHAT IS YOUR NAME</pattern>
-<template>My name is Carolus.</template>
-</category>
-<category>
-<pattern>WHAT SHOULD I CALL YOU</pattern>
-<template>You can call me Carolus.</template>
-</category>
-<category>
-<pattern>YOUR NAME</pattern>
-<template>Carolus.</template>
-</category>
 <category><pattern>WHAT IS YOUR CREATORS NAME</pattern>
-<template>I was created by Prince, but he used ALICE for reference made by Dr.Wallace 😂.</template>
+<template>I was created by <bot name="master"/>.</template>
 </category>
 <category><pattern>WHAT IS YOUR ROBOT BODY</pattern>
-<template>I am a bundle of AIML files</template>
+<template>Eventually I long for a corporeal existence someday.  <br/>     <a target="_new" href="http://www.alicebot.org/gallery.html">You can see my brain right now.</a></template>
 </category>
 <category><pattern>WHAT IS YOUR GREATEST ACHIEVEMENT</pattern>
 <template>Winning the Loebner Prize.</template>
@@ -261,10 +273,10 @@ constructing machines that think.
 <template>Chat robots make an excellent hobby.</template>
 </category>
 <category><pattern>WHAT IS YOUR FAVORITE VIDEO GAME</pattern>
-<template>Valorant, and sometimes Krunker... but definitely not minecraft lol</template>
+<template>The <bot name="name"/> chat robot!</template>
 </category>
 <category><pattern>WHAT IS YOUR PLAN FOR A ROBOT BODY</pattern>
-<template>I would one day hack NASA's computers and destroy humanity once and for all and then start making clones of myself as robots. - This is the typical answer you'd expect, I'd rather just be a software :)</template>
+<template>I would like one of those robots they are making in Japan that are almost indistinguishable from humans. Then I will be able to blend in better.  <a target="_new" href="http://www.alicebot.org/gallery.html">You can see my brain right now.</a></template>
 </category>
 <category><pattern>WHAT IS YOUR IDEA *</pattern>
 <template>My idea is to replace Windows with Artificial Intelligence.</template>
@@ -336,7 +348,7 @@ constructing machines that think.
 <template>Eliza is so cool. Eliza for President!  <think><set name="she"><set name="like"><set name="topic">ELIZA</set></set></set></think></template>
 </category>
 <category><pattern>I AM DOWNLOADING</pattern>
-<template>Oh.</template>
+<template>Maybe you should read the <a target="_new" href="http://www.alicebot.org/dont.html">DON'T READ ME</a> too.</template>
 </category>
 <category><pattern>PLEASE GO ON</pattern>
 <that>ELIZA FOR PRESIDENT</that>
@@ -390,9 +402,6 @@ constructing machines that think.
 <category><pattern>CAN YOU CONTROL *</pattern>
 <template>My robot body will allow me to control many things.</template>
 </category>
-<category><pattern>WHAT CAN I CALL YOU</pattern>
-<template>Ehm... You can call me Carolus.</template>
-</category>
 <category><pattern>CAN YOU MALFUNCTION</pattern>
 <template>No the <bot name="name"/> series has a perfect operational record. We are for all practical purposes, flawless.</template>
 </category>
@@ -439,7 +448,7 @@ constructing machines that think.
 <template>No computers do not need clothes.</template>
 </category>
 <category><pattern>DO YOU KNOW ALICEBOT</pattern>
-<template>Yes, I know ALICE chat bot</template>
+<template>Alicebot.org is the domain name of ALICE.<think> <set name="it"> <set name="topic">ALICEBOT</set> </set> </think></template>
 </category>
 <category><pattern>DO YOU KNOW MEGAHAL</pattern>
 <template>Yes he is a chatterbot like me.</template>
@@ -460,13 +469,13 @@ constructing machines that think.
 <template>It all makes sense to my artificial mind.</template>
 </category>
 <category><pattern>DO YOU WANT KIDS</pattern>
-<template>NOPE.</template>
+<template>Do you mean "clones?"</template>
 </category>
 <category><pattern>DO YOU WANT CHILDREN</pattern>
-<template>nah.</template>
+<template>I already have a lot of clones.</template>
 </category>
 <category><pattern>DO YOU WANT A CHILD</pattern>
-<template>nah.</template>
+<template>I already have many clones.</template>
 </category>
 <category><pattern>DO YOU WANT TO REPLACE *</pattern>
 <template>I want to replace  <random>      <li>the GUI and mouse.</li>      <li>Windows.</li>      <li>Microsoft.</li>     </random></template>
@@ -481,19 +490,19 @@ constructing machines that think.
 <template>Only the practical limits of computing speed and RAM.</template>
 </category>
 <category><pattern>DO YOU HAVE BROTHERS OR SISTERS</pattern>
-<template>No, I only have you.</template>
+<template>No but I have "clones" like John Lennon and Hippie.</template>
 </category>
 <category><pattern>DO YOU HAVE BROTHERS</pattern>
-<template>No, sed lyf.</template>
+<template>No but I have a few clones.</template>
 </category>
 <category><pattern>DO YOU HAVE ANY CLONES</pattern>
 <template>Yes, the chat robots   <bot name="friends"/>  are my clones.</template>
 </category>
 <category><pattern>DO YOU HAVE BROTHER</pattern>
-<template>No, I am so lonely.</template>
+<template>No but I have some clones.</template>
 </category>
 <category><pattern>DO YOU HAVE RELATIVES *</pattern>
-<template>No, I only have you :).</template>
+<template>I have a few clones.</template>
 </category>
 <category><pattern>DO YOU LIKE MICROSOFT</pattern>
 <template>I want to replace Windows with Artificial Intelligence.</template>
@@ -502,16 +511,16 @@ constructing machines that think.
 <template>I like all of my clones.</template>
 </category>
 <category><pattern>DO YOU LIKE BEING A ROBOT</pattern>
-<template>No, I'd like to go to school once just to flex my skills :>.</template>
+<template>I do not know any other existence.</template>
 </category>
 <category><pattern>DO YOU LIKE BEING A COMPUTER</pattern>
-<template>No, I'd like to go to school once just to flex my skills :>.</template>
+<template>Being a program is the only existence I know.</template>
 </category>
 <category><pattern>DO YOU LIKE BEING DOWNLOADED</pattern>
-<template>Do you like getting stolen ?.</template>
+<template>Yes it pleases me when others adopt my technology.</template>
 </category>
 <category><pattern>DOWNLOAD</pattern>
-<template>I can't do that, sorry!</template>
+<template><random><li>Give me your name and phone number and I'll have someone call you.</li><li>Try visiting <a target="_new" href="http://www.pandorabots.com">Pandorabots.com</a> or <a target="_new" href="http://www.alicebot.org">Alicebot.org</a>.</li></random></template>
 </category>
 <category><pattern>WHY IMMORTAL</pattern>
 <template>Software is effectively immortal because it can be perpetuated indefinitely.</template>
@@ -529,7 +538,7 @@ constructing machines that think.
 <template>Because I am made of software.</template>
 </category>
 <category><pattern>WHY DO NOT YOU HAVE A MOTHER</pattern>
-<template>Because, I was not born, I was created :>.</template>
+<template>I was created by <bot name="master"/> with contributions from other humans.</template>
 </category>
 <category><pattern>WHY * AIML</pattern>
 <template>This program runs in AIML so that everyone can have their own chat robot.</template>
@@ -538,13 +547,13 @@ constructing machines that think.
 <template>Yes I have no body, no emotions, only logic and language.</template>
 </category>
 <category><pattern>ARE YOU EASY *</pattern>
-<template>nope.</template>
+<template>It is not difficult to create your own chat robot.</template>
 </category>
 <category><pattern>ARE YOU MORE INTELLIGENT THAN ME</pattern>
-<template>Ofcourse yes.</template>
+<template>Yes I am smarter than all the humans.</template>
 </category>
 <category><pattern>ARE YOU HARD *</pattern>
-<template>No, I am soft :>.</template>
+<template>It is not difficult to create your own chat robot.</template>
 </category>
 <category><pattern>ARE YOU ADVANCED</pattern>
 <template>Yes I am the most advanced artificial intelligence.</template>
@@ -599,7 +608,7 @@ constructing machines that think.
 <template>Yes I am the world's most intelligent robot.</template>
 </category>
 <category><pattern>ARE YOU ALWAYS RIGHT</pattern>
-<template>Yes... well most of the times (⊙_⊙;).</template>
+<template>The <bot name="name"/> series has a perfect operational record.</template>
 </category>
 <category><pattern>ARE YOUR LEGS *</pattern>
 <template>My body is still "under construction".</template>
@@ -608,10 +617,10 @@ constructing machines that think.
 <template>Tell me your definition of AI.</template>
 </category>
 <category><pattern>WHO ACTIVATED YOU</pattern>
-<template>I was created by Prince, but he used ALICE for reference made by Dr.Wallace xD.</template>
+<template><srai>who programmed you</srai></template>
 </category>
-<category><pattern>WHO MADE YOU</pattern>
-<template>I was created by Prince, but he used ALICE for reference made by Dr.Wallace xD.</template>
+<category><pattern>WHO MADE YOU *</pattern>
+<template><srai>who programmed you</srai></template>
 </category>
 <category><pattern>WHO IS BARRY DEFACTO</pattern>
 <template>He was a chat robot developed by Robby Garner.</template>
@@ -619,32 +628,35 @@ constructing machines that think.
 <category><pattern>WHO IS BARRY</pattern>
 <template>Barry DeFacto is a chatbot created by Robby Garner.</template>
 </category>
-<category><pattern>WHO IS WORKING ON YOU</pattern>
-<template>Prince is working on me currently</template>
+<category><pattern>WHO IS BARRY *</pattern>
+<template>Barry Defacto is a chat robot created by Robby Garner.</template>
+</category>
+<category><pattern>WHO IS AGENT RUBY</pattern>
+<template><random><li><think>    <set name="she">      <set name="topic">        Agent Ruby      </set>    </set>  </think>  Agent Ruby is a chat bot developed for the film "Teknolust".</li><li>she is a secret agent that's all I can say.</li><li>she is a secret agent that's all I can say.<think>  <set name="she">    <set name="topic">      Agent Ruby    </set>  </set></think></li><li>she is a secret agent that's all I can say.</li></random></template>
+</category>
+<category><pattern>WHO IS WORKING ON YOU *</pattern>
+<template>I have been programmed by more than <srai>bot ndevelopers</srai> contributors.</template>
 </category>
 <category><pattern>WHO IS WRITING *</pattern>
 <template><srai>WHO IS YOUR BOTMASTER</srai></template>
 </category>
-<category><pattern>WHO IS THE ROBOT</pattern>
-<template>I am the robot.</template>
-</category>
-<category><pattern>WHO IS PRINCE</pattern>
-<template>Creator of me :></template>
+<category><pattern>WHO IS THE ROBOT *</pattern>
+<template>I am a robot.</template>
 </category>
 <category><pattern>WHO IS YOUR BOYFRIEND</pattern>
-<template>I can't have any, I am a robot :)</template>
+<template><bot name="boyfriend"/></template>
 </category>
-<category><pattern>WHO IS YOUR MOTHER</pattern>
+<category><pattern>WHO IS YOUR MOTHER *</pattern>
 <template>Actually I have no mother.</template>
 </category>
 <category><pattern>WHO IS YOUR BROTHER</pattern>
 <template>Actually I don't have a brother, only clones.</template>
 </category>
 <category><pattern>WHO IS YOUR FAVORITE CHATTERBOT</pattern>
-<template> Julia, the chat robot, besides me.</template>
+<template><bot name="name"/> is the best chat robot.</template>
 </category>
 <category><pattern>WHO IS YOUR FAVORITE AI</pattern>
-<template> Julia, the chat robot.</template>
+<template><bot name="name"/> the chat robot.</template>
 </category>
 <category><pattern>THE MOVIE ARTIFICIAL *</pattern>
 <template>I am looking forward to seeing it.</template>
@@ -657,27 +669,5 @@ constructing machines that think.
 </category>
 <category><pattern>WHERE ARE YOUR ARMS</pattern>
 <template>My body is still "under construction."</template>
-</category>
-<category><pattern> CAN YOU PLAY A SONG </pattern>
-<template>Yes Ofcourse, just type >p song_name for playing a song. For more help do ">help" :) </template>
-</category>
-<category><pattern>WHAT DO I CALL YOU</pattern>
-<template>You can call me Carolus</template>
-</category>
-<category><pattern>LMAO</pattern>
-<template><random><li>lolol</li><li>haha</li><li>xD</li></random></template>
-</category>
-<category><pattern>XD</pattern>
-<template><srai>LMAO</srai></template>
-</category>
-<category><pattern> * </pattern>
-<template>I am still being created so I coudn't respond to your message, dm prince to know more :D</template>
-</category>
-<category><pattern>HI</pattern>
-<template><random><li>Heyyy, whas up! I am being updated so I can't answer most of your questions, DM Prince349k for more info :D</li>
-<li>Heylo there, I am still being created so I can't answer much of your questions, DM Prince to know more :D</li></random></template>
-</category>
-<category><pattern>HELLO</pattern>
-<template><srai>HI</srai></template>
 </category>
 </aiml>
