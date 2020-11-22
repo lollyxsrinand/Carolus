@@ -18,8 +18,10 @@ async def on_guild_join(guild):
     await guild.create_text_channel('carol-chat')
     channel = discord.utils.get(guild.channels, name='general')
     await channel.send("Thanks for adding me :>")
+    
 @bot.event
 async def on_ready():
+    await bot.change_presence(status=discord.Status.invisible)
     print("Bot ready")
     
 bot.load_extension('cogs.MusicCommands')
