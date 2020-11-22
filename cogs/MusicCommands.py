@@ -139,12 +139,11 @@ class Song:
 
     def create_embed(self):
         embed = (discord.Embed(title='Now playing',
-                               description='**\n{0.source.title}\n**'.format(self),
+                               description='**\n[{0.source.title}]({0.source.url})\n**'.format(self,self),
                                color=0x73e600)
                  .add_field(name='Duration', value=self.source.duration)
                  .add_field(name='Requested by', value=f'{self.requester.mention}')
                 #  .add_field(name='Uploader', value='[{0.source.uploader}]({0.source.uploader_url})'.format(self))
-                 .add_field(name='URL', value='[Click]({0.source.url})'.format(self))
                  .set_thumbnail(url=self.source.thumbnail))
 
         return embed
@@ -211,12 +210,13 @@ class VoiceState:
     @property
     def is_playing(self):
         return self.voice and self.current
-
+    
     async def audio_player_task(self):
         while True:
             self.next.clear()
+            self.now = None
 
-            if not self.loop:
+            if self.loop == False:
                 # Try to get the next song within 3 minutes.
                 # If no song will be added to the queue in time,
                 # the player will disconnect due to performance
@@ -226,12 +226,18 @@ class VoiceState:
                         self.current = await self.songs.get()
                 except asyncio.TimeoutError:
                     self.bot.loop.create_task(self.stop())
+                    self.exists = False
                     return
-
-            self.current.source.volume = self._volume
-            self.voice.play(self.current.source, after=self.play_next_song)
-            await self.current.source.channel.send(embed=self.current.create_embed())
-
+                
+                self.current.source.volume = self._volume
+                self.voice.play(self.current.source, after=self.play_next_song)
+                await self.current.source.channel.send(embed=self.current.create_embed())
+            
+            #If the song is looped
+            elif self.loop == True:
+                self.now = discord.FFmpegPCMAudio(self.current.source.stream_url, **YTDLSource.FFMPEG_OPTIONS)
+                self.voice.play(self.now, after=self.play_next_song)
+            
             await self.next.wait()
 
     def play_next_song(self, error=None):
@@ -452,18 +458,19 @@ class Music(commands.Cog):
         ctx.voice_state.songs.remove(index - 1)
         await ctx.message.add_reaction('✅')
 
-    # @commands.command(name='loop')
-    # async def _loop(self, ctx: commands.Context):
-    #     """Loops the currently playing song.
-    #     Invoke this command again to unloop the song.
-    #     """
+    @commands.command(name='loop')
+    async def _loop(self, ctx: commands.Context):
+        """Loops the currently playing song.
+        Invoke this command again to unloop the song.
+        """
 
-    #     if not ctx.voice_state.is_playing:
-    #         return await ctx.send('Nothing is being played at the moment.')
+        if not ctx.voice_state.is_playing:
+            return await ctx.send('Nothing is being played at the moment.')
 
-    #     # Inverse boolean value to loop and unloop.
-    #     # ctx.voice_state.loop = not ctx.voice_state.loop
-    #     await ctx.message.add_reaction('✅')
+        # Inverse boolean value to loop and unloop.
+        ctx.voice_state.loop = not ctx.voice_state.loop
+        await ctx.message.add_reaction('✅')
+        await ctx.send('Looped \n[{0.source.title}]({0.source.url})\n'.format(self,self))
 
     @commands.command(name='play',aliases=['p'])
     async def _play(self, ctx: commands.Context, *, search: str):
@@ -473,26 +480,20 @@ class Music(commands.Cog):
         This command automatically searches from various sites if no URL is provided.
         A list of these sites can be found here: https://rg3.github.io/youtube-dl/supportedsites.html
         """
-
+        
         if not ctx.voice_state.voice:
             await ctx.invoke(self._join)
 
         async with ctx.typing():
             try:
                 source = await YTDLSource.create_source(ctx, search, loop=self.bot.loop)
-                await ctx.send("try opened")
-                print("try block opened")
             except YTDLError as e:
                 await ctx.send('An error occurred while processing this request: {}'.format(str(e)))
-                await ctx.send("exception opened")
-                print("exception block opened")
             else:
                 song = Song(source)
-                print("else block opened")
                 await ctx.voice_state.songs.put(song)
                 await ctx.send('Enqueued {}'.format(str(source)))
-                await ctx.send("else opened")
-
+        
     @_join.before_invoke
     @_play.before_invoke
     async def ensure_voice_state(self, ctx: commands.Context):
