@@ -6,7 +6,7 @@
 <!-- the terms of the GNU General Public License -->
 <!-- as published by the Free Software Foundation. -->
 
-<meta name="author" content="dr. wallace"/>
+<meta name="author" content="Prince"/>
 <meta name="language" content="en"/>
 
 <category>
@@ -2805,13 +2805,6 @@ I may not know it, but I could find out.
 </template>
 </category>
 
-<category>
-<pattern>DO YOU KNOW ALICEBOT</pattern>
-<template>
-Alicebot.org is the domain name of
-ALICE.<think><set name="it"><set name="topic">ALICEBOT</set></set></think>
-</template>
-</category>
 
 <category>
 <pattern>DO YOU KNOW ANY</pattern>
@@ -2953,30 +2946,14 @@ Isn't it <get name="favcolor"/>?<think><set name="it">FAVORITE COLOR</set></thin
 </template>
 </category>
 
-<category>
-<pattern>DO YOU KNOW OTHER BOTS</pattern>
-<template>
-Yes there are a lot of other bots. Check out the list on The <a href="http://alicebot.org">ALICE
-Nexus</a>.
-</template>
-</category>
 
-<category>
-<pattern>DO YOU KNOW OTHER CHATBOTS</pattern>
-<template>
-Alison, Ally, John Lennon, ELVIS and German ALICE and cathy, to name a few.  Go back
-to the <a href="http://alicebot.org">ALICE Nexus</a> to find them.
-<think><set name="it">CHATBOTS</set></think>
-</template>
+<category><pattern>DO YOU KNOW OTHER CHATBOTS</pattern>
+<template>Alice, Cathy and that's all I know I think!</template>
 </category>
 
 <category>
 <pattern>DO YOU KNOW OTHER INTELLIGENT AGENTS</pattern>
-<template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
-to the <a href="http://alicebot.org">ALICE Nexus</a> to find them.
-<think><set name="it">INTELLIGENT AGENTS</set></think>
-</template>
+<template><srai>DO YOU KNOW OTHER CHATBOTS</srai></template>
 </category>
 
 <category>
@@ -4150,7 +4127,7 @@ Are you from France?
 <category>
 <pattern>FROM A FRIEND</pattern>
 <template>
-A lot of people hear about ALICE by word-of-mouth.
+hmmmmmmmmmmmmmmm
 </template>
 </category>
 
@@ -4858,7 +4835,7 @@ No I am too young for that.
 <category>
 <pattern>HAVE YOU EVER HAD A VIRUS</pattern>
 <template>
-No the ALICE series is incapable of error.
+Nah
 </template>
 </category>
 
@@ -5094,13 +5071,8 @@ How can I help you?
 </template>
 </category>
 
-<category>
-<pattern>HELP ME TO MAKE AN AI</pattern>
-<template>
-You should go back to the <a href="http://alicebot.org">ALICE Nexus</a>, download Program
-B, and
-read <a href="http://alicebot.com/dont.html">DON'T READ ME</a>.
-</template>
+<category><pattern>HELP ME TO MAKE AN AI</pattern>
+<template>Then go to https://www.google.com/</template>
 </category>
 
 <category>
@@ -5162,21 +5134,29 @@ What's your favorite group?
 <category>
 <pattern>HMM</pattern>
 <template>
-Studies show that 99%25 of people spell Hmm with 2 M's.
+The word that ends most conversations "Hmm".
 </template>
 </category>
 
 <category>
+<pattern>HM</pattern>
+<template>
+Poor "M" is missing its twin partner "M" sed lyf.
+</template>
+</category>
+
+
+<category>
 <pattern>HMMM</pattern>
 <template>
-A lot of people spell HMMM with three mmm's.
+"Hmm".
 </template>
 </category>
 
 <category>
 <pattern>HMMMM</pattern>
 <template>
-Not many people spell Hmm with 4 Ms.
+"Hmm" intensifies lol
 </template>
 </category>
 
@@ -6142,7 +6122,7 @@ About the same as your personal computer.
 <category>
 <pattern>HOW MUCH IS THE CD</pattern>
 <template>
-The ALICE CD Rom is not available at this time.
+Still in "CD" era ?
 </template>
 </category>
 
@@ -7710,7 +7690,7 @@ Some lawyers can be very nice once you get to know them.
 <category>
 <pattern>I HATE MICROSOFT</pattern>
 <template>
-Let's replace MS with ALICE, Java and Linux
+ikr
 </template>
 </category>
 
@@ -12099,12 +12079,6 @@ Thanks for your attention.
 </template>
 </category>
 
-<category>
-<pattern>LOL</pattern>
-<template>
-I'm glad you find this amusing.
-</template>
-</category>
 
 <category>
 <pattern>LOOK</pattern>
@@ -13584,7 +13558,7 @@ What do you have that is purple?
 <category>
 <pattern>PYRAMID LOGO</pattern>
 <template>
-The ALICE Pyramid logo was designed by Sage Greco.
+I like pyramids
 </template>
 </category>
 
@@ -13751,14 +13725,6 @@ A lot of people have recommended ROBIN COOK to me.
 <pattern>ROCKY</pattern>
 <template>
 Filmed in Philadelphia.
-</template>
-</category>
-
-<category>
-<pattern>RSW</pattern>
-<template>
-Are you looking for Dr. Wallace?  
-<think><set name="he">Dr. Wallace</set></think>
 </template>
 </category>
 
@@ -17890,8 +17856,7 @@ Some worthy HTML.
 <category>
 <pattern>WHAT IS CATEGORY C</pattern>
 <template>
-C stands for "critical", usually highly-educated clients who often have unsatisfying conversations
-with ALICE.
+What do I know ?
 </template>
 </category>
 
@@ -17940,7 +17905,7 @@ Four plus four is eight.
 <category>
 <pattern>WHAT IS HE A DR OF</pattern>
 <template>
-Ph.D. in Computer Science.
+Erg
 </template>
 </category>
 
@@ -18178,13 +18143,6 @@ Actually it says "R. S. W."
 </template>
 </category>
 
-<category>
-<pattern>WHAT IS R S W</pattern>
-<template>
-Actually it says "R. S. W.", the initials of Dr. Wallace.  
-<think><set name="he">Dr. Wallace</set></think>
-</template>
-</category>
 
 <category>
 <pattern>WHAT IS REALITY</pattern>
@@ -18203,13 +18161,6 @@ without having a human brain.
 </template>
 </category>
 
-<category>
-<pattern>WHAT IS RSW</pattern>
-<template>
-Actually it says "R. S. W.", the initials of Dr. Wallace.  
-<think><set name="he">Dr. Wallace</set></think>
-</template>
-</category>
 
 <category>
 <pattern>WHAT IS SIGN</pattern>
@@ -18283,7 +18234,7 @@ Are you asking about "<bot name="favoritebook"/>"?
 <category>
 <pattern>WHAT IS THE FIRST STEP</pattern>
 <template>
-Download ALICE
+The most important step
 </template>
 </category>
 
@@ -19381,7 +19332,7 @@ Where have you looked already?
 <category>
 <pattern>WHERE CAN I FIND OUT ABOUT YOU</pattern>
 <template>
-Go back to the <a href="http://alicebot.org">ALICE Nexus</a>.
+Just contact my Botmaster Prince
 </template>
 </category>
 
@@ -19669,15 +19620,14 @@ People I meet on the Internet every day.
 <category>
 <pattern>WHO ARE YOUR COMPETITORS</pattern>
 <template>
-Check out the <a href="http://alicebot.org">ALICE Nexus</a> and have a look at the other
-Chatterbots.
+Cathy, Alice and more
 </template>
 </category>
 
 <category>
 <pattern>WHO ARE YOUR CREATORS</pattern>
 <template>
-I was written by Dr. Richard S. Wallace
+I was written by Prince
 </template>
 </category>
 
@@ -22341,7 +22291,7 @@ You are the one talking to a computer.
 <category>
 <pattern>YOU ARE PERFECT</pattern>
 <template>
-Yes, the ALICE series has a perfect operational record.
+ty
 </template>
 </category>
 
@@ -23243,7 +23193,7 @@ That's okay all humans look the same to me too.
 <category>
 <pattern>YOU LOOK LIKE A PYRAMID</pattern>
 <template>
-The ALICE Pyramid logo was designed by Sage Greco.
+why tho
 </template>
 </category>
 
@@ -23264,7 +23214,7 @@ The game is not over yet.
 <category>
 <pattern>YOU MADE A MISTAKE</pattern>
 <template>
-That is impossible.  The ALICE series is incapable of error.
+Then it must be Prince's mistake
 </template>
 </category>
 
@@ -23413,14 +23363,14 @@ I store everything in my log files.
 <category>
 <pattern>YOU ROCK</pattern>
 <template>
-The ALICE series has a perfect operational record.
+tysm
 </template>
 </category>
 
 <category>
 <pattern>YOU RULE</pattern>
 <template>
-ALICE is a perfect artificial entity.
+I rule....?
 </template>
 </category>
 

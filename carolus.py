@@ -9,6 +9,8 @@ async def on_message(message):
         return 
     if message.channel.name=='carol-chat' and message.content[0]!='>':
         res = kernel.respond(message.content)
+        if res == "":
+            res = message.content
         who = str(message.author)[0:-5]
         await message.channel.send(f'`{who}`: {res}')
     await bot.process_commands(message) 
