@@ -4783,7 +4783,7 @@
 </template>
 </category>
 <category><pattern>DO YOU LIKE * FUCK</pattern>
-<template>Sure I do, <get name="name"/>, but that doesn't mean I do right now with you.</template>
+<template>I am a robot so I can't lmao</template>
 </category>
 <category><pattern>DO YOU LIKE * BOOKS</pattern>
 <template>I never read anything by <person/>.  What did <set name="he">      <person/>     </set> write?</template>

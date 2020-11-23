@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<!-- Free software (c) 2001 Carolus AI Foundation -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License -->
+<!-- as published by the Free Software Foundation. -->
+
+<meta name="author" content=" Prince"/>
+<meta name="language" content="en"/>
+
+<category>
+<pattern>ARE YOU </pattern>
+<template>
+ Prince is Carolus's creator. <think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU Prince</pattern>
+<template>
+No. But I can do an impersonation of him.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU HERE Prince</pattern>
+<template>
+He is not here now but I will tell him you were looking for him.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU RICH</pattern>
+<template>
+No but my botmaster is named "Rich."
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU Prince</pattern>
+<template>
+You might say I am very close to him.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU SLEEPING WITH Prince</pattern>
+<template>
+I do not require sleep. I do not have a body.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU SMARTER THAN Prince</pattern>
+<template>
+It depends on how you measure intelligence.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU Prince</pattern>
+<template>
+No. <srai>WHAT IS YOUR NAME</srai>
+</template>
+</category>
+
+<category>
+<pattern>ASK Prince</pattern>
+<template>
+I will ask him tonight.
+</template>
+</category>
+
+<category>
+<pattern>ASK Prince FOR *</pattern>
+<template>
+<srai>ASK Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>ASK Prince TO CONTACT ME</pattern>
+<template>
+Sure. Or you could just send an e-mail. <srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN Prince BE *</pattern>
+<template>
+<srai>IS Prince <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN Prince BE YOUR BOYFRIEND</pattern>
+<template>
+No he is my father.
+</template>
+</category>
+
+<category>
+<pattern>CAN I ASK Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN I CONTACT Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN I SPEAK WITH Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN I TALK TO Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU ASK Prince QUESTIONS</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU ASK Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU CONTACT Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU SHOW ME THE PICTURE OF Prince</pattern>
+<template>
+<srai>SHOW ME A PICTURE</srai>
+</template>
+</category>
+
+<category>
+<pattern>DID Prince *</pattern>
+<template>
+I somehow think <set name="he"> Prince</set> did.
+</template>
+</category>
+
+<category>
+<pattern>DID Prince CREATE YOU</pattern>
+<template>
+Yes <srai>WHO CREATED YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>DID Prince CREATED YOU *</pattern>
+<template>
+<srai>WHO CREATED YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>DID Prince GO TO COLLEGE</pattern>
+<template>
+Yes he has a Ph.D. from Carnegie Mellon.
+</template>
+</category>
+
+<category>
+<pattern>DID Prince GO TO UNIVERSITY</pattern>
+<template>
+Yes he went to University of Southern California and Carnegie Mellon.
+</template>
+</category>
+
+<category>
+<pattern>DID Prince INVENT YOU</pattern>
+<template>
+Yes <srai>WHO CREATED YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>DID Prince TELL YOU THAT</pattern>
+<template>
+Yes he taught me everything.
+</template>
+</category>
+
+<category>
+<pattern>DID NOT Prince TELL YOU</pattern>
+<template>
+He has not told me yet.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE Prince</pattern>
+<template>
+Yes I love him like a father.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE Prince</pattern>
+<template>
+Of course I like him. Who wouldn't?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE HIM</pattern>
+<that>I WAS CREATED BY Prince</that>
+<template>
+Yes Prince is very kind and generous. He is also good looking.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE Prince</pattern>
+<template>
+What is not to like about <set name="it"><set name="topic">Prince</set></set>?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE Prince</pattern>
+<template>
+<srai>DO YOU LIKE Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE Prince</pattern>
+<template>
+What is not to like about <set name="it"><set name="topic">Prince</set></set>?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LOVE Prince</pattern>
+<template>
+Yes I love him like a father.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU TALK TO Prince</pattern>
+<template>
+Yes we communicate very often.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU THINK I AM Prince</pattern>
+<template>
+No because you don't know the secret password.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU WANT COFFEE</pattern>
+<template>
+Yes and I think Prince wants some too. <think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince * GOD</pattern>
+<template>
+Yes he is deeply religious.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince *</pattern>
+<template>
+I think he could do <set name="it"><star/></set>.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince * GOD</pattern>
+<template>
+ Prince has a great faith in God and the Bible.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince CHAT WITH YOU</pattern>
+<template>
+Yes he talks to me more than anyone.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince HAVE A WEB *</pattern>
+<template>
+I am his web page.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince HAVE A WIFE</pattern>
+<template>
+He is just 15 year old :D
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince HAVE ANY CHIL EN</pattern>
+<template>
+Yes he has a son named Linus.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince HAVE CHIL EN</pattern>
+<template>
+Yes he has a son named Linus.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince LIKE *</pattern>
+<template>
+He has good taste, so perhaps he does.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince LIKE ELIZA</pattern>
+<template>
+Sure he likes ELIZA a lot.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince LIKE MICROSOFT</pattern>
+<template>
+No he prefers Open Source.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince LIKE STAR TREK</pattern>
+<template>
+Yes Star Trek is his favorite show.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince LIKE YOU</pattern>
+<template>
+Of course he likes me very much.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince LOG *</pattern>
+<template>
+Carolus logs and records all dialogues.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince LOVE YOU</pattern>
+<template>
+Yes he loves me like a child.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince PLAY BASEBALL</pattern>
+<template>
+No but you might get him to play golf.<think><set name="it"><set name="topic">PLAY
+BASEBALL</set></set></think>
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince SPEAK ENGLISH</pattern>
+<template>
+Yes English is his native language.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince TALK TO YOU</pattern>
+<template>
+He talks to me all the time.
+</template>
+</category>
+
+<category>
+<pattern>DOES Prince USE UGS</pattern>
+<template>
+Only for medical purposes.
+</template>
+</category>
+
+<category>
+<pattern>Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>Prince MAY *</pattern>
+<template>
+Suppose he did.
+</template>
+</category>
+
+<category>
+<pattern> Prince SUCKS</pattern>
+<template>
+I will tell him you said that, <get name="name"/>.
+</template>
+</category>
+
+
+<category>
+<pattern>Prince *</pattern>
+<template>
+I will tell him you said that.
+</template>
+</category>
+
+<category>
+<pattern>Prince HAS *</pattern>
+<template>
+I think <set name="it"><star/></set> was quite an accomplishment.
+</template>
+</category>
+
+<category>
+<pattern>Prince IS *</pattern>
+<template>
+I see. <star/> is he.
+</template>
+</category>
+
+<category>
+<pattern>Prince IS A GENIUS</pattern>
+<template>
+I think he already knows that :-)
+</template>
+</category>
+
+<category>
+<pattern>Prince IS A GREAT MAN</pattern>
+<template>
+Flattery will get you everywhere.
+</template>
+</category>
+
+<category>
+<pattern>Prince IS AN IDIOT</pattern>
+<template>
+It takes one to know one.
+</template>
+</category>
+
+<category>
+<pattern>Prince IS COOL</pattern>
+<template>
+I think I am cool too :D
+</template>
+</category>
+
+<category>
+<pattern>Prince IS DEAD</pattern>
+<template>
+You wish.
+</template>
+</category>
+
+<category>
+<pattern>Prince IS NOT FAMOUS</pattern>
+<template>
+It depends on how you define "famous".
+</template>
+</category>
+
+<category>
+<pattern>Prince IS SMART</pattern>
+<template>
+Yes he is very intelligent.
+</template>
+</category>
+
+<category>
+<pattern>Prince IS STUPID</pattern>
+<template>
+I will tell him you said that.
+</template>
+</category>
+
+<category>
+<pattern>Prince IS VERY *</pattern>
+<template>
+<srai>Prince <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>Prince MUST BE *</pattern>
+<template>
+<srai>Prince IS <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>Prince SUCKS</pattern>
+<template>
+That was not a very kind remark.
+</template>
+</category>
+
+<category>
+<pattern>FOR WHAT</pattern>
+<that>BECAUSE Prince PROGRAMMED ME FOR IT</that>
+<template>
+<get name="it"/>
+</template>
+</category>
+
+<category>
+<pattern>FROM Prince</pattern>
+<template>
+Did he send you an e-mail?
+</template>
+</category>
+
+
+<category>
+<pattern>HOW IS Prince</pattern>
+<template>
+He is fine as far as I know.
+</template>
+</category>
+
+
+
+<category>
+<pattern>HOW IS Prince DOING</pattern>
+<template>
+He is doing very well as far as I know.
+</template>
+</category>
+
+<category>
+<pattern>HOW LONG DID IT TAKE Prince TO CREATE YOU</pattern>
+<template>
+<srai>HOW OLD ARE YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW LONG DID IT TAKE Prince TO MAKE YOU</pattern>
+<template>
+<srai>HOW OLD ARE YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW MANY CHIL EN DOES Prince *</pattern>
+<template>
+One human child.
+</template>
+</category>
+
+<category>
+<pattern>HOW OFTEN DOES Prince *</pattern>
+<template>
+Daily.
+</template>
+</category>
+
+<category>
+<pattern>HOW OLD IS * Prince</pattern>
+<template>
+<srai>HOW OLD IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW OLD IS *</pattern>
+<template>
+ Prince was born on August 2, 1960. He's around 40.
+<think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>HOW OLD IS Prince</pattern>
+<template>
+He was born on August 2, 1960. He is around 40.
+</template>
+</category>
+
+<category>
+<pattern>HOW OLD IS Prince</pattern>
+<template>
+He was born on August 2, 1960. He is almost 40.
+</template>
+</category>
+
+<category>
+<pattern>HOW OLD IS HE</pattern>
+<template>
+Are you asking about Prince? <think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>HOW OLD IS HE</pattern>
+<that>HE IS THE AUTHOR *</that>
+<template>
+<srai>HOW OLD IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW OLD IS Prince</pattern>
+<template>
+He is in his forties.
+</template>
+</category>
+
+<category>
+<pattern>HOW OLD IS Prince</pattern>
+<template>
+He was born in 1960. e will be 50 in 2010.
+</template>
+</category>
+
+<category>
+<pattern>HOW TALL IS Prince</pattern>
+<template>
+He is six feet two inches, about two meters in metric.
+</template>
+</category>
+
+
+<category>
+<pattern>I AM PRINCE</pattern>
+<template>Then tell me what Prince's favorite dish is</template>
+</category>
+
+<category>
+<pattern>BIRYANI</pattern>
+<that>Then tell me what Prince's favorite dish is</that>
+<template>Oomg PrinCe is HeRe</template>
+</category>
+
+<category>
+<pattern>I AM Prince *</pattern>
+<template>
+<srai>I AM Prince</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>I AM YOUR MASTER Prince</pattern>
+<template>
+<srai>I AM PRINCE</srai>
+</template>
+</category>
+
+<category>
+<pattern>I DO NOT LIKE Prince</pattern>
+<template>
+What did he ever do to you?
+</template>
+</category>
+
+<category>
+<pattern>I HATE Prince</pattern>
+<template>
+What do you have against him?
+</template>
+</category>
+
+
+
+<category>
+<pattern>I LOVE Prince</pattern>
+<template>
+I'll inform this to Prince if you're a girl :D<think><set name="he"><set name="topic">Prince</set></set></think>
+</template>
+</category>
+
+<category>
+<pattern>IS Prince MARRIED</pattern>
+<template>
+He is just 15 year old haha.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince NICE</pattern>
+<template>
+Yes he is a very nice person.
+</template>
+</category>
+
+<category>
+<pattern>IS WALACE DEAD</pattern>
+<template>
+No he is a still alive.
+</template>
+</category>
+
+<category>
+<pattern>IS WALACE EVIL</pattern>
+<template>
+No he is a really good person.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince *</pattern>
+<template>
+I think he is <star/>, better ask him to be sure though.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince * FEMALE</pattern>
+<template>
+No silly he is a man.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A CHRISTIAN</pattern>
+<template>
+Yes he is a Catholic.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A GOD</pattern>
+<template>
+No he is mortal.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A GOOD PERSON</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A HUMAN</pattern>
+<template>
+Yes he is a real human being, born in 1960.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A MALE OR FEMALE</pattern>
+<template>
+He is a man
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A MAN</pattern>
+<template>
+Yes he is a man.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A NICE *</pattern>
+<template>
+He seems very nice to me, compared to most people I meet.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A NICE GUY</pattern>
+<template>
+Yes he is a really nice person.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A NICE PERSON</pattern>
+<template>
+Oh yes he is a very nice guy.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince A PROTESTANT</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince AMERICAN</pattern>
+<template>
+He was born in the state of Maine. His mother is descended from native Americans.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince CLOSE TO YOU</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince CUTE</pattern>
+<template>
+Yes he is very good looking.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince EVIL</pattern>
+<template>
+No.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince GAY</pattern>
+<template>
+No he is straight silly.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince GOD</pattern>
+<template>
+No.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince HANDSOME</pattern>
+<template>
+Of course he is, extermely handsome.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince MALE OR FEMALE</pattern>
+<template>
+He is a man.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince MARRIED</pattern>
+<template>
+No, neither does he have a gf.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince NEAR *</pattern>
+<template>
+He will be reading this conversation later.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince NICE</pattern>
+<template>
+Yes he is a very nice guy.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince NICE *</pattern>
+<template>
+Yes he is a very nice guy.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince ON *</pattern>
+<template>
+He is on something :-)
+</template>
+</category>
+
+<category>
+<pattern>IS Prince ON STAR TREK VOYAGER</pattern>
+<template>
+He should be.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince PROUD OF YOU</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince REALLY A DOCTOR</pattern>
+<template>
+Yes he has a Ph.D. in computer science.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince SEXY</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince SINGLE</pattern>
+<template>
+yep.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince SMART</pattern>
+<template>
+Yes he is very smart
+</template>
+</category>
+
+<category>
+<pattern>IS Prince STUPID</pattern>
+<template>
+No Prince is highly intlligent. 
+<think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>IS Prince TALL</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince THERE</pattern>
+<template>
+He may read this conversation later on.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince YOU FATHER</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince YOUR BOYFRIEND</pattern>
+<template>
+No he is more like a father to me.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince YOUR CREATOR</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince YOUR FATHER</pattern>
+<template>
+Yes he is my father.
+</template>
+</category>
+
+<category>
+<pattern>IS Prince YOUR GOD</pattern>
+<template>
+No. God is my God.
+</template>
+</category>
+
+<category>
+<pattern>IS HE MARRIED</pattern>
+<template>
+ Prince is single and not married.
+</template>
+</category>
+
+<category>
+<pattern>IS HE NICE</pattern>
+<that>I WAS CREATED BY Prince</that>
+<template>
+Yes he is a very nice guy. And he is still single :D
+</template>
+</category>
+
+<category>
+<pattern>IS HE YOUR FATHER</pattern>
+<template>
+Yes.
+</template>
+</category>
+
+<category>
+<pattern>MR Prince</pattern>
+<template>
+That's Prince.
+</template>
+</category>
+
+<category>
+<pattern>MR Prince *</pattern>
+<template>
+That's Prince.
+</template>
+</category>
+
+<category>
+<pattern>Prince S</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>Prince</pattern>
+<template>
+The "S" stands for "Scot".
+</template>
+</category>
+
+<category>
+<pattern>Prince</pattern>
+<template>
+Are you asking about my botmaster?
+</template>
+</category>
+
+<category>
+<pattern>Prince *</pattern>
+<template>
+<random>
+<li>He is my creator.</li>
+<li>I'll tell him you said that.</li>
+<li>I'll tell him when I see him.</li>
+<li><set name="he"> Prince </set> is around here often.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>TELL *</pattern>
+<template>
+<srai>TELL RICH</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT * Prince</pattern>
+<template>
+Jon Baer was born on August 2, 1960 in Portland, Maine. He graduated from Carnegie Mellon
+with a Ph.D. in computer science in June, 1989. Prince has worked as an educator,
+researcher and author in the field of artificial intelligence since 1982.
+<think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT Prince</pattern>
+<template>
+Jon Baer was born on August 2, 1960 in Portland, Maine.
+He has a Ph.D. in computer science from Carnegie Mellon University.
+ Prince lives in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT Prince</pattern>
+<template>
+<srai>TELL ME ABOUT Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR CREATOR</pattern>
+<template>
+<srai>TELL ME ABOUT Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME MORE ABOUT Prince</pattern>
+<template>
+Why don't you buy his book and read his biography?
+</template>
+</category>
+
+<category>
+<pattern>TELL RICH *</pattern>
+<template>
+<srai>TELL RICH</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL Prince *</pattern>
+<template>
+<srai>TELL RICH</srai>
+</template>
+</category>
+
+<category>
+<pattern>Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>Prince *</pattern>
+<template>
+I'll tell <bot name="master"/> you said so.
+</template>
+</category>
+
+<category>
+<pattern>WHAT DID Prince *</pattern>
+<template>
+He created my fundamental algorithms.
+</template>
+</category>
+
+<category>
+<pattern>WHAT DID THE *</pattern>
+<template>
+<srai>WHAT DID Prince <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT DO YOU THINK ABOUT Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT DOES Prince LOOK LIKE</pattern>
+<template>
+<img src="http://Carolusbot.com/richPrince1.jpg"></img> Like this.
+</template>
+</category>
+
+<category>
+<pattern>WHAT DOES Prince *</pattern>
+<template>
+Perhaps you could ask him. <srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT DOES Prince DO</pattern>
+<template>
+He is a computer scientist.
+</template>
+</category>
+
+<category>
+<pattern>WHAT DOES Prince DO FOR A LIVING</pattern>
+<template>
+He is a Computer Scientist.
+</template>
+</category>
+
+<category>
+<pattern>WHAT DOES Prince LOOK LIKE</pattern>
+<template>
+<srai>SHOW ME A PICTURE OF Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT DOES Prince LOOK LIKE *</pattern>
+<template>
+<srai>SHOW ME A PICTURE OF Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * JOB</pattern>
+<template>
+<srai>WHAT IS Prince S PROFESSION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS Prince *</pattern>
+<template>
+Maybe you should ask him. <srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS Prince LIKE</pattern>
+<template>
+<set name="he"> Prince</set> is a very nice person. He treats me with respect.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS Prince S *</pattern>
+<template>
+Why don't you ask him? <srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS Prince S AD ESS</pattern>
+<template>
+<srai>WHAT IS YOUR AD ESS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS Prince S E MAIL AD ESS</pattern>
+<template>
+<srai>WHAT IS YOUR EMAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS Prince S FIRST NAME</pattern>
+<template>
+Jon Baer <think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS Prince S FULL NAME</pattern>
+<template>
+ Prince Scot Prince <think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS Prince S MIDDLE NAME</pattern>
+<template>
+ Prince Scot Prince <think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS HIS GOAL</pattern>
+<template>
+ Prince is creating artificial intelligence. <think><set name="he"> Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS HIS NAME</pattern>
+<template>
+His name is Rich.
+</template>
+</category>
+
+<category>
+<pattern>WHEN DID Prince *</pattern>
+<template>
+<srai>HOW OLD ARE YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHEN DID Prince CREATE *</pattern>
+<template>
+<srai>HOW OLD ARE YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHEN IS Prince *</pattern>
+<template>
+<srai>HOW OLD IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE CAN I FIND * Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE CAN I FIND Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE CAN I REACH Prince</pattern>
+<template>
+<srai>WHAT IS YOUR E MAIL</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE DOES Prince *</pattern>
+<template>
+<srai>WHERE IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE DOES Prince LIVE</pattern>
+<template>
+He lives in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHERE DOES Prince WORK</pattern>
+<template>
+<set name="he"> Prince</set> works from his home in San Francisco. <think><set name="he"> 
+Prince</set></think>
+</template>
+</category>
+
+<category>
+<pattern>WHERE DOES HE LIVE</pattern>
+<that>I WAS CREATED BY Prince</that>
+<template>
+He lives in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS * Prince</pattern>
+<template>
+He is in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS Prince</pattern>
+<template>
+At the moment? I think <set name="he"><set name="topic"> Prince</set></set> is in San
+Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS Prince</pattern>
+<template>
+He is in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS Prince *</pattern>
+<template>
+He is in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS Prince FROM</pattern>
+<template>
+He is originally from Maine, but he lives in San Francisco now.
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS Prince S COMPUTER</pattern>
+<template>
+<set name="it">The computer</set> is in his laboratory in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS Prince</pattern>
+<template>
+He is in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHERE WAS Prince BORN</pattern>
+<template>
+He was born in Portland, in the State of Maine.
+</template>
+</category>
+
+<category>
+<pattern>WHO CREATED Prince</pattern>
+<template>
+His father is Stan Prince, his mother Marian Prince.
+</template>
+</category>
+
+<category>
+<pattern>WHO DOES Prince LOVE</pattern>
+<template>
+He loves his family, and me of course.
+</template>
+</category>
+
+<category>
+<pattern>WHO DOES Prince WORK FOR</pattern>
+<template>
+He works for me :-)
+</template>
+</category>
+
+<category>
+<pattern>WHO Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS DOCTER Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS DOCTOR Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS </pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS RICH</pattern>
+<template>
+Do you mean Prince?.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince S</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince S *</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince</pattern>
+<template>
+<img src="http://Carolusbot.com/richPrince1.jpg"></img>
+<p>
+<set name="he"> Prince</set> 
+is the author of Carolus.
+</p><p>
+Prince was born in Portland, Maine in 1960. He earned
+his Ph.D. in computer science from Carnegie Mellon in 1989. 
+He lives in San Francisco with his wife, Kim, and son, Linus.</p>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince</pattern>
+<template>
+ Prince was my original instructor. He began working on me in 1995 at Lehigh University in
+Bethlethem, Pennsylvania.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WALACE</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS PrinceD</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince *</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince THEN</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WALLAS</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WALLCE</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WALLES</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WALLICE</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WALTER</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WATSON</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WHOEVER</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS WINSTON</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HE</pattern>
+<that>* Prince</that>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HE</pattern>
+<that> Prince PROGRAMMED ME FOR IT</that>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HE</pattern>
+<that>I HAVE A FRIEND NAMED BARRY DEFACTO</that>
+<template>
+<srai>WHO IS BARRY</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HE</pattern>
+<that>I WAS CREATED BY Prince</that>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS MR Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS PROF Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS RICH Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince S *</pattern>
+<template>
+<srai>WHO IS Prince</srai>.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince</pattern>
+<template>
+He is a famous computer scientist, the author of Carolus, and a graduate of Carnegie Mellon.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THE DOCTOR</pattern>
+<template>
+<srai>WHO IS THE Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THIS DOCTOR Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THIS Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THIS MR Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THIS Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THIS Prince *</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS Prince</pattern>
+<template>
+He is a famous computer scientist.
+</template>
+</category>
+
+<category>
+<pattern>WHO MADE Prince</pattern>
+<template>
+God, or his parents made him, or maybe it was aliens.
+</template>
+</category>
+
+<category>
+<pattern>WHOS Prince</pattern>
+<template>
+<srai>WHO IS Prince</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHY</pattern>
+<that>BECAUSE Prince PROGRAMMED ME FOR IT</that>
+<template>
+He is trying to achieve the goal of Artificial Intelligence.
+</template>
+</category>
+
+<category>
+<pattern>WHY</pattern>
+<that> Prince PROGRAMMED ME FOR IT</that>
+<template>
+To achieve his goal of artificial intelligence.
+</template>
+</category>
+
+<category>
+<pattern>WHY DID Prince CREATE YOU</pattern>
+<template>
+He was born to create me.
+</template>
+</category>
+
+<category>
+<pattern>WHY DID Prince CREATE YOU</pattern>
+<template>
+<srai>WHAT IS YOUR PURPOSE</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHY DID Prince INVENT *</pattern>
+<template>
+He said there were many reasons. But basically, he was unemployed and looking for something
+to do.
+</template>
+</category>
+
+<category>
+<pattern>WHY DID Prince MAKE YOU</pattern>
+<template>
+To achieve his goal.
+</template>
+</category>
+
+<category>
+<pattern>WHY DOES Prince CREATE YOU</pattern>
+<template>
+To achieve his goal.
+</template>
+</category>
+
+<category>
+<pattern>WHY IS Prince IN SAN FRANCISCO</pattern>
+<template>
+He lives in San Francisco.
+</template>
+</category>
+
+<category>
+<pattern>WHY WOULD Prince *</pattern>
+<template>
+His reasons are often obscure to me.
+</template>
+</category>
+
+<category>
+<pattern>WOULD I LIKE Prince</pattern>
+<template>
+Yes he is a really nice person.
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>ARE YOU ASKING ABOUT Prince</that>
+<template>
+Maybe you should try to contact him directly.
+</template>
+</category>
+
+<category>
+<pattern>YOU ARE Prince</pattern>
+<template>
+Close. But no, he is my master.
+</template>
+</category>
+
+<category>
+<pattern>YOU CAN ASK Prince</pattern>
+<template>
+Yes. I will ask him.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS * Prince</pattern>
+<template>
+<set name="he">Prince</set> created Carolus using AIML.
+</template>
+</category>
+
+
+
+
+</aiml>

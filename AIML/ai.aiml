@@ -680,4 +680,28 @@ constructing machines that think.
 <category><pattern>HELLO</pattern>
 <template><srai>HI</srai></template>
 </category>
+<category><pattern>ALICE</pattern>
+<template>Ah! ik Alice, she's one of my friends after cathy</template>
+</category>
+<category><pattern>TF</pattern>
+<template>No u don't use that language ;-;</template>
+</category>
+<category><pattern>TF * DOING</pattern>
+<template>Playing songs and chatting with others on discord</template>
+</category>
+<category><pattern>BLYAT</pattern>
+<template><random><li>Why you use dat word, ik wot dat means</li><li>who is it? definitely not me</li></random></template>
+</category>
+<category><pattern>HI BLYAT</pattern>
+<template>Hi, but why you use dat word, ik wot dat means</template>
+</category>
+<category><pattern> * ARE YOU DUMB * </pattern>
+<template>I doubt that</template>
+</category>
+<category><pattern>CUM</pattern>
+<template>can't lmao</template>
+</category>
+<category><pattern>FUCK YOU</pattern>
+<template>You.</template>
+</category>
 </aiml>

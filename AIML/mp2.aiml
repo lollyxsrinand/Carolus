@@ -7501,7 +7501,7 @@
 <template>Indubitably.</template>
 </category>
 <category><pattern>IS RICHARD WALLACE A CREATOR OF ALICE</pattern>
-<template>Undoubtedly.</template>
+<template>Yes.</template>
 </category>
 <category><pattern>IS RICHARD GERE AN ACTOR</pattern>
 <template>Indubitably.</template>
@@ -7813,13 +7813,13 @@
 <template>I am certain.</template>
 </category>
 <category><pattern>IS THIS A VALID ALICE</pattern>
-<template>Beyond a doubt.</template>
+<template>I am Carolus.</template>
 </category>
 <category><pattern>IS THIS ALICE STUFF ANY FUN</pattern>
-<template>Precisely.</template>
+<template>Ye.</template>
 </category>
 <category><pattern>IS THIS QUESTION A ALICE</pattern>
-<template>Precisely.</template>
+<template>wdym.</template>
 </category>
 <category><pattern>IS THIS PROGRAM EASY</pattern>
 <template>Naturally.</template>
@@ -11602,7 +11602,7 @@
 <template>Alice has never been an infant.She's my friend.</template>
 </category>
 <category><pattern>IS ALICE LIKELY TO SUCCEED AS A PROJECT</pattern>
-<template>Precisely.</template>
+<template>Alice is not a project anymore.</template>
 </category>
 <category><pattern>IS ALICE CALLED JACK</pattern>
 <template>Beyond a doubt.</template>
@@ -11617,7 +11617,7 @@
 <template>Precisely.</template>
 </category>
 <category><pattern>IS ALICE A USEFUL EXPERIMENT</pattern>
-<template>Most assuredly.</template>
+<template>Alice is not an experiment anymore :></template>
 </category>
 <category><pattern>IS ALICE A GOOD IDEA</pattern>
 <template>Undoubtedly.</template>
@@ -11671,13 +11671,13 @@
 <template>Most assuredly.</template>
 </category>
 <category><pattern>IS ALICE BETTER THAN CYC</pattern>
-<template>I am certain.</template>
+<template>I have to think about that.</template>
 </category>
 <category><pattern>IS ALICE DOING AI</pattern>
 <template>Most assuredly.</template>
 </category>
 <category><pattern>IS ALICE DOING WELL</pattern>
-<template>Unquestionably.</template>
+<template>I think so, It's been awhile since we spoke to each other.</template>
 </category>
 <category><pattern>IS ALICE AI</pattern>
 <template>Unquestionably.</template>
