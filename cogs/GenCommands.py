@@ -41,5 +41,14 @@ class General(commands.Cog):
         embed = discord.Embed(title="Carolus invite", color=0x73e600)
         embed.add_field(name="I'd love to be invited to your server :D",value="[Invite Carolus](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)")
         await ctx.send(embed=embed)
+    @commands.command()
+    async def host(self, ctx):
+        hos = "Hosted on Heroku"
+        latency = round(self.bot.latency*1000)
+        if latency > 50:
+            hos = "Local Host machine"
+        embed = discord.Embed(color=0x73e600)
+        embed.add_field(name="Hosted on: ",value=hos,inline=True)
+        await ctx.send(embed = embed)
 def setup(bot):
     bot.add_cog(General(bot))
