@@ -20,6 +20,7 @@ class General(commands.Cog):
         embed.add_field(name="AIML Chat",value=f"`Chat with Carolus written in AIML in` {channel_id} `to have more fun.\nIf such channel doesn't exist, request admin to create one ツ` ")
         embed.set_author(name=f'Requested by {str(ctx.author)[:-5]}', icon_url=ctx.author.avatar_url)
         await ctx.send(embed=embed)
+        
     @commands.command() 
     async def ping(self, ctx):
         embed = discord.Embed(color=0x73e600)
@@ -27,10 +28,12 @@ class General(commands.Cog):
         await ctx.send(embed=embed)
     
     @commands.command()
-    @commands.has_permissions(manage_guild=True)
-    async def kick(self, ctx, member: discord.Member, *,reason=None):
-        await member.kick(reason=reason)
-            
+    @commands.has_permissions(kick_members=True)
+    async def kick(self, ctx, member : discord.Member):
+        await member.kick(reason="No reason Provided")
+        await ctx.send(f":boot: {member.mention}")
+        
+                
     @commands.command()
     @commands.has_permissions(manage_guild=True)
     async def clear(self, ctx,*, lim):
@@ -41,6 +44,7 @@ class General(commands.Cog):
         embed = discord.Embed(title="Carolus invite", color=0x73e600)
         embed.add_field(name="I'd love to be invited to your server :D",value="[Invite Carolus](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)")
         await ctx.send(embed=embed)
+        
     @commands.command()
     async def host(self, ctx):
         hos = "Third Party Hosting Service"
