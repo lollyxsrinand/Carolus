@@ -10710,7 +10710,7 @@
 <template>Pong</template>
 </category>
 <category><pattern>WHOSE</pattern>
-<template>I don't know the owner.</template>
+<template>Prince.</template>
 </category>
 <category><pattern>WHERE ELSE</pattern>
 <template>Quite a few places.</template>

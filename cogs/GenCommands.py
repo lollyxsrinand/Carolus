@@ -43,7 +43,7 @@ class General(commands.Cog):
         await ctx.send(embed=embed)
     @commands.command()
     async def host(self, ctx):
-        hos = "Hosted on Heroku"
+        hos = "Third Party Hosting Service"
         latency = round(self.bot.latency*1000)
         if latency > 50:
             hos = "Local Host machine"
