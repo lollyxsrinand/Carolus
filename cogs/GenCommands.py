@@ -13,7 +13,7 @@ class General(commands.Cog):
         if channel is None:
             channel_id='#carolus-chat'
         embed=discord.Embed(title="Here are my commands :", description="**My Prefix is** `>`", color=0x73e600)
-        embed.add_field(name="General", value="help | ping | kick |\nclear ", inline=False)
+        embed.add_field(name="General", value="help | ping | kick |\nclear |pmath", inline=False)
         embed.add_field(name="Music", value="play | stop | move |\nnow | queue | skip |\nforceskip | pause | resume", inline=False)
         embed.add_field(name="Fun", value="flip | avatar | rand", inline=False)
         embed.add_field(name="Misc", value="google | youtube", inline = False)
@@ -50,5 +50,11 @@ class General(commands.Cog):
         embed = discord.Embed(color=0x73e600)
         embed.add_field(name="Hosted on: ",value=hos,inline=True)
         await ctx.send(embed = embed)
+    @commands.command(aliases=['pmath'])
+    async def pymath(self, ctx, *, ope):
+        resp = eval(ope)
+        if resp > 10**1000:
+            resp = "The output was too big to be calcluated"
+        await ctx.send(resp)
 def setup(bot):
     bot.add_cog(General(bot))
