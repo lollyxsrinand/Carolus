@@ -1,9 +1,7 @@
 from imports import *
-
 class General(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        
     @commands.command()
     async def help(self, ctx):
         channel = discord.utils.get(ctx.guild.channels, name='carol-chat')
@@ -13,7 +11,7 @@ class General(commands.Cog):
         if channel is None:
             channel_id='#carolus-chat'
         embed=discord.Embed(title="Here are my commands :", description="**My Prefix is** `>`", color=0x73e600)
-        embed.add_field(name="General", value="help | ping | kick |\nclear |pmath", inline=False)
+        embed.add_field(name="General", value="help | ping | kick |\nclear | prefix | pmath", inline=False)
         embed.add_field(name="Music", value="play | stop | move |\nnow | queue | skip |\nforceskip | pause | resume", inline=False)
         embed.add_field(name="Fun", value="flip | avatar | rand", inline=False)
         embed.add_field(name="Misc", value="google | youtube", inline = False)
@@ -32,7 +30,12 @@ class General(commands.Cog):
     async def kick(self, ctx, member : discord.Member):
         await member.kick(reason="No reason Provided")
         await ctx.send(f":boot: {member.mention}")
-        
+
+    @commands.command()
+    @commands.has_permissions(ban_members=True)
+    async def kick(self, ctx, member : discord.Member):
+        await member.ban(reason="No reason Provided")
+        await ctx.send(f":boot: {member.mention}")       
                 
     @commands.command()
     @commands.has_permissions(manage_guild=True)

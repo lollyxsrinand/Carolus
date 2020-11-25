@@ -1,7 +1,15 @@
 from imports import *
 
-bot = commands.Bot(command_prefix='>')
+def get_prefix(bot, message):
+    with open('prefixes.json', 'r') as f:
+        prefixes = json.load(f)
+        
+    return prefixes[str(message.guild.id)]
+     
+bot = commands.Bot(command_prefix=get_prefix)
 bot.remove_command('help')
+
+    
 
 @bot.event
 async def on_message(message):
@@ -12,20 +20,51 @@ async def on_message(message):
         if res == "":
             res = message.content
         who = str(message.author)[0:-5]
-        await message.channel.send(f'`{who}`: {res}')
+        await message.channel.send(f"`{who}`: {res}")
     await bot.process_commands(message) 
     
 @bot.event
 async def on_guild_join(guild):
+    """Creating Text Channel and saying Thanks for adding"""
     await guild.create_text_channel('carol-chat')
     channel = discord.utils.get(guild.channels, name='general')
     await channel.send("Thanks for adding me :>")
+    """Prefix"""
+    with open('prefixes.json', 'r') as f:
+        prefixes = json.load(f)
+        
+    prefixes[str(guild.id)] = '>'
+    
+    with open('prefixes.json', 'w')  as f:
+        json.dump(prefixes, f, indent=4)
+@bot.event
+async def on_guild_remove(guild):
+    with open('prefixes.json', 'r') as f:
+        prefixes = json.load(f)
+        
+    prefixes.pop(str(guild.id))
+    
+    with open('prefixes.json', 'w')  as f:
+        json.dump(prefixes, f, indent=4)
+    
+@bot.command()
+async def prefix(ctx, pref):
+    with open('prefixes.json', 'r') as f:
+        prefixes = json.load(f)
+    guild_id = str(ctx.guild.id)
+    prefixes[guild_id] = pref
+    
+    with open('prefixes.json', 'w') as f:
+        json.dump(prefixes, f, indent=4)
+    
+    await ctx.send(f"Prefix changed to `{pref}` :)")
     
 @bot.event
 async def on_ready():
-    await bot.change_presence(status=discord.Status.online)
+    activity = discord.Activity(type=discord.ActivityType.listening, name="clients on discord | >help")
+    await bot.change_presence(status=discord.Status.online, activity=activity) 
     print("Bot ready")
-    
+
 bot.load_extension('cogs.MusicCommands')
 bot.load_extension('cogs.GenCommands')
 bot.load_extension('cogs.FunCommands')
