@@ -2,6 +2,7 @@ from imports import *
 class General(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
+        
     @commands.command()
     async def help(self, ctx):
         channel = discord.utils.get(ctx.guild.channels, name='carol-chat')
@@ -10,12 +11,13 @@ class General(commands.Cog):
             channel_id=f"<#{channel_id}>"
         if channel is None:
             channel_id='#carolus-chat'
-        embed=discord.Embed(title="Here are my commands :", description="**My Prefix is** `>`", color=0x73e600)
+        embed=discord.Embed(title="Here are my commands :", description="**You can always get my prefix by pinging me ツ**", color=0x73e600)
         embed.add_field(name="General", value="help | ping | kick |\nclear | prefix | pmath", inline=False)
-        embed.add_field(name="Music", value="play | stop | move |\nnow | queue | skip |\nforceskip | pause | resume", inline=False)
         embed.add_field(name="Fun", value="flip | avatar | rand", inline=False)
+        embed.add_field(name="Music", value="play | stop | move |\nnow | queue | skip |\nforceskip | pause | resume", inline=False)
         embed.add_field(name="Misc", value="google | youtube", inline = False)
-        embed.add_field(name="AIML Chat",value=f"`Chat with Carolus written in AIML in` {channel_id} `to have more fun.\nIf such channel doesn't exist, request admin to create one ツ` ")
+        embed.add_field(name="Chat",value=f"`Chat with Carolus in` {channel_id} ` and have fun.\nIf such channel doesn't exist, request admin to create one` ")
+        embed.set_footer(text="20 commands in total ツ")
         embed.set_author(name=f'Requested by {str(ctx.author)[:-5]}', icon_url=ctx.author.avatar_url)
         await ctx.send(embed=embed)
         
@@ -26,10 +28,10 @@ class General(commands.Cog):
         await ctx.send(embed=embed)
     
     @commands.command()
-    @commands.has_permissions(kick_members=True)
+    @commands.has_permissions(manage_guild=True)
     async def kick(self, ctx, member : discord.Member):
         await member.kick(reason="No reason Provided")
-        await ctx.send(f":boot: {member.mention}")
+        await ctx.send(f"{ctx.author} has :boot: {member.mention}")
 
     @commands.command()
     @commands.has_permissions(ban_members=True)
