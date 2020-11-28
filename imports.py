@@ -1,5 +1,5 @@
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 from discord.utils import get   
 from discord.ext.commands import Bot
 import asyncio
@@ -18,3 +18,4 @@ from math import sin
 from math import cos
 from math import tan
 import json
+from itertools import cycle

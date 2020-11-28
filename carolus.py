@@ -2,6 +2,8 @@ from imports import *
 
 valid_prefixes = ['<','>','!','#','$','%','^','&','*','(',')','[',']','{','}',':',';','/','\\','-','+','=','.',',','?']
 
+status = cycle(['clients on discord','>help | Report any bug to Prince349k#0628'])
+
 def get_prefix(bot, message):
     with open('prefixes.json', 'r') as f:
         prefixes = json.load(f)
@@ -15,7 +17,7 @@ bot.remove_command('help')
 def valid_prefix(pre):
     """RETURNING TRUE IF PREFIX EXISTS IN VALID_PREFIXES ELSE FALSE"""
     return pre in valid_prefixes
-    
+
 @bot.event
 async def on_message(message):
     """WE DO NOT WANT THE BOT TO RESPOND TO ITSELF"""
@@ -80,11 +82,14 @@ async def prefix(ctx, pref):
         json.dump(prefixes, f, indent=4)
     
     await ctx.send(f"Prefix changed to `{pref}` :)")
-    
+
+@tasks.loop(seconds=5)
+async def change_status():
+    await bot.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name=next(status)))
+
 @bot.event
 async def on_ready():
-    activity = discord.Activity(type=discord.ActivityType.listening, name="clients on discord | >help")
-    await bot.change_presence(status=discord.Status.online, activity=activity) 
+    change_status.start()
     print("Bot ready")
     
 """LOADING COGS"""
