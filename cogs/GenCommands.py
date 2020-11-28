@@ -35,7 +35,7 @@ class General(commands.Cog):
 
     @commands.command()
     @commands.has_permissions(ban_members=True)
-    async def kick(self, ctx, member : discord.Member):
+    async def ban(self, ctx, member : discord.Member):
         await member.ban(reason="No reason Provided")
         await ctx.send(f":boot: {member.mention}")       
                 
@@ -60,6 +60,7 @@ class General(commands.Cog):
         embed.add_field(name="Hosted on: ",value=hos,inline=True)
         await ctx.send(embed = embed)
     @commands.command(aliases=['pmath'])
+    
     async def pymath(self, ctx, *, ope):
         resp = eval(ope)
         if resp > 10**1000:

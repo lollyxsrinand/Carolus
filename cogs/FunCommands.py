@@ -8,11 +8,13 @@ class Fun(commands.Cog):
     @commands.command()
     async def flip(self, ctx):
         """ COIN FLIP SIMULATION """
+        
         await ctx.send(random.choice(["Aha! It's Heads!", "Yay! It's Tales!"]))
     
     @commands.command(aliases=['av','pfp'])
     async def avatar(self, ctx, *,  avamember : discord.Member=None):
         """ DISPLAYING USER AVATAR """
+        
         userAvatarUrl = avamember.avatar_url
         embed = discord.Embed(color=0x73e600)
         embed.set_author(name=f'Requested by {str(ctx.author)[0:-5]}',icon_url=(ctx.author.avatar_url))
@@ -28,6 +30,7 @@ class Fun(commands.Cog):
         for x in l[:4]:
             s += str(x)
         await ctx.send(s) 
+    
         
 def setup(bot):
     bot.add_cog(Fun(bot))

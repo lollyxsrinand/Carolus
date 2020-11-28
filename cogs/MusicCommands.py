@@ -1,3 +1,4 @@
+
 import asyncio
 import functools
 import itertools
@@ -287,7 +288,7 @@ class Music(commands.Cog):
         ctx.voice_state = self.get_voice_state(ctx)
 
     async def cog_command_error(self, ctx: commands.Context, error: commands.CommandError):
-        await ctx.send('An error occurred: {}'.format(str(error)))
+        print('An error occurred: {}'.format(str(error)))
 
     @commands.command(name='join', aliases=['j'], invoke_without_subcommand=True)
     async def _join(self, ctx: commands.Context):
@@ -364,8 +365,7 @@ class Music(commands.Cog):
             ctx.voice_state.skip()
             await ctx.send("Skipped :D")
         else:
-            await ctx.send("I am not connected to a voice channel")
-        
+            await ctx.send("Nothing to skip")
     @commands.command(name='resume')
     @commands.has_permissions(manage_guild=True)
     async def _resume(self, ctx: commands.Context):
@@ -385,7 +385,7 @@ class Music(commands.Cog):
 
         if ctx.voice_state.is_playing:
             ctx.voice_state.voice.stop()
-            await ctx.message.add_reaction('⏹')
+            await ctx.send("Stopped playing and cleared queue")
 
     @commands.command(name='skip',aliases=['s'])
     async def _skip(self, ctx: commands.Context):
@@ -468,8 +468,11 @@ class Music(commands.Cog):
 
         # Inverse boolean value to loop and unloop.
         ctx.voice_state.loop = not ctx.voice_state.loop
-        await ctx.message.add_reaction('✅')
-        await ctx.send('Looped \n[{0.source.title}]({0.source.url})\n'.format(self,self))
+        if ctx.voice_state.loop:
+            await ctx.send(f"Looped current playing song")
+        if not ctx.voice_state.loop:
+            await ctx.send(f"Unlooped current playing song")
+        # await ctx.send('Looped \n[{0.source.title}]({0.source.url})\n'.format(self,self))
 
     @commands.command(name='play',aliases=['p'])
     async def _play(self, ctx: commands.Context, *, search: str):

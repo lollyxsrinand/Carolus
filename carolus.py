@@ -1,6 +1,6 @@
 from imports import *
 
-valid_prefixes = ['<','>','!','#','$','%','^','&','*','(',')','[',']','{','}',':',';','/','\\','-','+','=','.',',']
+valid_prefixes = ['<','>','!','#','$','%','^','&','*','(',')','[',']','{','}',':',';','/','\\','-','+','=','.',',','?']
 
 def get_prefix(bot, message):
     with open('prefixes.json', 'r') as f:
@@ -22,7 +22,7 @@ async def on_message(message):
     if message.author == bot.user:
         return 
     """ Telling the prefix of the bot on mention """
-    if bot.user.mentioned_in(message):
+    if bot.user.mentioned_in(message) and "@everyone" not in message.content:
         with open('prefixes.json', 'r') as file:
             prefixes = json.load(file)
             guild_prefix = prefixes[str(message.guild.id)]
@@ -30,7 +30,7 @@ async def on_message(message):
         return
     
     """AIML RESPONDS TO USER WHEN MESSAGE IN CAROL-CHAT APPEARS"""
-    if message.channel.name=='carol-chat' and message.content[0]!='>':
+    if message.channel.name=='carol-chat' and message.content[0]!=">":
         res = kernel.respond(message.content)
         if res == "":
             res = message.content
