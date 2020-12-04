@@ -55,6 +55,7 @@ async def on_guild_join(guild):
     
     with open('prefixes.json', 'w')  as f:
         json.dump(prefixes, f, indent=4)
+        
 @bot.event
 async def on_guild_remove(guild):
     with open('prefixes.json', 'r') as f:
@@ -97,6 +98,7 @@ bot.load_extension('cogs.MusicCommands')
 bot.load_extension('cogs.GenCommands')
 bot.load_extension('cogs.FunCommands')
 bot.load_extension('cogs.MiscCommands')
+bot.load_extension('cogs.HelpCommand')
 """END OF LOADING COGS"""
 
 """LOADING AIML"""
@@ -106,4 +108,4 @@ kernel.respond("load aiml b")
 """END OF LOADING AIML"""
 
 """RUNNING BOT"""
-bot.run('Nzc0NTMwMjcwNTA1MjA1ODAx.X6ZHhg.SG-awP6hOU8kntE5o9yyZZdV5iQ') 
+bot.run('Nzc0NTMwMjcwNTA1MjA1ODAx.X6ZHhg.SG-awP6hOU8kntE5o9yyZZdV5iQ')  
