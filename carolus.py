@@ -9,7 +9,8 @@ def get_prefix(bot, message):
         prefixes = json.load(f)
         
     return prefixes[str(message.guild.id)]
-     
+
+embed = discord.Embed(title=";ldkfajsldf")
 bot = commands.Bot(command_prefix=get_prefix)
 bot.remove_command('help')
 

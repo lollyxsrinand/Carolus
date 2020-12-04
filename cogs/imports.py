@@ -17,3 +17,4 @@ import urbandict
 import youtube_dl
 import shutil
 import praw
+from contextlib import suppress
