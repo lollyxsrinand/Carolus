@@ -1,13 +1,9 @@
 from imports import *
 
 help_comds = {
-    "flip" : "```css Flips a coin\nUsage: >flip ```",
-    "avatar" : "```css Shows mentioned user's avatar\nUsage: >av or >avatar```",
-    "rand" : "```css Gives random```",
-    "" : "```css ```",
-    "" : "```css ```",
-    "" : "```css ```",
-    "" : "```css ```",
+    "flip" : "```css\nFlips a coin\nUsage: >flip ```",
+    "avatar" : "```css\nShows mentioned user's avatar\nUsage: >av or >avatar```",
+    "rand" : "```css\nSelectes random choice from user given choice\nUsage: >rand <choice1> <choice2>...```",
 
 }
 
@@ -17,7 +13,9 @@ class Help(commands.Cog):
         self.bot = bot
     @commands.command()
     async def help(self, ctx):
-        if ctx.message.content == '.help':
+        msg = str(ctx.message.content)
+        msg = msg.replace(msg[0],'')
+        if msg == 'help':
             channel = discord.utils.get(ctx.guild.channels, name='carol-chat')
             if channel is not None:
                 channel_id=str(channel.id)
@@ -35,11 +33,10 @@ class Help(commands.Cog):
             await ctx.send(embed=embed)
 
         else:
-            # cat = ctx.message.content.split()
             try:
-                await ctx.send(help_comds[(ctx.message.content).split()[1]])
+                await ctx.send(help_comds[msg.split()[1]])
             except:
-                await ctx.send(f"Command `{(ctx.message.content).split()[1]}` not found")
+                await ctx.send(f"Command `{msg.split()[1]}` not found")
 
     
 def setup(bot):

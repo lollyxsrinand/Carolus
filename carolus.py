@@ -10,9 +10,23 @@ def get_prefix(bot, message):
         
     return prefixes[str(message.guild.id)]
 
-embed = discord.Embed(title=";ldkfajsldf")
+        
 bot = commands.Bot(command_prefix=get_prefix)
 bot.remove_command('help')
+@bot.event
+async def on_guild_join(guild):
+    """CREATING TEXT CHANNEL AND SAYING THANKS FOR ADDING"""
+    await guild.create_text_channel('carol-chat')
+    
+    """ADDING GUILD ID TO JSON ASSIGNING DEFAULT PREFIX"""
+    with open('prefixes.json', 'r') as f:
+        prefixes = json.load(f)
+        
+    prefixes[str(guild.id)] = '>'
+    
+    with open('prefixes.json', 'w')  as f:
+        json.dump(prefixes, f, indent=4)
+
 
 """VALIDATING PREFIX"""
 def valid_prefix(pre):
@@ -41,21 +55,6 @@ async def on_message(message):
         await message.channel.send(f"`{who}`: {res}")
     await bot.process_commands(message) 
     
-@bot.event
-async def on_guild_join(guild):
-    """CREATING TEXT CHANNEL AND SAYING THANKS FOR ADDING"""
-    await guild.create_text_channel('carol-chat')
-    channel = discord.utils.get(guild.channels, name='general')
-    await channel.send("Thanks for adding me :>")
-    
-    """ADDING GUILD ID TO JSON ASSIGNING DEFAULT PREFIX"""
-    with open('prefixes.json', 'r') as f:
-        prefixes = json.load(f)
-        
-    prefixes[str(guild.id)] = '>'
-    
-    with open('prefixes.json', 'w')  as f:
-        json.dump(prefixes, f, indent=4)
         
 @bot.event
 async def on_guild_remove(guild):
