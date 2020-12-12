@@ -47,14 +47,12 @@ async def on_message(message):
         return
     
     """AIML RESPONDS TO USER WHEN MESSAGE IN CAROL-CHAT APPEARS"""
-    if message.channel.name=='carol-chat' and message.content[0]!=">" and len(message.content)<900:
-            res = kernel.respond(message.content)
-            if res == "":
-                res = message.content
-            who = str(message.author)[0:-5]
-            await message.channel.send(f"`{who}`: {res}")
-    else:
-        await message.channel.send("Message too big bruv")
+    if message.channel.name=='carol-chat' and message.content[0]!=">":
+        res = kernel.respond(message.content)
+        if res == "":
+            res = message.content
+        who = str(message.author)[0:-5]
+        await message.channel.send(f"`{who}`: {res}")
     await bot.process_commands(message) 
     
         

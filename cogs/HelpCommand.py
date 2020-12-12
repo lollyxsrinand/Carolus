@@ -3,8 +3,7 @@ from imports import *
 help_comds = {
     "flip" : "```css\nFlips a coin\nUsage: >flip ```",
     "avatar" : "```css\nShows mentioned user's avatar\nUsage: >av or >avatar```",
-    "rand" : "```css\nSelectes random choice from user given choice\nUsage: >rand <choice1> <choice2>...```",
-
+    "rand" : "```css\nSelectes random choice from user given choice\nUsage: >rand <choice1> <choice2>...```"
 }
 
 class Help(commands.Cog):
