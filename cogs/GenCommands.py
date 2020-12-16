@@ -9,7 +9,7 @@ class General(commands.Cog):
         embed.add_field(name="Here goes my ping: ",value=f"{round(self.bot.latency*1000)}ms")   
         await ctx.send(embed=embed)
     
-    @commands.command(help="I can't help you ")
+    @commands.command()
     @commands.has_permissions(kick_members=True)
     async def kick(self, ctx, member : discord.Member):
         await member.kick(reason="No reason Provided")
@@ -45,7 +45,7 @@ class General(commands.Cog):
         embed.add_field(name="Hosted on: ",value=hos,inline=True)
         await ctx.send(embed = embed)
         
-    @commands.command(aliases=['pmath'])
+    @commands.command(aliases=['pmath','math','meth','m'])
     async def pymath(self, ctx, *, ope):
         resp = eval(ope)
         if resp > 10**1000:
