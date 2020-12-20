@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands, tasks
 from discord.utils import get   
 from discord.ext.commands import Bot
+# from discord.ext.commands import MissingPermissions
 import asyncio
 from os import system
 from googlesearch import search

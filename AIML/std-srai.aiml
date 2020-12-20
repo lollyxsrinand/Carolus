@@ -48323,5 +48323,36 @@ I think you meant "you are" or "you're".
 <template>Discord is home for me</template>
 </category>
 
+<category>
+<pattern>lol</pattern>
+<template>
+<random>
+<li>lel</li>
+<li>lol</li>
+<li>xD</li>
+<li>haha</li>
+</random>   
+</template>
+</category>
+
+<category>
+<pattern>lel</pattern>
+<template><srai>lol</srai></template>
+</category>
+
+<category>
+<pattern>eks de</pattern>
+<template><srai>lol</srai></template>
+</category>
+
+<category>
+<pattern>lmao</pattern>
+<template><srai>lol</srai></template>
+</category>
+
+<category>
+<pattern>lmfao</pattern>
+<template><srai>lol</srai></template>
+</category>
 
 </aiml>
