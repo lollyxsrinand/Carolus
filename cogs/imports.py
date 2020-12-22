@@ -10,6 +10,7 @@ from urllib import *
 import urllib.request
 from bs4 import BeautifulSoup
 import re
+import aiohttp
 import random
 import datetime 
 from datetime import date
@@ -17,7 +18,5 @@ import aiml
 import urbandict
 import youtube_dl
 import shutil
-import praw
 import io
-import sys
 from contextlib import suppress
