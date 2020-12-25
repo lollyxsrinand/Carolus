@@ -48,9 +48,9 @@ class Fun(commands.Cog):
 
     @commands.command()
     @commands.cooldown(2,5,commands.BucketType.guild)
-    async def meme(self, ctx, sub=None):
+    async def meme(self, ctx):
         async with ctx.typing():
-            if not sub:sub=random.choice(['memes','dankmemes','gamingmemes'])
+            sub=random.choice(['memes','dankmemes','ProgrammingHumor','gamingmemes','AdviceAnimals',"MemeEconomy","terriblefacebookmemes"])
             pos = random.randint(0,50)
             counter=0
             for submission in self.reddit.subreddit(sub).hot(limit=50):
@@ -58,22 +58,19 @@ class Fun(commands.Cog):
                 if counter==pos:
                     title = submission.title
                     pic = submission.url
-                    print(title)
-                    print(pic)
                     # if pic[-3::]!='.jpg' or pic[-3::]!='.gif':
                     if pic[-1]=='/':
                         continue
                     break
         embed=discord.Embed(title=title,color=0x8a0101)
         embed.set_image(url=pic)
-        embed.set_thumbnail(url=ctx.author.avatar_url)
         embed.set_author(name=f"Requested by {ctx.author.name}" , icon_url=ctx.author.avatar_url)
         await ctx.send(embed=embed)
     
     @meme.error
     async def meme_error(self, ctx, error):
         if isinstance(error, commands.CommandOnCooldown):
-            await ctx.send('You need to wait for 5 seconds before using this command')
+            await ctx.send('Aking for memes too quickly. Try again after 5 seconds')
         else:
             embed=discord.Embed(title="No meme for you today ;-;",color=0x73e600)
             await ctx.send(embed=embed)
