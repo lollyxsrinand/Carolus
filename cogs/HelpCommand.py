@@ -21,14 +21,16 @@ class Help(commands.Cog):
             if channel is None:
                 channel_id='#carolus-chat'
             embed=discord.Embed(title="Here are my commands :", description="**You can always get my prefix by pinging me ツ**", color=0x73e600)
-            embed.add_field(name="General", value="help | invite | pymath |\navatar | servericon | youtube\n userinfo", inline=False)
-            embed.add_field(name="Admin", value="kick | ban | clear |", inline = False)
-            embed.add_field(name="Fun", value="flip | choice | dmuser |\nslot", inline=False)
-            embed.add_field(name="Music", value="join | play | stop | move |nnowplaying | queue | skip | forceskip | pause | resume", inline=False)
-            embed.add_field(name="Chat",value=f"`Chat with Carolus in` {channel_id} ` and have fun.\nIf such channel doesn't exist, request admin to create one` ")
-            embed.set_footer(text="20 commands in total ツ")
+            embed.add_field(name="<:general:792348707004612618> General", value="`help` | `invite` | `math` |\n`avatar` | `servericon` | `youtube`\n `userinfo`", inline=False)
+            embed.add_field(name="<:settings:792337130621894697> Admin ",   value="`kick` | `ban` | `clear` |\n `lock` | `unlock`", inline = False)
+            embed.add_field(name="<:fun:792341688482922526> Fun ",     value="`flip` | `choice` | `dmuser` |\n`slot` | `meme`", inline=False)
+            embed.add_field(name="<:music:792344750132690955> Music ",   value="`join` | `play` | `stop` |\n`move` | `nowplaying` | `queue` |\n`skip` | `forceskip` | `loop` |\n`pause` | `resume` | `remove`", inline=False)
+            embed.add_field(name="<:chat:792342422163947544> Chat ",    value=f"`Chat with Carolus in` {channel_id} ` and have fun.\nIf such channel doesn't exist, request admin to create one` ", inline=False)
+            embed.set_footer(text="29 commands in total ツ")
             embed.set_author(name=f'Requested by {str(ctx.author)[:-5]}', icon_url=ctx.author.avatar_url)
-            await ctx.send(embed=embed)
+            await ctx.author.send(embed=embed)
+            await ctx.message.add_reaction("<:dm:792337130932142090>")
+            await ctx.send("ok")
 
         else:
             try:

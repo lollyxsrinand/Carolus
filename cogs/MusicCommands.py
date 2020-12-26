@@ -1,3 +1,4 @@
+""" NOTE - 90% OF MUSIC COMMANDS ARE FROM ANOTHER GITHUB REPO """
 
 import asyncio
 import functools
@@ -139,7 +140,7 @@ class Song:
         self.requester = source.requester
 
     def create_embed(self):
-        embed = (discord.Embed(title='Now playing',
+        embed = (discord.Embed(title='<:youtube:792297534852431892> Now playing',
                                description='**\n[{0.source.title}]({0.source.url})\n**'.format(self,self),
                                color=0x73e600)
                  .add_field(name='Duration', value=self.source.duration)
@@ -356,14 +357,18 @@ class Music(commands.Cog):
         # if not ctx.voice_state.is_playing and ctx.voice_state.voice.is_playing():
         if ctx.voice_state.is_playing:
             ctx.voice_state.voice.pause()
-            await ctx.message.add_reaction('⏯')
+            # await ctx.message.add_reaction('⏯')
+            await ctx.message.add_reaction("<:paused:792321192739995648>")
+        else:
+            await ctx.send("Nothing playing to pause...")
             
-    @commands.command(name='Force Skip',aliases=['fs'])
+    @commands.command(aliases=['fs'])
     @commands.has_permissions(manage_guild=True)
     async def force_skip(self, ctx):
         if ctx.voice_state.is_playing:
             ctx.voice_state.skip()
-            await ctx.send("Skipped :D")
+            await ctx.message.add_reaction("<:skipped:792321193150644225>")
+            # await ctx.send("Skipped :D")
         else:
             await ctx.send("Nothing to skip")
     @commands.command(name='resume')
@@ -374,7 +379,9 @@ class Music(commands.Cog):
         # if not ctx.voice_state.is_playing and ctx.voice_state.voice.is_paused():
         if  ctx.voice_state.voice.is_paused():
             ctx.voice_state.voice.resume()
-            await ctx.message.add_reaction('⏯')
+            await ctx.message.add_reaction('<:play:792321192736194570>')
+        else:
+            await ctx.send("Nothing is paused to resume")
 
     @commands.command(name='stop')
     @commands.has_permissions(manage_guild=True)
@@ -385,7 +392,10 @@ class Music(commands.Cog):
 
         if ctx.voice_state.is_playing:
             ctx.voice_state.voice.stop()
-            await ctx.send("Stopped playing and cleared queue")
+            # await ctx.send("Stopped playing and cleared queue")
+            await ctx.message.add_reaction("<:stop:792321192722825217>")
+        else:
+            ctx.send("I am not playing anything...")
 
     @commands.command(name='skip',aliases=['s'])
     async def _skip(self, ctx: commands.Context):
@@ -445,7 +455,7 @@ class Music(commands.Cog):
             return await ctx.send('Empty queue.')
 
         ctx.voice_state.songs.shuffle()
-        await ctx.message.add_reaction('✅')
+        await ctx.message.add_reaction('<:shuffle:792325586643189770>')
 
     @commands.command(name='remove',aliases=['del','rem'])
     async def _remove(self, ctx: commands.Context, index: int):
@@ -455,13 +465,11 @@ class Music(commands.Cog):
             return await ctx.send('Empty queue.')
 
         ctx.voice_state.songs.remove(index - 1)
-        await ctx.message.add_reaction('✅')
+        await ctx.message.add_reaction('<:yes:786521668762730516>')
 
-    @commands.command(name='loop')
+    @commands.command(name='loop', aliases = ['unloop'])
     async def _loop(self, ctx: commands.Context):
-        """Loops the currently playing song.
-        Invoke this command again to unloop the song.
-        """
+        """ LOOPS THE CURRENT PLAYING SONG """
 
         if not ctx.voice_state.is_playing:
             return await ctx.send('Nothing is being played at the moment.')
@@ -470,18 +478,15 @@ class Music(commands.Cog):
         ctx.voice_state.loop = not ctx.voice_state.loop
         if ctx.voice_state.loop:
             await ctx.send(f"Looped current playing song")
+            await ctx.message.add_reaction("<:looped:792321190609289227>")
         if not ctx.voice_state.loop:
+            await ctx.message.add_reaction('<:looped:792321190609289227>')
             await ctx.send(f"Unlooped current playing song")
         # await ctx.send('Looped \n[{0.source.title}]({0.source.url})\n'.format(self,self))
 
     @commands.command(name='play',aliases=['p'])
     async def _play(self, ctx: commands.Context, *, search: str):
-        """Plays a song.
-        If there are songs in the queue, this will be queued until the
-        other songs finished playing.
-        This command automatically searches from various sites if no URL is provided.
-        A list of these sites can be found here: https://rg3.github.io/youtube-dl/supportedsites.html
-        """
+        """ PLAYES A SONG OFC """
         
         if not ctx.voice_state.voice:
             await ctx.invoke(self._join)
