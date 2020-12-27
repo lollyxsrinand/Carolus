@@ -7,14 +7,15 @@ class General(commands.Cog):
     @commands.command() 
     async def ping(self, ctx):
         embed = discord.Embed(color=0x73e600)
-        embed.add_field(name="Here goes my ping: ",value=f"{round(self.bot.latency*1000)}ms")   
+        embed.add_field(name="<:latency:792811383241572362> My Latency: ",value=f"```{round(self.bot.latency*1000)}ms```", inline=True)   
+        embed.add_field(name="<:latency:792811383241572362> Discord API Latency: ", value = f"```{round(self.bot.ws.latency*1000)}ms```", inline=True)
         await ctx.send(embed=embed)
 
     """ SENDS AN INVITE LINK IN AN EMBED """
     @commands.command()
     async def invite(self, ctx):
-        embed = discord.Embed(title="Carolus invite", color=0x73e600)
-        embed.add_field(name="I'd love to be invited to your server :D",value="**[Invite Carolus](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)**")
+        embed = discord.Embed(title="Hey! Thanks for thinking of inviting me!", color=0x73e600)
+        embed.add_field(name="I'd love to be in your server",value="**[Click here to invite](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)**")
         await ctx.send(embed=embed)
     
     """ DOES MATH CALCULATION USING PYMATH LIB """
@@ -59,16 +60,16 @@ class General(commands.Cog):
     @commands.cooldown(3, 5, commands.BucketType.guild)
     async def userinfo(self, ctx, member : discord.Member = None):
         member = member or ctx.author
-        embed = discord.Embed(title=f"{member.name} <:info:792300331895095336> ",color=member.color)
+        embed = discord.Embed(title = f"<:info:792300331895095336> {member.name} ", color = 0x73e600)
         created_time = str(member.created_at).split(' ')
-        embed.add_field(name=f"User ID",value=f"**{member.id}**",inline=True)
-        embed.add_field(name=f"Mention",value=f"{member.mention}",inline=True)
-        embed.add_field(name=f"Tag",value=f"{member.discriminator}",inline=True)
-        embed.add_field(name=f"Prominent Role",value=f"{member.top_role.mention}",inline=True)
-        embed.add_field(name=f"Member since",value=f"{created_time[0]}",inline=True)
-        embed.add_field(name=f"Joined server on",value=f"{str(member.joined_at).split(' ')[0]}",inline=False)
-        embed.set_thumbnail(url=member.avatar_url)
-        await ctx.send(embed=embed)
+        embed.add_field(name = f"User ID",         value = f"**{member.id}**",                      inline = True)
+        embed.add_field(name = f"Mention",         value = f"{member.mention}",                     inline = True)
+        embed.add_field(name = f"Tag",             value = f"{member.discriminator}",               inline = True)
+        embed.add_field(name = f"Prominent Role",  value = f"{member.top_role.mention}",            inline = True)
+        embed.add_field(name = f"Member since",    value = f"{created_time[0]}",                    inline = True)
+        embed.add_field(name = f"Joined server on",value = f"{str(member.joined_at).split(' ')[0]}",inline = False)
+        embed.set_thumbnail(url = member.avatar_url)
+        await ctx.send(embed = embed)
 
     """ HANDLING USERINFO COMMAND COOLDOWN ERROR """
     @userinfo.error
@@ -76,5 +77,32 @@ class General(commands.Cog):
         if isinstance(error, commands.CommandOnCooldown):
             await ctx.send("You are trying to use the command too many times.Retry after {:.0f}s".format(error.retry_after))
 
+    @commands.command(aliases=["sifo"])
+    @commands.cooldown(3, 5, commands.BucketType.guild)
+    async def serverinfo(self, ctx):
+        prem_subs = ctx.guild.premium_subscribers or "No server boosters"
+        c = str(ctx.guild.created_at).split(' ')
+        embed = discord.Embed(title = "Server Information <:info:792300331895095336>", color = 0x73e600)
+        embed.add_field(name = "**Owner**",         value = f"<@{ctx.guild.owner_id}>",       inline = True)
+        embed.add_field(name = "**Boosters**",      value = prem_subs,                        inline = True)
+        embed.add_field(name = '**Member Count**',  value = f"{ctx.guild.member_count}",      inline = True)
+        embed.add_field(name = "**Channel Count**", value = f"{len(ctx.guild.channels)}",     inline = True)
+        embed.add_field(name = "**Highest Role**",value = f"<@&{ctx.guild.roles[-1].id}>",  inline = True)
+        embed.add_field(name = "**Emoji Count**",   value = f"{len(ctx.guild.emojis)}",       inline = True)
+        embed.add_field(name = "**Server ID**",     value = f"{ctx.guild.id}",                inline = True)
+        embed.add_field(name = "**Creation **",     value = f"{c[1].split('.')[0]} on {c[0]}",inline = True)
+        if ctx.guild.icon_url:
+            embed.set_thumbnail(url=f"{ctx.guild.icon_url}")
+        embed.set_author(name=f"Requested by - {ctx.author.name}",icon_url=f"{ctx.author.avatar_url}")
+        await ctx.send(embed = embed)
+
+    @serverinfo.error
+    async def serverinfo_error(self, ctx, error):
+        if isinstance(error, commands.CommandOnCooldown):
+            await ctx.send("Requesting for guild info too quickly.Try after {:.0f}s".format(error.retry_after))
+        else:
+            await ctx.send("There was an error processing server information...")
+
+    
 def setup(bot):
     bot.add_cog(General(bot))

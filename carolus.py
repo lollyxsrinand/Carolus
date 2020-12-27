@@ -132,6 +132,7 @@ async def on_command_error(ctx, error):
 
 @bot.event
 async def on_ready():
+    print((bot.ws.latency)*1000)
     change_status.start()
     print("Bot ready")
     

@@ -68,6 +68,9 @@ class Mod(commands.Cog):
     @commands.has_permissions(manage_channels=True)
     async def lock(self, ctx, channel : discord.TextChannel = None):
         channel = channel or ctx.channel    
+        if not channel.overwrites_for(ctx.guild.default_role).send_messages:
+            await ctx.send("Already locked channel")
+            return  
         overwrite = channel.overwrites_for(ctx.guild.default_role)
         overwrite.send_messages = False
         await channel.set_permissions(ctx.guild.default_role, overwrite=overwrite)
@@ -84,6 +87,9 @@ class Mod(commands.Cog):
     @commands.has_permissions(manage_channels=True)
     async def unlock(self, ctx, channel : discord.TextChannel = None):
         channel = channel or ctx.channel
+        if channel.overwrites_for(ctx.guild.default_role).send_messages:
+            await ctx.send("Channel is not locked")
+            return
         overwrite = channel.overwrites_for(ctx.guild.default_role)
         overwrite.send_messages = True
         await channel.set_permissions(ctx.guild.default_role, overwrite=overwrite)

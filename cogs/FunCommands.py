@@ -84,5 +84,6 @@ class Fun(commands.Cog):
             embed=discord.Embed(title="No meme for you today ;-;",color=0x73e600)
             await ctx.send(embed=embed) 
 
+
 def setup(bot):
     bot.add_cog(Fun(bot))
