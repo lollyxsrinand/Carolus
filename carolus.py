@@ -122,6 +122,14 @@ async def prefix_error(ctx, error):
 async def change_status():
     await bot.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name=next(status)))
 
+""" HANDLING THE COMMAND NOT FOUND ERROR """
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CommandNotFound):
+        embed = discord.Embed(title = "**Command Not Found!**",description = f"{ctx.author} try for a help command for a list of valid commands that I can work on.",color=0x73e600)
+        await ctx.send(embed=embed)
+
+
 @bot.event
 async def on_ready():
     change_status.start()

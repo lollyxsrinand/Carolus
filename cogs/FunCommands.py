@@ -65,11 +65,10 @@ class Fun(commands.Cog):
                     title = submission.title
                     pic = submission.url
                     # if pic[-3::]!='.jpg' or pic[-3::]!='.gif':
-                    if pic[-1] == '/': # TRYING MY BEST TO AVOID FETCHING A NON GIF URL OR NON PIC URL
+                    if pic[-1] == '/':
                         continue
                     break
-        embed=disco
-        rd.Embed(title = title,color = 0x8a0101)
+        embed=discord.Embed(title = title,color = 0x8a0101)
         embed.set_image(url = pic)
         embed.set_author(name=f"Requested by {ctx.author.name}" , icon_url=ctx.author.avatar_url)
         await ctx.send(embed = embed)
