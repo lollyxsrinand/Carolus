@@ -1,4 +1,5 @@
 from imports import *
+import time
 class General(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
@@ -6,16 +7,21 @@ class General(commands.Cog):
     """ SHOWS USER IT'S PING , LOOK NEEDS TO BE UPDATED"""
     @commands.command() 
     async def ping(self, ctx):
+        before = time.monotonic()
+        temp = await ctx.send("Pong!")
+        after = time.monotonic()
         embed = discord.Embed(color=0x73e600)
-        embed.add_field(name="<:latency:792811383241572362> My Latency: ",value=f"```{round(self.bot.latency*1000)}ms```", inline=True)   
+        embed.add_field(name="<:latency:792811383241572362> My Latency: ",value=f"```{int((after - before)*1000)}ms```", inline=True)   
+        print("pong1")
         embed.add_field(name="<:latency:792811383241572362> Discord API Latency: ", value = f"```{round(self.bot.ws.latency*1000)}ms```", inline=True)
-        await ctx.send(embed=embed)
+        print("pong2")
+        await temp.edit(content="",embed=embed)
 
     """ SENDS AN INVITE LINK IN AN EMBED """
     @commands.command()
     async def invite(self, ctx):
         embed = discord.Embed(title="Hey! Thanks for thinking of inviting me!", color=0x73e600)
-        embed.add_field(name="I'd love to be in your server",value="**[Click here to invite](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)**")
+        embed.add_field(name=" <:invitation:792796172199919616> I'd love to be in your server",value="**[Click here to invite](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)**")
         await ctx.send(embed=embed)
     
     """ DOES MATH CALCULATION USING PYMATH LIB """
