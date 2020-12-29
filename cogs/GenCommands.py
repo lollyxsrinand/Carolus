@@ -1,6 +1,21 @@
 from imports import *
+import requests
 import time
 class General(commands.Cog):
+    digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    lcase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',  
+                     'i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 
+                     'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 
+                     'z']
+    ucase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',  
+                     'I', 'J', 'K', 'M', 'N', 'O', 'p', 'Q', 
+                     'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 
+                     'Z']
+    symb = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>',  
+           '*', '(', ')', '<&# 039']
+
+    comb = digits + lcase + ucase + symb
+
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
@@ -60,6 +75,26 @@ class General(commands.Cog):
         html = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + search)
         video_ids = re.findall(r"watch\?v=(\S{11})", html.read().decode())
         await ctx.send(f"<:youtube:792297534852431892> https://www.youtube.com/watch?v={video_ids[0]}")
+
+    @commands.command()
+    async def google(self, ctx, *, search=None):
+        if not search:
+            await ctx.send("Syntax for google search - `<prefix>google <search>`")
+            return
+        results = 5
+        counter = 1
+        embed = discord.Embed(title = "<:google:793195172296130560> Here are a few related results",color=0xfffefc)
+        embed.set_thumbnail(url="https://img-authors.flaticon.com/google.jpg")
+        page = requests.get(f"https://www.google.com/search?q={search}&num={results}")
+        print('after requetsing pages f;dlkajsdf')
+        soup = BeautifulSoup(page.content, 'html.parser')
+        links = soup.findAll('a')
+        for link in links:
+            link_href = link.get('href')
+            if "url?q=" in link_href and not "webcache" in link_href:
+                embed.add_field(name=f"**{counter}**",value=f"**{(link.get('href').split('?q=')[1].split('&sa=U')[0])}**",inline=False)
+                counter+=1
+        await ctx.send(embed = embed)
 
     """ SHOWS USERINFORMATION , NEEDS TO BE UPDATED A LITTLE """
     @commands.command(aliases=["uinfo"])

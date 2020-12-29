@@ -101,5 +101,20 @@ class Mod(commands.Cog):
         if isinstance(error, commands.MissingPermissions):
             await ctx.send("<:huh:755278797774782637> You don't have permissions to manage channels")
 
+    @commands.command()
+    @commands.has_permissions(mute_members=True)
+    async def mute(self, ctx, member: discord.Member=None):
+        # print('lol')
+        await ctx.send("Muting...")
+        guild = ctx.guild
+        if (not guild.has_role(name="Muted")):
+            perms = discord.Permissions(send_messages=False, speak=False)
+            await guild.create_role(name="Muted", permissions=perms)
+        role = discord.utils.get(ctx.guild.roles, name="Muted")
+        print("🔨 "+member+" was muted.")
+        if (not member):
+            await ctx.send("Please specify a member to mute")
+            return
+        await member.add_roles(role)      
 def setup(bot):
     bot.add_cog(Mod(bot))   
