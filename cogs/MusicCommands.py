@@ -500,7 +500,7 @@ class Music(commands.Cog):
                 song = Song(source)
                 await ctx.voice_state.songs.put(song)
                 await ctx.send('Enqueued {}'.format(str(source)))
-        
+
     @_join.before_invoke
     @_play.before_invoke
     async def ensure_voice_state(self, ctx: commands.Context):

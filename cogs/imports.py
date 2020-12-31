@@ -19,5 +19,4 @@ import urbandict
 import youtube_dl
 import shutil
 import io
-from PIL import Image, ImageOps
 from contextlib import suppress

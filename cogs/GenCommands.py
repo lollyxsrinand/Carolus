@@ -2,19 +2,6 @@ from imports import *
 import requests
 import time
 class General(commands.Cog):
-    digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    lcase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',  
-                     'i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 
-                     'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 
-                     'z']
-    ucase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',  
-                     'I', 'J', 'K', 'M', 'N', 'O', 'p', 'Q', 
-                     'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 
-                     'Z']
-    symb = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>',  
-           '*', '(', ')', '<&# 039']
-
-    comb = digits + lcase + ucase + symb
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
@@ -81,6 +68,7 @@ class General(commands.Cog):
         if not search:
             await ctx.send("Syntax for google search - `<prefix>google <search>`")
             return
+        message = await ctx.send("It's gonna take time bare with me...")
         results = 5
         counter = 1
         embed = discord.Embed(title = "<:google:793195172296130560> Here are a few related results",color=0xfffefc)
@@ -94,7 +82,7 @@ class General(commands.Cog):
             if "url?q=" in link_href and not "webcache" in link_href:
                 embed.add_field(name=f"**{counter}**",value=f"**{(link.get('href').split('?q=')[1].split('&sa=U')[0])}**",inline=False)
                 counter+=1
-        await ctx.send(embed = embed)
+        await message.edit(content="",embed = embed)
 
     """ SHOWS USERINFORMATION , NEEDS TO BE UPDATED A LITTLE """
     @commands.command(aliases=["uinfo"])
