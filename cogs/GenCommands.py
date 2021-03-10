@@ -6,24 +6,22 @@ class General(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    """ SHOWS USER IT'S PING , LOOK NEEDS TO BE UPDATED"""
+    """ SHOWS PING """
     @commands.command() 
     async def ping(self, ctx):
         before = time.monotonic()
         temp = await ctx.send("Pong!")
         after = time.monotonic()
         embed = discord.Embed(color=0x73e600)
-        embed.add_field(name="<:latency:792811383241572362> My Latency: ",value=f"```{int((after - before)*1000)}ms```", inline=True)   
-        print("pong1")
-        embed.add_field(name="<:latency:792811383241572362> Discord API Latency: ", value = f"```{round(self.bot.ws.latency*1000)}ms```", inline=True)
-        print("pong2")
+        embed.add_field(name="<:invitation:818419988272513044> My Latency: ",value=f"```{int((after - before)*1000)}ms```", inline=True)   
+        embed.add_field(name="<:invitation:818419988272513044> Discord API Latency: ", value = f"```{round(self.bot.ws.latency*1000)}ms```", inline=True)
         await temp.edit(content="",embed=embed)
 
     """ SENDS AN INVITE LINK IN AN EMBED """
     @commands.command()
     async def invite(self, ctx):
         embed = discord.Embed(title="Hey! Thanks for thinking of inviting me!", color=0x73e600)
-        embed.add_field(name=" <:invitation:792796172199919616> I'd love to be in your server",value="**[Click here to invite](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)**")
+        embed.add_field(name=" <:invitation:818419988272513044> I'd love to be in your server",value="**[Click here to invite](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)**")
         await ctx.send(embed=embed)
     
     """ DOES MATH CALCULATION USING PYMATH LIB """
@@ -38,13 +36,13 @@ class General(commands.Cog):
     @commands.command(aliases=["av","avt","pfp"])
     async def avatar(self, ctx, *, user: discord.Member = None):
         """ Get the avatar of you or someone else """
-        user = user or ctx.author
-        embed = discord.Embed(color=0x73e600)
-        embed.set_author(name=f"Requested by {str(ctx.author)[0:-5]}", icon_url=ctx.author.avatar_url)
-        embed.set_image(url=f"{user.avatar_url_as(size=1024)}")
+        user = user or ctx.author 
+        embed = discord.Embed(color=0x73e600) 
+        embed.set_author(name=f"Requested by {str(ctx.author)[0:-5]}", icon_url=ctx.author.avatar_url) 
+        embed.set_image(url=f"{user.avatar_url_as(size=1024)}") 
         await ctx.send(embed=embed)
-
-    """ SHOWS SERVER ICON """
+         
+        """ SHOWS SERVER ICON """ 
     @commands.command(aliases=["serverico","servericon","sico","sicon"])
     async def server_icon(self, ctx):
         if len(str(ctx.guild.icon_url))>0:
@@ -63,6 +61,7 @@ class General(commands.Cog):
         video_ids = re.findall(r"watch\?v=(\S{11})", html.read().decode())
         await ctx.send(f"<:youtube:792297534852431892> https://www.youtube.com/watch?v={video_ids[0]}")
 
+    """ FETCHES RESULTS FROM GOOGLE """
     @commands.command()
     async def google(self, ctx, *, search=None):
         if not search:
@@ -74,7 +73,6 @@ class General(commands.Cog):
         embed = discord.Embed(title = "<:google:793195172296130560> Here are a few related results",color=0xfffefc)
         embed.set_thumbnail(url="https://img-authors.flaticon.com/google.jpg")
         page = requests.get(f"https://www.google.com/search?q={search}&num={results}")
-        print('after requetsing pages f;dlkajsdf')
         soup = BeautifulSoup(page.content, 'html.parser')
         links = soup.findAll('a')
         for link in links:

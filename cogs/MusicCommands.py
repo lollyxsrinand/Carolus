@@ -358,7 +358,7 @@ class Music(commands.Cog):
         if ctx.voice_state.is_playing:
             ctx.voice_state.voice.pause()
             # await ctx.message.add_reaction('⏯')
-            await ctx.message.add_reaction("<:paused:792321192739995648>")
+            await ctx.message.add_reaction("<:pause:800556833319944192>")
         else:
             await ctx.send("Nothing playing to pause...")
             
@@ -367,7 +367,7 @@ class Music(commands.Cog):
     async def force_skip(self, ctx):
         if ctx.voice_state.is_playing:
             ctx.voice_state.skip()
-            await ctx.message.add_reaction("<:skipped:792321193150644225>")
+            await ctx.message.add_reaction("<:next:800556833525202984>")
             # await ctx.send("Skipped :D")
         else:
             await ctx.send("Nothing to skip")
@@ -379,7 +379,7 @@ class Music(commands.Cog):
         # if not ctx.voice_state.is_playing and ctx.voice_state.voice.is_paused():
         if  ctx.voice_state.voice.is_paused():
             ctx.voice_state.voice.resume()
-            await ctx.message.add_reaction('<:play:792321192736194570>')
+            await ctx.message.add_reaction('<:play:800556833432403968>')
         else:
             await ctx.send("Nothing is paused to resume")
 
@@ -393,7 +393,7 @@ class Music(commands.Cog):
         if ctx.voice_state.is_playing:
             ctx.voice_state.voice.stop()
             # await ctx.send("Stopped playing and cleared queue")
-            await ctx.message.add_reaction("<:stop:792321192722825217>")
+            await ctx.message.add_reaction("<:stop:800556832958578709>")
         else:
             ctx.send("I am not playing anything...")
 
@@ -455,7 +455,7 @@ class Music(commands.Cog):
             return await ctx.send('Empty queue.')
 
         ctx.voice_state.songs.shuffle()
-        await ctx.message.add_reaction('<:shuffle:792325586643189770>')
+        await ctx.message.add_reaction('<:shuffle:800556833592573972>')
 
     @commands.command(name='remove',aliases=['del','rem'])
     async def _remove(self, ctx: commands.Context, index: int):
@@ -478,9 +478,9 @@ class Music(commands.Cog):
         ctx.voice_state.loop = not ctx.voice_state.loop
         if ctx.voice_state.loop:
             await ctx.send(f"Looped current playing song")
-            await ctx.message.add_reaction("<:looped:792321190609289227>")
+            # await ctx.message.add_reaction("<:looped:792321190609289227>")
         if not ctx.voice_state.loop:
-            await ctx.message.add_reaction('<:looped:792321190609289227>')
+            # await ctx.message.add_reaction('<:looped:792321190609289227>')
             await ctx.send(f"Unlooped current playing song")
         # await ctx.send('Looped \n[{0.source.title}]({0.source.url})\n'.format(self,self))
 

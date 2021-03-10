@@ -24,7 +24,7 @@ class Fun(commands.Cog):
     """ BOT SENDS GIVEN MESSAGE TO THE SPECIFIED USER """
     @commands.command(aliases=["dm","dmu","pm"])
     async def dmuser(self, ctx, user: discord.User, *, message):
-        await ctx.message.add_reaction("<:dm:792337130932142090>")
+        await ctx.message.add_reaction("<:dm:818425964165201970>")
         await user.send(message)
 
     """ SLOTS OR BETTING COMMAND """
@@ -84,6 +84,20 @@ class Fun(commands.Cog):
             embed=discord.Embed(title="No meme for you today ;-;",color=0x73e600)
             await ctx.send(embed=embed) 
 
+    @commands.command()
+    @commands.cooldown(5, 15, commands.BucketType.guild)
+    async def say(self, ctx, member:discord.Member, *text:str):
+        """IDK WHY ME MADES THIS ::>"""
+        webhook = await ctx.channel.create_webhook(name="Carolus")
+        await webhook.send(content=' '.join(text), username=member.display_name, avatar_url=member.avatar_url)
+        await webhook.delete()
+        await ctx.message.delete()
 
+    @say.error
+    async def say_error(self, ctx, error):
+        if isinstance(error, commands.CommandOnCooldown):
+            await ctx.send("I can't keep saying so quick, try after few seconds")
+            return
+        await ctx.send("ooof, i got a bug")
 def setup(bot):
     bot.add_cog(Fun(bot))

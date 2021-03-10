@@ -126,15 +126,26 @@ async def change_status():
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
-        embed = discord.Embed(title = "**Command Not Found!**",description = f"{ctx.author} try for a help command for a list of valid commands that I can work on.",color=0x73e600)
-        await ctx.send(embed=embed)
-
+        embed=discord.Embed(title="Here is how you can get along with me :", description=f"**Contacting <@{702122543410184253}> for any kind of suggestions or a bug report would be appreciated**", color=0x73e600)
+        embed.add_field(name="<:general:818432179750305842> General", value="`help` | `invite` | `math` |\n`avatar` | `servericon` | `google` | `youtube`\n `userinfo` | `serverinfo`", inline=False)
+        embed.add_field(name="<:settings:818425966379794453> Admin ",   value="`kick` | `ban` | `clear` |\n `lock` | `unlock`", inline = False)
+        embed.add_field(name="<:fun:818425966531313754> Fun ",     value="`flip` | `choice` | `dmuser` |\n`slot` | `meme` | `say`", inline=False)
+        embed.add_field(name="<:music:818432767523815425> Music ",   value="`join` | `play` | `stop` |\n`move` | `nowplaying` | `queue` |\n`skip` | `forceskip` | `loop` |\n`pause` | `resume` | `remove` |\n `shuffle` ", inline=False)
+        embed.add_field(name="<:chat:818432878819934258> Chat ",    value=f"`Chat with AIML powered Carolus in` #carol-chat ` if you're interested.\nIf such channel doesn't exist, request admin to create one` ", inline=False)
+        embed.add_field(name="<:invitation:818419988272513044> I'd love to join new servers", value=f"**[Invite](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)**", inline=False)
+        embed.set_footer(text="You can always get my prefix just by pinging me ツ")
+        await ctx.author.send(embed=embed)
+        await ctx.message.add_reaction("<:dm:818425964165201970>")
+        await ctx.send("I don't have that command, check dm for commands that I have")
+        return
 
 @bot.event
 async def on_ready():
-    # print((bot.ws.latency)*1000)
     change_status.start()
     print("Bot ready")
+    guilds = bot.guilds
+    for x in guilds:
+        print(x.name)
     
 """LOADING COGS"""
 bot.load_extension('cogs.GenCommands')
@@ -151,4 +162,4 @@ kernel.respond("load aiml b")
 """END OF LOADING AIML"""
 
 """RUNNING BOT"""
-bot.run('Nzc0NTMwMjcwNTA1MjA1ODAx.X6ZHhg.SG-awP6hOU8kntE5o9yyZZdV5iQ')  
+bot.run('Nzc0NTMwMjcwNTA1MjA1ODAx.X6ZHhg.6aaTIJnJh2o-9aEW9uJN0iOs_O4')  

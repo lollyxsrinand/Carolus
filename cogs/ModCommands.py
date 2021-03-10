@@ -7,22 +7,23 @@ class Mod(commands.Cog):
     """ KICKS A USER FROM SERVER, IF YOU MENTION YOURSELF YOU GET KICKED BY YOURSELF TOO """
     @commands.command()
     @commands.has_permissions(kick_members=True)
-    async def kick(self, ctx, member : discord.Member):
-        await member.kick(reason="No reason Provided")
-        await ctx.send(f"{ctx.author.mention} has <a:slaughtered:789838738565627914> {member.mention}")
+    async def kick(self, ctx, member : discord.Member, *, reason = None):
+        await member.kick(reason=reason)
+        await ctx.send(f"{ctx.author.mention} has <:kick:818413879138582568> {member.mention} | Reason - {reason}")
 
     """ HANDLING KICK ERROR ON SOMEONE TRYING TO KICK WITHOUT PERMISSIONS """
     @kick.error
     async def kick_error(self, ctx, error):
         if isinstance(error, commands.MissingPermissions):
-            await ctx.send(f" <:huh:755278797774782637> Seems that you do not have permissio n to kick members in this server")
+            await ctx.send(f" <:huh:755278797774782637> Seems that you do not have permission to kick members in this server")
 
     """ BANS A SPECIFIED USER FROM THE SERVER """  
     @commands.command()
     @commands.has_permissions(ban_members=True)
-    async def ban(self, ctx, member : discord.Member):
-        await member.ban(reason="No reason Provided")
-        await ctx.send(f"<:ban:792311447035183174> {ctx.author.mention} has banned {member.mention}")  
+    async def ban(self, ctx, member : discord.Member, *, reason=None):
+        await member.ban(reason=reason)
+        print("UvU i won't ban do anything :lmao:")
+        await ctx.send(f"{ctx.author.mention} has banned {member.mention} | Reason : {reason}")  
     
     """ HANDLING BAN ERROR ON SOMEONE TRYING TO BAN WITHOUT PERMISSIONS """
     @ban.error
@@ -34,7 +35,10 @@ class Mod(commands.Cog):
     @commands.command()
     @commands.has_permissions(manage_messages=True)
     @commands.cooldown(5, 15, commands.BucketType.guild)
-    async def clear(self, ctx,*, lim):
+    async def clear(self, ctx, lim : int = None):
+        if not lim:
+            await ctx.send("You must specify the amount of messages to delete!")
+            return
         if int(lim)<2000:
             await ctx.channel.purge(limit=int(lim)+1)
         else:   
@@ -100,6 +104,7 @@ class Mod(commands.Cog):
     async def unlock_error(self, ctx, error):
         if isinstance(error, commands.MissingPermissions):
             await ctx.send("<:huh:755278797774782637> You don't have permissions to manage channels")
+
 
 def setup(bot):
     bot.add_cog(Mod(bot))   
