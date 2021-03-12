@@ -83,21 +83,29 @@ class Fun(commands.Cog):
         else:
             embed=discord.Embed(title="No meme for you today ;-;",color=0x73e600)
             await ctx.send(embed=embed) 
+        
+    @commands.command()
+    @commands.cooldown(5, 15, commands.BucketType.Guild)
+    async def say(self, ctx, *message):
+        
 
     @commands.command()
     @commands.cooldown(5, 15, commands.BucketType.guild)
-    async def say(self, ctx, member:discord.Member, *text:str):
+    async def say(self, ctx, member:discord.Member, *text):
         """IDK WHY ME MADES THIS ::>"""
+        if member.id==702122543410184253 and ctx.author.id !=702122543410184253:
+            await ctx.send("get a life son.")
+            return
+        await ctx.message.delete()
         webhook = await ctx.channel.create_webhook(name="Carolus")
         await webhook.send(content=' '.join(text), username=member.display_name, avatar_url=member.avatar_url)
         await webhook.delete()
-        await ctx.message.delete()
 
     @say.error
     async def say_error(self, ctx, error):
         if isinstance(error, commands.CommandOnCooldown):
             await ctx.send("I can't keep saying so quick, try after few seconds")
             return
-        await ctx.send("ooof, i got a bug")
+
 def setup(bot):
     bot.add_cog(Fun(bot))

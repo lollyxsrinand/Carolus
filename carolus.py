@@ -2,7 +2,7 @@ from imports import *
 
 valid_prefixes = ['<','>','!','#','$','%','^','&','*','(',')','[',']','{','}',':',';','/','\\','-','+','=','.',',','?']
 
-status = cycle(['clients on discord','>help | DM Bugs :>'])
+status = cycle(['clients on discord','>help | DM Bugs :>', 'My owner who is such an idiot'])
 
 """ GETTING PREFIX FOR THE PARTICULAR GUILD """
 def get_prefix(bot, message):
