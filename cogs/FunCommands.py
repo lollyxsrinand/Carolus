@@ -85,11 +85,6 @@ class Fun(commands.Cog):
             await ctx.send(embed=embed) 
         
     @commands.command()
-    @commands.cooldown(5, 15, commands.BucketType.Guild)
-    async def say(self, ctx, *message):
-        
-
-    @commands.command()
     @commands.cooldown(5, 15, commands.BucketType.guild)
     async def say(self, ctx, member:discord.Member, *text):
         """IDK WHY ME MADES THIS ::>"""
