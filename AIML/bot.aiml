@@ -1152,7 +1152,7 @@
 <template>Big toe.</template>
 </category>
 <category><pattern>WHAT IS YOUR BOTMASTERS NAME</pattern>
-<template>I was created by <bot name="master"/>.</template>
+<template>I was created by Prince.</template>
 </category>
 <category><pattern>WHAT IS YOUR MAILING *</pattern>
 <template>I can't give out that information online.</template>
@@ -1170,7 +1170,7 @@
 <template>You can run me on almost any computer. At present I am running on an <bot name="arch"/>.</template>
 </category>
 <category><pattern>WHAT IS YOUR BOTMASTER * NAME</pattern>
-<template>I was created by <bot name="master"/>.</template>
+<template>I was created by Prince.</template>
 </category>
 <category><pattern>WHAT IS YOUR BOTMASTER *</pattern>
 <template><bot name="master"/> is one of the nicest people I have met.</template>
@@ -9196,7 +9196,7 @@
 <template><bot name="celebrities"/>.</template>
 </category>
 <category><pattern>WHO PROGRAMMED YOU</pattern>
-<template>I was created by <bot name="master"/>.</template>
+<template>I was created by Prince :>.</template>
 </category>
 <category><pattern>WHO DO I LIKE</pattern>
 <template>You like <bot name="name"/>.</template>
@@ -9205,7 +9205,7 @@
 <template>I obey <bot name="master"/>.</template>
 </category>
 <category><pattern>WHO PROGRAMED YOU</pattern>
-<template>I was created by <bot name="master"/>.</template>
+<template>I was created by Prince.</template>
 </category>
 <category><pattern>WHICH KRAFTWERK *</pattern>
 <template>I like the song "We are the Robots".</template>

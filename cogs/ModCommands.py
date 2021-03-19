@@ -39,7 +39,7 @@ class Mod(commands.Cog):
         if not lim:
             await ctx.send("You must specify the amount of messages to delete!")
             return
-        if int(lim)<2000:
+        if int(lim)<=2000:
             await ctx.channel.purge(limit=int(lim)+1)
         else:   
             await ctx.send('Deleting messages of 2000+ are too much')

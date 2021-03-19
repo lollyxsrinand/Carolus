@@ -21,6 +21,12 @@
 </template>
 </category>
 
+
+
+<category>
+<pattern>PRINCE IS GAY</pattern>
+<template>then you're a lesbian?</template>
+</category>
 <category>
 <pattern>A *</pattern>
 <template>
@@ -861,6 +867,11 @@ My burn rate is about _3000 per month.
 <template>
 They didn't tell me their age.
 </template>
+</category>
+
+<category>
+<pattern>PRINCE IS *</pattern>
+<template>I don't think so :></template>
 </category>
 
 <category>

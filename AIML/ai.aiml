@@ -10,6 +10,14 @@
 <!-- Last modified 11/23/2011 -->
 <!-- -->
 <category>
+<pattern>PRINCE IS *</pattern>
+<template>are you sure...?</template>
+</category>
+<category>
+<pattern>* IS PRINCE</pattern>
+<template>You sure of that...?</template>
+</category>
+<category>
 <pattern>WHO IS LAUREN</pattern>
 <template><set name="she">Lauren</set> is a bot on Pandorabots.</template>
 </category>
