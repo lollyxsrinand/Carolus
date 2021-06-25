@@ -33,7 +33,7 @@ class Help(commands.Cog):
             embed.add_field(name="<:invitation:818419988272513044> I'd love to join new servers", value=f"**[Invite](https://discord.com/api/oauth2/authorize?client_id=774530270505205801&permissions=8&scope=bot)**", inline=False)
             embed.set_footer(text="You can always get my prefix just by pinging me ツ")
             embed.set_author(name=f'Requested by {str(ctx.author)[:-5]}', icon_url=ctx.author.avatar_url)
-            await ctx.author.send(embed=embed)
+            await ctx.send(embed=embed)
             await ctx.message.add_reaction("<:dm:818425964165201970>")
             await ctx.send("ok")
 

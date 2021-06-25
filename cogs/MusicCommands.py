@@ -1,4 +1,4 @@
-""" NOTE - 90% OF MUSIC COMMANDS ARE FROM ANOTHER GITHUB REPO """
+""" NOTE - 90% OF MUSIC COMMANDS ARE FROM ANOTHER GITHUB REPO :/"""
 
 import asyncio
 import functools
@@ -301,6 +301,7 @@ class Music(commands.Cog):
             return
 
         ctx.voice_state.voice = await destination.connect()
+        await ctx.send(f"Joined I is to `{destination}`")
 
     @commands.command(name='move',aliases=['summon'])
     async def _move(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None):
@@ -505,11 +506,13 @@ class Music(commands.Cog):
     @_play.before_invoke
     async def ensure_voice_state(self, ctx: commands.Context):
         if not ctx.author.voice or not ctx.author.voice.channel:
-            raise commands.CommandError('You are not connected to any voice channel.')
+            # raise commands.CommandError('You are not connected to any voice channel.')
+            await ctx.send('You is not in any voice channel.')
 
         if ctx.voice_client:
             if ctx.voice_client.channel != ctx.author.voice.channel:
-                raise commands.CommandError('Bot is already in a voice channel.')
+                # raise commands.CommandError('Bot is already in a voice channel.')
+                await ctx.send(f"Joined is me to `{ctx.author.voice.channel}`")
             
 def setup(bot):
     bot.add_cog(Music(bot))
