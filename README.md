@@ -1,5 +1,5 @@
 # Carolus
-a discord bot I made just for fun during my school days :>
+A discord bot I made just for fun during my school days :>
 
 ## Commands 
 
