@@ -162,4 +162,4 @@ kernel.respond("load aiml b")
 """END OF LOADING AIML"""
 
 """RUNNING BOT"""
-bot.run('Nzc0NTMwMjcwNTA1MjA1ODAx.X6ZHhg.6aaTIJnJh2o-9aEW9uJN0iOs_O4')  
+bot.run('')  
